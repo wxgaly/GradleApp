@@ -1,5 +1,6 @@
 package annotation;
 
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 
 /**
@@ -30,21 +31,46 @@ public class NewsTest {
 
     public void test() {
         ApiUtils apiUtils = new ApiUtils();
-//        apiUtils.getNews();
+//        apiUtils.getNews("aaa");
         Method[] methods = apiUtils.getClass().getMethods();
         for (Method method : methods) {
-            GET annotation = method.getAnnotation(GET.class);
-            if (annotation != null) {
-                System.out.println("get annotation value is : " + annotation.value());
+            Annotation[] methodAnnotations = method.getAnnotations();
+            Annotation[][] parameterAnnotations = method.getParameterAnnotations();
+//            GET annotation = method.getAnnotation(GET.class);
+            if (methodAnnotations != null && methodAnnotations.length > 0) {
+                for (Annotation annotation : methodAnnotations) {
+                    parseMethodAnnotation(annotation);
+                }
             }
+
+            if (parameterAnnotations != null && parameterAnnotations.length > 0) {
+                for (Annotation[] parameterAnnotation : parameterAnnotations) {
+                    parseParameterAnnotation(parameterAnnotation);
+                }
+            }
+
+        }
+    }
+
+    private void parseParameterAnnotation(Annotation[] parameterAnnotation) {
+        for (Annotation annotation : parameterAnnotation) {
+            if (annotation instanceof Path) {
+                System.out.println("Path annotation value is : " + ((Path) annotation).value());
+            }
+        }
+    }
+
+    private void parseMethodAnnotation(Annotation annotation) {
+        if (annotation instanceof GET) {
+            System.out.println("GET annotation value is : " + ((GET) annotation).value());
         }
     }
 
     public static class ApiUtils {
 
         @GET("/api/news")
-        public void getNews() {
-            System.out.println("getNews");
+        public void getNews(@Path("/id") String path) {
+            System.out.println("getNews : " + path);
         }
     }
 
