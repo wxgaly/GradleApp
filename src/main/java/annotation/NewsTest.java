@@ -1,6 +1,7 @@
 package annotation;
 
 import java.lang.annotation.Annotation;
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 /**
@@ -31,12 +32,23 @@ public class NewsTest {
 
     public void test() {
         ApiUtils apiUtils = new ApiUtils();
-//        apiUtils.getNews("aaa");
+        apiUtils.getNews("invoke getNews");
+
+        Field[] declaredFields = apiUtils.getClass().getDeclaredFields();
+        if (declaredFields != null && declaredFields.length > 0) {
+            for (Field field : declaredFields) {
+                System.out.println(field.getName());
+                parseFieldAnnotation(field);
+            }
+        }
+
         Method[] methods = apiUtils.getClass().getMethods();
+
         for (Method method : methods) {
             Annotation[] methodAnnotations = method.getAnnotations();
             Annotation[][] parameterAnnotations = method.getParameterAnnotations();
 //            GET annotation = method.getAnnotation(GET.class);
+
             if (methodAnnotations != null && methodAnnotations.length > 0) {
                 for (Annotation annotation : methodAnnotations) {
                     parseMethodAnnotation(annotation);
@@ -48,7 +60,17 @@ public class NewsTest {
                     parseParameterAnnotation(parameterAnnotation);
                 }
             }
+        }
+    }
 
+    private void parseFieldAnnotation(Field field) {
+        try {
+            DataField annotation = field.getAnnotation(DataField.class);
+            if (annotation != null) {
+                System.out.println("DataField annotation value is : " + annotation.value());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -67,6 +89,9 @@ public class NewsTest {
     }
 
     public static class ApiUtils {
+
+        @DataField("1")
+        private String id;
 
         @GET("/api/news")
         public void getNews(@Path("/id") String path) {
