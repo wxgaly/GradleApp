@@ -28,12 +28,12 @@ public class LinkMain {
         System.out.println("linkedList.getLast() : " + linkedList.getLast());
         System.out.println("----------------------------------------------");
 
-//        linkedList.remove(2);
-//        System.out.println("linkedList.remove(2)");
-//        System.out.println("linkedList.getSize() : " + linkedList.getSize());
-//        System.out.println("linkedList.getHead() : " + linkedList.getHead());
-//        System.out.println("linkedList.getLast() : " + linkedList.getLast());
-//        System.out.println("----------------------------------------------");
+        linkedList.remove(2);
+        System.out.println("linkedList.remove(2)");
+        System.out.println("linkedList.getSize() : " + linkedList.getSize());
+        System.out.println("linkedList.getHead() : " + linkedList.getHead());
+        System.out.println("linkedList.getLast() : " + linkedList.getLast());
+        System.out.println("----------------------------------------------");
 
         linkedList.remove(5);
         System.out.println("linkedList.remove(5)");
@@ -78,8 +78,8 @@ public class LinkMain {
         System.out.println("linkedList.getLast() : " + linkedList.getLast());
         System.out.println("----------------------------------------------");
 
+        testRemove(linkedList);
         testLoopList(linkedList);
-//        testRemove(linkedList);
     }
 
     private static void testLoopList(BothWayLinkedList<Integer> linkedList) {
@@ -104,6 +104,12 @@ public class LinkMain {
         System.out.println("----------------------------------------------");
 
         linkedList.remove(1);
+        System.out.println("linkedList.getSize() : " + linkedList.getSize());
+        System.out.println("linkedList.getHead() : " + linkedList.getHead());
+        System.out.println("linkedList.getLast() : " + linkedList.getLast());
+        System.out.println("----------------------------------------------");
+
+        linkedList.remove(3);
         System.out.println("linkedList.getSize() : " + linkedList.getSize());
         System.out.println("linkedList.getHead() : " + linkedList.getHead());
         System.out.println("linkedList.getLast() : " + linkedList.getLast());
