@@ -1,5 +1,9 @@
 package exception;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+
 /**
  * exception.ExceptionMain
  *
@@ -11,7 +15,16 @@ public class ExceptionMain {
 
     public static void main(String[] args) {
         CrashHandler instance = CrashHandler.getInstance();
+//        new Thread(() -> {
+//
+//        }).start();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
+        int a = 1 / 0;
     }
 
 }

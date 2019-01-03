@@ -9,16 +9,18 @@ package exception;
 
 public class CrashHandler implements Thread.UncaughtExceptionHandler {
 
+    private static final String TAG = "CrashHandler";
+
     private static volatile CrashHandler singleton = null;
 
-    private Thread.UncaughtExceptionHandler mDefaultHandler;
-
     private CrashHandler() {
-        init();
+
     }
 
-    private void init() {
-        mDefaultHandler = Thread.getDefaultUncaughtExceptionHandler();
+    /**
+     * must be call the method, the handler will be work.
+     */
+    public void init() {
         // 将此类设为默认异常处理器
         Thread.setDefaultUncaughtExceptionHandler(this);
     }
@@ -36,7 +38,7 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
 
     @Override
     public void uncaughtException(Thread t, Throwable e) {
-        System.out.println(t.getName() + e.getMessage());
+        System.err.println(TAG + t.getName() + e.getMessage());
     }
 
 }
