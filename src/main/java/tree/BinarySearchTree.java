@@ -3,7 +3,6 @@ package tree;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
-import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * tree.BinarySearchTree
@@ -298,6 +297,26 @@ public class BinarySearchTree {
         }
     }
 
+    public int minDepth() {
+
+        return minDepth(rootNode);
+    }
+
+    public int minDepth(BinaryTreeNode<Integer> root) {
+        if (root == null) {
+            return 0;
+        }
+
+        int leftDepth = minDepth(root.left);
+        int rightDepth = minDepth(root.right);
+
+        if (leftDepth == 0 || rightDepth == 0) {
+            return 1 + leftDepth + rightDepth;
+        } else {
+            return leftDepth > rightDepth ? 1 + rightDepth : 1 + leftDepth;
+        }
+    }
+
     public static void main(String[] args) {
         BinarySearchTree binarySearchTree = new BinarySearchTree();
 
@@ -313,13 +332,15 @@ public class BinarySearchTree {
         binarySearchTree.insert(26);
         binarySearchTree.insert(29);
 
-        binarySearchTree.printf();
+        System.out.println("depth: " + binarySearchTree.minDepth());
 
-        binarySearchTree.delete(25);
+//        binarySearchTree.printf();
 
-        System.out.println("----------------");
+//        binarySearchTree.delete(25);
 
-        binarySearchTree.printf();
+//        System.out.println("----------------");
+//
+//        binarySearchTree.printf();
     }
 
 }
