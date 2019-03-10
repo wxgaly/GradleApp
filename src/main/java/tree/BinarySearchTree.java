@@ -1,8 +1,6 @@
 package tree;
 
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * tree.BinarySearchTree
@@ -136,10 +134,10 @@ public class BinarySearchTree {
 
             //后序遍历 根左右
 //            lastOrder(rootNode);
-//            lastOrderNonRecursive(rootNode);
+            lastOrderNonRecursive(rootNode);
 
             //层序遍历
-            levelOrder(rootNode);
+//            levelOrder(rootNode);
 
         } else {
             System.out.println("BinarySearchTree is null");
@@ -238,11 +236,14 @@ public class BinarySearchTree {
      * @param root 根节点
      */
     private void lastOrderNonRecursive(BinaryTreeNode<Integer> root) {
-
+        List<Integer> list = new ArrayList<>();
         Stack<BinaryTreeNode<Integer>> stack = new Stack<>();
         while (true) {
             if (root != null) {
                 stack.push(root);
+                if (root.left == null && root.right == null) {
+                    list.add(root.value);
+                }
                 root = root.left;
             } else {
                 if (stack.isEmpty()) {
@@ -250,11 +251,12 @@ public class BinarySearchTree {
                 }
 
                 if (stack.lastElement().right == null) {
+
                     root = stack.pop();
-                    System.out.println(root.value);
+//                    System.out.println(root.value);
                     while (root == stack.lastElement().right) {
                         root = stack.pop();
-                        System.out.println(root.value);
+//                        System.out.println(root.value);
 
                         if (stack.isEmpty()) {
                             break;
@@ -268,6 +270,10 @@ public class BinarySearchTree {
                     root = null;
                 }
             }
+        }
+
+        for (Integer integer : list) {
+            System.out.println(integer);
         }
     }
 
@@ -332,9 +338,9 @@ public class BinarySearchTree {
         binarySearchTree.insert(26);
         binarySearchTree.insert(29);
 
-        System.out.println("depth: " + binarySearchTree.minDepth());
+//        System.out.println("depth: " + binarySearchTree.minDepth());
 
-//        binarySearchTree.printf();
+        binarySearchTree.printf();
 
 //        binarySearchTree.delete(25);
 
