@@ -1,6 +1,9 @@
 package question.easy;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * question.easy.MergeTwoBinaryTrees
  *
@@ -8,27 +11,27 @@ package question.easy;
  * @version V1.0
  * Given two binary trees and imagine that when you put one of them to cover the other,
  * some nodes of the two trees are overlapped while the others are not.
- *
+ * <p>
  * You need to merge them into a new binary tree. The merge rule is that if two nodes overlap,
  * then sum node values up as the new value of the merged node. Otherwise,
  * the NOT null node will be used as the node of new tree.
- *
+ * <p>
  * Example 1:
- *
+ * <p>
  * Input:
- * 	Tree 1                     Tree 2
- *           1                         2
- *          / \                       / \
- *         3   2                     1   3
- *        /                           \   \
- *       5                             4   7
+ * Tree 1                     Tree 2
+ * 1                         2
+ * / \                       / \
+ * 3   2                     1   3
+ * /                           \   \
+ * 5                             4   7
  * Output:
  * Merged tree:
- * 	     3
- * 	    / \
- * 	   4   5
- * 	  / \   \
- * 	 5   4   7
+ * 3
+ * / \
+ * 4   5
+ * / \   \
+ * 5   4   7
  */
 
 public class MergeTwoBinaryTrees {
@@ -55,8 +58,10 @@ public class MergeTwoBinaryTrees {
         t2.left.right = new TreeNode(4);
         t2.right.right = new TreeNode(7);
 
-        TreeNode treeNode = mergeTrees(t1, t2);
-        System.out.println(treeNode.val);
+//        TreeNode treeNode = mergeTrees(t1, t2);
+//        System.out.println(treeNode.val);
+
+        System.out.println(preorderTraversal(t1));
     }
 
     public static TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
@@ -70,4 +75,15 @@ public class MergeTwoBinaryTrees {
         return t1 != null ? t1 : t2;
     }
 
+    public static List<Integer> preorderTraversal(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
+
+        if (root != null) {
+            list.add(root.val);
+            list.addAll(preorderTraversal(root.left));
+            list.addAll(preorderTraversal(root.right));
+        }
+
+        return list;
+    }
 }
