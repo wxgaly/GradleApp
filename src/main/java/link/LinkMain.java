@@ -1,5 +1,7 @@
 package link;
 
+import java.util.Scanner;
+
 /**
  * link.LinkMain
  *
@@ -10,8 +12,51 @@ package link;
 public class LinkMain {
 
     public static void main(String[] args) {
-        testOneWayLink();
+//        testOneWayLink();
 //        testBothWayLink();
+        testOpt();
+    }
+
+    private static void testOpt() {
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.next();
+//        int leftCount = scanner.nextInt();
+//        int rightCount = scanner.nextInt();
+//
+//        int totalCount = rightCount - leftCount;
+//        if (totalCount < 0) {
+//            totalCount = -totalCount;
+//        }
+
+        CircularLinkedList<Character> linkedList = new CircularLinkedList<>();
+
+        for (char c : str.toCharArray()) {
+            linkedList.add(c);
+        }
+
+        Node<Character> head = linkedList.getHead();
+        Node<Character> node = head;
+        StringBuilder stringBuilder = new StringBuilder(str.length());
+
+        while (!node.nextNode.equals(head)) {
+            stringBuilder.append(node.nextNode.value);
+            node = node.nextNode;
+        }
+
+        System.out.println(stringBuilder.toString());
+
+        linkedList.setHead(1);
+
+        head = linkedList.getHead();
+        node = head;
+        stringBuilder = new StringBuilder(str.length());
+
+        while (!node.nextNode.equals(head)) {
+            stringBuilder.append(node.nextNode.value);
+            node = node.nextNode;
+        }
+
+        System.out.println(stringBuilder.toString());
     }
 
     private static void testOneWayLink() {
