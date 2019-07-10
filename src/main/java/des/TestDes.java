@@ -17,8 +17,61 @@ public class TestDes {
 
     public static void main(String[] args) {
 
-        testDes();
+//        testDes();
 //        testReadFile();
+//        int num = 2147483647;
+//        int temp = num + 2;
+//        System.out.println(temp);
+//
+//        boolean flag = 10 % 2 == 1 && 10 / 3 == 0 && 1 / 0 == 0;
+//        System.out.println(flag);
+//
+//        num = 50;
+//        num = num++ * 2;
+//        System.out.println(num);
+//
+//        String str = "";
+//        for (int i = 0; i < 5; i++) {
+//            str += i;
+//        }
+//
+//        System.out.println(str);
+//
+//        int sum = 0;
+//        for (int i = 0; i < 10; i++) {
+//            sum += i;
+//            if (i % 3 == 0) {
+//                break;
+//            }
+//        }
+//
+//        System.out.println(sum);
+
+//        System.out.println(inc(10) + inc(8) + inc(-10));
+
+        char c = 'A';
+        int num = 10;
+        switch (c) {
+            case 'B':
+                num++;
+            case 'A':
+                num++;
+            case 'Y':
+                num++;
+                break;
+
+            default:
+                num--;
+        }
+
+        System.out.println(num);
+    }
+
+    public static int inc(int temp) {
+        if (temp > 0) {
+            return temp * 2;
+        }
+        return -1;
     }
 
     private static void testReadFile() {
