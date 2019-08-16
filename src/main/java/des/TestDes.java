@@ -5,6 +5,8 @@ import org.jcp.xml.dsig.internal.dom.Utils;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * des.TestDes
@@ -13,10 +15,15 @@ import java.io.IOException;
  * @version V1.0
  */
 
+
+
+
+
+
 public class TestDes {
 
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
 //        testDes();
 //        testReadFile();
 //        int num = 2147483647;
@@ -49,22 +56,44 @@ public class TestDes {
 
 //        System.out.println(inc(10) + inc(8) + inc(-10));
 
-        char c = 'A';
-        int num = 10;
-        switch (c) {
-            case 'B':
-                num++;
-            case 'A':
-                num++;
-            case 'Y':
-                num++;
-                break;
+//        char c = 'A';
+//        int num = 10;
+//        switch (c) {
+//            case 'B':
+//                num++;
+//            case 'A':
+//                num++;
+//            case 'Y':
+//                num++;
+//                break;
+//
+//            default:
+//                num--;
+//        }
+//
+//        System.out.println(num);
 
-            default:
-                num--;
+        ((TestDes) null).count();
+    }
+
+    int count = 21;
+    public void count() {
+        System.out.println(++count);
+    }
+
+    public static class A {
+        public final static String c = "C";
+
+        static {
+            System.out.print("A");
+        }
+    }
+
+    public static class B extends A {
+        static {
+            System.out.print("B");
         }
 
-        System.out.println(num);
     }
 
     public static int inc(int temp) {
