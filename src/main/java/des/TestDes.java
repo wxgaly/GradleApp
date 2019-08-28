@@ -73,7 +73,27 @@ public class TestDes {
 //
 //        System.out.println(num);
 
-        ((TestDes) null).count();
+//        System.out.println(B.c);
+
+        String s1 = "HelloWorld";
+        String s2 = new String("HelloWorld");
+        StringBuffer s3 = new StringBuffer(s2);
+        if (s1 == s2) {
+            System.out.println("s1 == s2");
+        } else {
+            System.out.println("s1 != s2");
+        }
+        if (s1.equals(s2)) {
+            System.out.println("s1 equals s2");
+        } else {
+            System.out.println("s1 not equals s2");
+        }
+
+        if (s2.equals(s3)) {
+            System.out.println("s2 equals s3");
+        } else {
+            System.out.println("s2 not equals s3");
+        }
     }
 
     int count = 21;
@@ -81,19 +101,18 @@ public class TestDes {
         System.out.println(++count);
     }
 
-    public static class A {
-        public final static String c = "C";
+    static class A {
 
         static {
             System.out.print("A");
         }
     }
 
-    public static class B extends A {
+    static class B extends A {
         static {
             System.out.print("B");
         }
-
+        public final static String c = "C";
     }
 
     public static int inc(int temp) {
