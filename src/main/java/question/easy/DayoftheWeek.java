@@ -10,9 +10,9 @@ package question.easy;
  *
  * The input is given as three integers representing the day, month and year respectively.
  *
- * Return the answer as one of the following valuesÂ {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}.
+ * Return the answer as one of the following values?{"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}.
  *
- * Â 
+ * ?
  *
  * Example 1:
  *
@@ -26,11 +26,11 @@ package question.easy;
  *
  * Input: day = 15, month = 8, year = 1993
  * Output: "Sunday"
- * Â 
+ * ?
  *
  * Constraints:
  *
- * The given dates are validÂ dates between the years 1971 and 2100
+ * The given dates are valid?dates between the years 1971 and 2100
  *
  *
  */
@@ -46,7 +46,7 @@ public class DayoftheWeek {
             month += 12;
             year--;
         }
-        int iWeek = (day + 2 * month + 3 * (month + 1) / 5 + year + year / 4 - year / 100 + year / 400) % 7;                              //åŸºå§†æ‹‰å°”æ£®è®¡ç®—å…¬å¼
+        int iWeek = (day + 2 * month + 3 * (month + 1) / 5 + year + year / 4 - year / 100 + year / 400) % 7;                              //»ùÄ·À­¶ûÉ­¼ÆËã¹«Ê½
         String[] result = new String[]{"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
         return result[iWeek];
     }

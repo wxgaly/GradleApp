@@ -40,13 +40,13 @@ public class SumofLeftLeaves {
         return sumOfLeftLeavesHelper(root, false);
     }
 
-    // å…ˆåºéå†æ±‚æ‰€æœ‰å·¦å¶å­èŠ‚ç‚¹å€¼ä¹‹å’Œ
+    // ÏÈĞò±éÀúÇóËùÓĞ×óÒ¶×Ó½ÚµãÖµÖ®ºÍ
     public int sumOfLeftLeavesHelper(TreeNode root, boolean flag) {
         if (root == null) {
             return 0;
         }
         int leave = 0;
-        // å·¦å¶å­èŠ‚ç‚¹
+        // ×óÒ¶×Ó½Úµã
         if (flag && root.left == null && root.right == null) {
             leave = root.val;
         }

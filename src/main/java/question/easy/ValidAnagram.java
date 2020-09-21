@@ -33,7 +33,7 @@ public class ValidAnagram {
     }
 
     /**
-     * è€ƒè™‘äº†unicodeçš„å¯èƒ½ï¼Œä½†æ•ˆç‡å¤ªä½
+     * ¿¼ÂÇÁËunicodeµÄ¿ÉÄÜ£¬µ«Ğ§ÂÊÌ«µÍ
      *
      * @param s
      * @param t

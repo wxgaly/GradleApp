@@ -75,7 +75,7 @@ public class CousinsInBinaryTree {
     }
 
     public static void getResult(TreeNode root, int x, int y, int[] result, int depth) {
-        //result[2] å’Œ result[3]åˆ†åˆ«è®°å½•xå’Œyçš„çˆ¶èŠ‚ç‚¹çš„æ·±åº¦ result[0]å’Œresult[1]åˆ†åˆ«è¡¨ç¤ºxå’Œyçš„çˆ¶èŠ‚ç‚¹çš„å€¼
+        //result[2] ºÍ result[3]·Ö±ð¼ÇÂ¼xºÍyµÄ¸¸½ÚµãµÄÉî¶È result[0]ºÍresult[1]·Ö±ð±íÊ¾xºÍyµÄ¸¸½ÚµãµÄÖµ
         if (root == null) return;
         if (result[0] != -1 && result[1] != -1) return;
 

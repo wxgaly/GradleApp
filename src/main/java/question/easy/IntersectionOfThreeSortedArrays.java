@@ -9,17 +9,17 @@ import java.util.List;
  * question.easy.
  *
  *
- * Given three integer arrays arr1, arr2 and arr3Â sorted in strictly increasing order,
- * return a sorted array of onlyÂ theÂ integers that appeared in all three arrays.
+ * Given three integer arrays arr1, arr2 and arr3?sorted in strictly increasing order,
+ * return a sorted array of only?the?integers that appeared in all three arrays.
  *
- * Â 
+ * ?
  *
  * Example 1:
  *
  * Input: arr1 = [1,2,3,4,5], arr2 = [1,2,5,7,9], arr3 = [1,3,4,5,8]
  * Output: [1,5]
  * Explanation: Only 1 and 5 appeared in the three arrays.
- * Â 
+ * ?
  *
  * Constraints:
  *
@@ -85,7 +85,7 @@ public class IntersectionOfThreeSortedArrays {
     }
 
     /**
-     * æŠ˜åŠæŸ¥æ‰¾è™½ç„¶é€Ÿåº¦è¾ƒå¿«ï¼Œä½†æ˜¯ä¾ç„¶éœ€è¦å¤šæ¬¡å¾ªç¯
+     * ÕÛ°ë²éÕÒËäÈ»ËÙ¶È½Ï¿ì£¬µ«ÊÇÒÀÈ»ĞèÒª¶à´ÎÑ­»·
      *
      * @param arr1
      * @param arr2
@@ -104,7 +104,7 @@ public class IntersectionOfThreeSortedArrays {
     }
 
     /**
-     * æ ‡è®°æ³•ï¼Œä¸€æ¬¡å¾ªç¯ã€‚
+     * ±ê¼Ç·¨£¬Ò»´ÎÑ­»·¡£
      *
      * @param arr1
      * @param arr2

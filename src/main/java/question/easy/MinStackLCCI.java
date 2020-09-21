@@ -56,7 +56,7 @@ public class MinStackLCCI {
 
         public void push(int x) {
             if (head == null) head = new Node(x, x);
-                /*新加入节点的min字段（最小值）为：自己的值和栈顶的值较小的那个*/
+                /*�¼���ڵ��min�ֶΣ���Сֵ��Ϊ���Լ���ֵ��ջ����ֵ��С���Ǹ�*/
             else if (head != null) {
                 int min = Math.min(x, head.min);
                 Node node = new Node(x, min, head);

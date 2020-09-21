@@ -44,7 +44,7 @@ public class WordPattern {
     }
 
     /**
-     * è½¬æ¢ä¸€ç§è§„åˆ™ï¼Œé€šè¿‡hashmapåˆ¤æ–­é‡å¤é¡¹
+     * ×ª»»Ò»ÖÖ¹æÔò£¬Í¨¹ıhashmapÅĞ¶ÏÖØ¸´Ïî
      *
      * @param pattern
      * @param str
@@ -88,7 +88,7 @@ public class WordPattern {
     }
 
     /**
-     * ç›´æ¥åšcharå’ŒStringçš„æ˜ å°„å…³ç³»
+     * Ö±½Ó×öcharºÍStringµÄÓ³Éä¹ØÏµ
      *
      * @param pattern
      * @param str
@@ -102,17 +102,17 @@ public class WordPattern {
 
         for (int i = 0; i < pattern.length(); i++) {
             char tmp = pattern.charAt(i);
-            //keyå·²ç»åœ¨
+            //keyÒÑ¾­ÔÚ
             if (map.containsKey(tmp)) {
-                //ä¸å¯¹åº”å°±å¤±è´¥
+                //²»¶ÔÓ¦¾ÍÊ§°Ü
                 if (!map.get(tmp).equals(string[i])) return false;
             }
-            //keyä¸å­˜åœ¨
+            //key²»´æÔÚ
             else {
-                //ä¸¤ä¸ªvalueçš„å€¼ä¸€æ · a-dog b-dog->false
+                //Á½¸övalueµÄÖµÒ»Ñù a-dog b-dog->false
                 if (map.containsValue(string[i])) return false;
                 else
-                    //æ·»åŠ k-vå€¼
+                    //Ìí¼Ók-vÖµ
                     map.put(tmp, string[i]);
             }
         }

@@ -39,25 +39,25 @@ public class ThreeSum {
         List<List<Integer>> tuples = new ArrayList<>();
 
         for(int i = 0; i < nums.length-2; i++){
-            if(i > 0 && nums[i-1] == nums[i]) continue; //ÂéªÈáç
+            if(i > 0 && nums[i-1] == nums[i]) continue; //»•÷ÿ
 
             int l = i+1, r = nums.length-1;
-            if(nums[l] < 0 && Integer.MIN_VALUE-nums[l] > nums[i]) continue; //Â¶ÇÊûúÊ∫¢Âá∫ÊúÄÂ∞èÂÄºÂàôË∑≥Ëøá
-            if(nums[i] > 0 && Integer.MAX_VALUE-nums[l] < nums[i]) break; //Ê∫¢Âá∫ÊúÄÂ§ßÂÄºÁõ¥Êé•ÁªìÊùüÔºå‰∏çÂèØËÉΩ‰ºöÊúâÊñ∞ÁöÑ‰∏âÂÖÉÁªÑÂá∫Áé∞‰∫Ü
+            if(nums[l] < 0 && Integer.MIN_VALUE-nums[l] > nums[i]) continue; //»Áπ˚“Á≥ˆ◊Ó–°÷µ‘ÚÃ¯π˝
+            if(nums[i] > 0 && Integer.MAX_VALUE-nums[l] < nums[i]) break; //“Á≥ˆ◊Ó¥Û÷µ÷±Ω”Ω· ¯£¨≤ªø…ƒ‹ª·”––¬µƒ»˝‘™◊È≥ˆœ÷¡À
 
             while(l < r){
                 if(nums[r] > -nums[i]-nums[l]){
-                    while(l < r && nums[r-1] == nums[r]) r--; //Âè≥ÊåáÈíàÂéªÈáç
+                    while(l < r && nums[r-1] == nums[r]) r--; //”“÷∏’Î»•÷ÿ
                     r--;
                 }
                 else if(nums[r] < -nums[i]-nums[l]){
-                    while(l < r && nums[l+1] == nums[l]) l++; //Â∑¶ÊåáÈíàÂéªÈáç
+                    while(l < r && nums[l+1] == nums[l]) l++; //◊Û÷∏’Î»•÷ÿ
                     l++;
                 }
                 else{
                     tuples.add(Arrays.asList(nums[i],nums[l],nums[r]));
-                    while(l < r && nums[r-1] == nums[r]) r--; //Â∑¶ÊåáÈíàÂéªÈáç
-                    while(l < r && nums[l+1] == nums[l]) l++; //Âè≥ÊåáÈíàÂéªÈáç
+                    while(l < r && nums[r-1] == nums[r]) r--; //◊Û÷∏’Î»•÷ÿ
+                    while(l < r && nums[l+1] == nums[l]) l++; //”“÷∏’Î»•÷ÿ
                     r--;
                     l++;
                 }

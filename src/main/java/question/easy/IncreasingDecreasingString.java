@@ -16,15 +16,15 @@ import java.util.TreeMap;
  * Pick the smallest character from s and append it to the result.
  * Pick the smallest character from s which is greater than the last appended character to the result and append it.
  * Repeat step 2 until you cannot pick more characters.
- * Pick the largestÂ character from s and append it to the result.
- * Pick the largestÂ character from s which is smaller than the last appended character to the result and append it.
+ * Pick the largest?character from s and append it to the result.
+ * Pick the largest?character from s which is smaller than the last appended character to the result and append it.
  * Repeat step 5 until you cannot pick more characters.
  * Repeat the steps from 1 to 6 until you pick all characters from s.
  * In each step, If the smallest or the largest character appears more than once you can choose any occurrence and append it to the result.
  *
- * Return the result string after sorting sÂ with this algorithm.
+ * Return the result string after sorting s?with this algorithm.
  *
- * Â 
+ * ?
  *
  * Example 1:
  *
@@ -52,7 +52,7 @@ import java.util.TreeMap;
  *
  * Input: s = "spo"
  * Output: "ops"
- * Â 
+ * ?
  *
  * Constraints:
  *
@@ -89,7 +89,7 @@ public class IncreasingDecreasingString {
     }
 
     public String sortString1(String s) {
-        //å°†å­—ç¬¦ä¸²æŒ‰ç…§å„å­—ç¬¦å¤§å°è£…å…¥TreeMapä¸­ï¼Œkeyä¸ºå­—ç¬¦ï¼Œvalueä¸ºå‡ºç°æ¬¡æ•°
+        //½«×Ö·û´®°´ÕÕ¸÷×Ö·û´óĞ¡×°ÈëTreeMapÖĞ£¬keyÎª×Ö·û£¬valueÎª³öÏÖ´ÎÊı
         TreeMap<Character, Integer> params = new TreeMap<>(Comparator.comparingInt(Character::charValue));
         for (char item : s.toCharArray()) {
             if (params.containsKey(item)) {
@@ -101,8 +101,8 @@ public class IncreasingDecreasingString {
 
         StringBuilder result = new StringBuilder();
         boolean desc = true;
-        //ç”±é¢˜æ„çŸ¥ç»“æœå­—ç¬¦ä¸²ä¸ºå…ˆä»å°åˆ°å¤§ç­›é€‰å„å­—ç¬¦æ’åˆ—ï¼Œç„¶åä»å¤§åˆ°å°ç­›é€‰æ’åˆ—ï¼Œç„¶ååˆä»å°åˆ°å¤§ç­›é€‰æ’åˆ—ï¼Œç›´è‡³å…¨éƒ¨ç­›é€‰å®Œ
-        //æ•…æ­¤å¯åˆ©ç”¨æœ‰åºtreeMapçš„higherEntryå’ŒlowerEntryæ–¹æ³•è¿›è¡Œç­›é€‰è·å–
+        //ÓÉÌâÒâÖª½á¹û×Ö·û´®ÎªÏÈ´ÓĞ¡µ½´óÉ¸Ñ¡¸÷×Ö·ûÅÅÁĞ£¬È»ºó´Ó´óµ½Ğ¡É¸Ñ¡ÅÅÁĞ£¬È»ºóÓÖ´ÓĞ¡µ½´óÉ¸Ñ¡ÅÅÁĞ£¬Ö±ÖÁÈ«²¿É¸Ñ¡Íê
+        //¹Ê´Ë¿ÉÀûÓÃÓĞĞòtreeMapµÄhigherEntryºÍlowerEntry·½·¨½øĞĞÉ¸Ñ¡»ñÈ¡
         Map.Entry<Character, Integer> entry = params.firstEntry();
         Map.Entry<Character, Integer> temp = entry;
         while (params.size() > 0) {

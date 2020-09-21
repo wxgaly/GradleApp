@@ -41,7 +41,7 @@ public class BinarySubarraysWithSum {
     }
 
     /**
-     * 浼氭湁閲嶅璁＄畻锛屽彲鑳借秴鍑烘椂闂撮檺鍒讹紝闇�瑕佷紭鍖栭噸澶嶈绠楃殑閮ㄥ垎
+     * 会有重复计算，可能超出时间限制，需要优化重复计算的部分
      *
      * @param A
      * @param S

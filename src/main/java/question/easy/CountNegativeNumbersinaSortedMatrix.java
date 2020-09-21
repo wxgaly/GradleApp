@@ -6,11 +6,11 @@ package question.easy;
  * @author Created by WXG on 2020-04-16 15:10
  * @version V1.0
  * <p>
- * Given a mÂ * nÂ matrix gridÂ which is sorted in non-increasing order both row-wise and column-wise.Â 
+ * Given a m?* n?matrix grid?which is sorted in non-increasing order both row-wise and column-wise.?
  * <p>
- * Return the number of negative numbers inÂ grid.
+ * Return the number of negative numbers in?grid.
  * <p>
- * Â 
+ * ?
  * <p>
  * Example 1:
  * <p>
@@ -29,7 +29,7 @@ package question.easy;
  * <p>
  * Input: grid = [[-1]]
  * Output: 1
- * Â 
+ * ?
  * <p>
  * Constraints:
  * <p>
@@ -51,13 +51,13 @@ public class CountNegativeNumbersinaSortedMatrix {
             int len = ints.length;
             int start = 0;
             int end = len - 1;
-            //ç¬¬ä¸€ä¸ªæ•°å°äº0ï¼Œåˆ™æ•°ç»„ä¸­å…¨ä¸ºè´Ÿæ•°
+            //µÚÒ»¸öÊıĞ¡ÓÚ0£¬ÔòÊı×éÖĞÈ«Îª¸ºÊı
             if (ints[start] < 0) {
                 count += len;
                 continue;
             }
 
-            //æœ€åä¸€ä¸ªæ•°å¤§äº0ï¼Œåˆ™æ•°ç»„ä¸­å…¨ä¸ºéè´Ÿæ•°
+            //×îºóÒ»¸öÊı´óÓÚ0£¬ÔòÊı×éÖĞÈ«Îª·Ç¸ºÊı
             if (ints[end] >= 0) {
                 continue;
             }

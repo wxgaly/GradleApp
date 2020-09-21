@@ -10,18 +10,18 @@ import java.util.Arrays;
  * <p>
  * We are given a list nums of integers representing a list compressed with run-length encoding.
  * <p>
- * Consider each adjacent pairÂ of elements [a, b] = [nums[2*i], nums[2*i+1]]Â (with i >= 0).Â 
+ * Consider each adjacent pair?of elements [a, b] = [nums[2*i], nums[2*i+1]]?(with i >= 0).?
  * For each such pair, there are a elements with value b in the decompressed list.
  * <p>
  * Return the decompressed list.
  * <p>
- * Â 
+ * ?
  * <p>
  * Example 1:
  * <p>
  * Input: nums = [1,2,3,4]
  * Output: [2,4,4,4]
- * Â 
+ * ?
  * <p>
  * Constraints:
  * <p>
@@ -39,8 +39,8 @@ public class DecompressRunLengthEncodedList {
     }
 
     /**
-     * æ‰§è¡Œç”¨æ—¶ : 1 ms, åœ¨æ‰€æœ‰ Java æäº¤ä¸­å‡»è´¥äº† 100.00% çš„ç”¨æˆ·
-     * å†…å­˜æ¶ˆè€— : 37.4 MB, åœ¨æ‰€æœ‰ Java æäº¤ä¸­å‡»è´¥äº† 100.00% çš„ç”¨æˆ·
+     * Ö´ĞĞÓÃÊ± : 1 ms, ÔÚËùÓĞ Java Ìá½»ÖĞ»÷°ÜÁË 100.00% µÄÓÃ»§
+     * ÄÚ´æÏûºÄ : 37.4 MB, ÔÚËùÓĞ Java Ìá½»ÖĞ»÷°ÜÁË 100.00% µÄÓÃ»§
      *
      * @param nums
      * @return

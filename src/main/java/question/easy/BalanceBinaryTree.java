@@ -6,24 +6,24 @@ package question.easy;
  * @author Created by WXG on 2020-05-11 14:14
  * @version V1.0
  *
- * è¾“å…¥ä¸€æ£µäºŒå‰æ ‘çš„æ ¹èŠ‚ç‚¹ï¼Œåˆ¤æ–­è¯¥æ ‘æ˜¯ä¸æ˜¯å¹³è¡¡äºŒå‰æ ‘ã€‚å¦‚æžœæŸäºŒå‰æ ‘ä¸­ä»»æ„èŠ‚ç‚¹çš„å·¦å³å­æ ‘çš„æ·±åº¦ç›¸å·®ä¸è¶…è¿‡1ï¼Œé‚£ä¹ˆå®ƒå°±æ˜¯ä¸€æ£µå¹³è¡¡äºŒå‰æ ‘ã€‚
+ * ÊäÈëÒ»¿Ã¶þ²æÊ÷µÄ¸ù½Úµã£¬ÅÐ¶Ï¸ÃÊ÷ÊÇ²»ÊÇÆ½ºâ¶þ²æÊ÷¡£Èç¹ûÄ³¶þ²æÊ÷ÖÐÈÎÒâ½ÚµãµÄ×óÓÒ×ÓÊ÷µÄÉî¶ÈÏà²î²»³¬¹ý1£¬ÄÇÃ´Ëü¾ÍÊÇÒ»¿ÃÆ½ºâ¶þ²æÊ÷¡£
  *
- * Â 
+ * ?
  *
- * ç¤ºä¾‹ 1:
+ * Ê¾Àý 1:
  *
- * ç»™å®šäºŒå‰æ ‘ [3,9,20,null,null,15,7]
+ * ¸ø¶¨¶þ²æÊ÷ [3,9,20,null,null,15,7]
  *
  *     3
  *    / \
  *   9  20
  *     /  \
  *    15   7
- * è¿”å›ž true ã€‚
+ * ·µ»Ø true ¡£
  *
- * ç¤ºä¾‹ 2:
+ * Ê¾Àý 2:
  *
- * ç»™å®šäºŒå‰æ ‘ [1,2,2,3,3,null,null,4,4]
+ * ¸ø¶¨¶þ²æÊ÷ [1,2,2,3,3,null,null,4,4]
  *
  *        1
  *       / \
@@ -32,14 +32,14 @@ package question.easy;
  *    3   3
  *   / \
  *  4   4
- * è¿”å›žÂ false ã€‚
+ * ·µ»Ø?false ¡£
  *
- * Â 
+ * ?
  *
- * é™åˆ¶ï¼š
+ * ÏÞÖÆ£º
  *
- * 1 <= æ ‘çš„ç»“ç‚¹ä¸ªæ•° <= 10000
- * æ³¨æ„ï¼šæœ¬é¢˜ä¸Žä¸»ç«™ 110Â é¢˜ç›¸åŒï¼šhttps://leetcode-cn.com/problems/balanced-binary-tree/
+ * 1 <= Ê÷µÄ½áµã¸öÊý <= 10000
+ * ×¢Òâ£º±¾ÌâÓëÖ÷Õ¾ 110?ÌâÏàÍ¬£ºhttps://leetcode-cn.com/problems/balanced-binary-tree/
  *
  *
  */
@@ -65,7 +65,7 @@ public class BalanceBinaryTree {
 
     /**
      * https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/solution/mian-shi-ti-55-ii-ping-heng-er-cha-shu-cong-di-zhi/
-     * ä½¿ç”¨é¢˜è§£æ–¹æ³•ä¸€
+     * Ê¹ÓÃÌâ½â·½·¨Ò»
      *
      * @param root
      * @return

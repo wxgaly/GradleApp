@@ -11,7 +11,7 @@ import java.util.List;
  *
  * Given a binary tree, return all root-to-leaf paths.
  *
- * Note:Â A leaf is a node with no children.
+ * Note:?A leaf is a node with no children.
  *
  * Example:
  *
@@ -48,10 +48,10 @@ public class BinaryTreePaths {
     public void construct_paths(TreeNode root, String path, LinkedList<String> paths) {
         if (root != null) {
             path += Integer.toString(root.val);
-            if ((root.left == null) && (root.right == null))  // å½“å‰èŠ‚ç‚¹æ˜¯å¶å­èŠ‚ç‚¹
-                paths.add(path);  // æŠŠè·¯å¾„åŠ å…¥åˆ°ç­”æ¡ˆä¸­
+            if ((root.left == null) && (root.right == null))  // µ±Ç°½ÚµãÊÇÒ¶×Ó½Úµã
+                paths.add(path);  // °ÑÂ·¾¶¼ÓÈëµ½´ð°¸ÖÐ
             else {
-                path += "->";  // å½“å‰èŠ‚ç‚¹ä¸æ˜¯å¶å­èŠ‚ç‚¹ï¼Œç»§ç»­é€’å½’éåŽ†
+                path += "->";  // µ±Ç°½Úµã²»ÊÇÒ¶×Ó½Úµã£¬¼ÌÐøµÝ¹é±éÀú
                 construct_paths(root.left, path, paths);
                 construct_paths(root.right, path, paths);
             }

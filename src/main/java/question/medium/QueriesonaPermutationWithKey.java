@@ -13,10 +13,10 @@ import java.util.Arrays;
  * <p>
  * In the beginning, you have the permutation P=[1,2,3,...,m].
  * For the current i, find the position of queries[i] in the permutation P (indexing from 0) and then move this at the beginning of the permutation P.
- * Â Notice that the position of queries[i] in P is the result for queries[i].
+ * ?Notice that the position of queries[i] in P is the result for queries[i].
  * Return an array containing the result for the given queries.
  * <p>
- * Â 
+ * ?
  * <p>
  * Example 1:
  * <p>
@@ -36,7 +36,7 @@ import java.util.Arrays;
  * <p>
  * Input: queries = [7,5,5,8,3], m = 8
  * Output: [6,5,0,7,5]
- * Â 
+ * ?
  * <p>
  * Constraints:
  * <p>
@@ -57,8 +57,8 @@ public class QueriesonaPermutationWithKey {
     }
 
     /**
-     * æš´åŠ›æ¨¡æ‹Ÿ
-     * äºŒåˆ†æŸ¥æ‰¾ç«Ÿç„¶å‡ºé”™äº†ã€‚ã€‚ã€‚
+     * ±©Á¦Ä£Äâ
+     * ¶þ·Ö²éÕÒ¾¹È»³ö´íÁË¡£¡£¡£
      *
      * @param queries
      * @param m

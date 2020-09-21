@@ -42,7 +42,7 @@ public class SubarraySumEqualsK {
         int ans = 0;
         for (int num : nums) {
             sum += num;
-            // æ£€æŸ¥æ˜¯å¦å­˜åœ¨ sum[j] + k == sum[i]
+            // ¼ì²éÊÇ·ñ´æÔÚ sum[j] + k == sum[i]
             int pSum = sum - k;
             if (map.containsKey(pSum)) {
                 ans += map.get(pSum);

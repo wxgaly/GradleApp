@@ -6,18 +6,18 @@ package question.easy;
  * @author Created by WXG on 2019-12-16 16:01
  * @version V1.0
  *
- * Given anÂ integer arrayÂ sorted in non-decreasing order,
+ * Given an?integer array?sorted in non-decreasing order,
  * there is exactly one integer in the array that occurs more than 25% of the time.
  *
  * Return that integer.
  *
- * Â 
+ * ?
  *
  * Example 1:
  *
  * Input: arr = [1,2,2,6,6,6,6,7,10]
  * Output: 6
- * Â 
+ * ?
  *
  * Constraints:
  *
@@ -71,8 +71,8 @@ public class ElementAppearingMoreThan25InSortedArray {
             if (tagV == arr[tagIndex]) {
                 return tagV;
             } else {
-                // å½“å‰å…ƒç´ ä¸æ»¡è¶³æƒ…å†µåˆ™æ‰¾å‡ºarr[tagIndex]å¯¹åº”çš„å€¼çš„èµ·å§‹ä½ç½®,äºŒåˆ†æŸ¥æ‰¾
-                // æŸ¥æ‰¾è¿‡ç¨‹å¤æ‚åº¦ä¸ºlog(n)å°äºéå†O(n)
+                // µ±Ç°ÔªËØ²»Âú×ãÇé¿öÔòÕÒ³öarr[tagIndex]¶ÔÓ¦µÄÖµµÄÆğÊ¼Î»ÖÃ,¶ş·Ö²éÕÒ
+                // ²éÕÒ¹ı³Ì¸´ÔÓ¶ÈÎªlog(n)Ğ¡ÓÚ±éÀúO(n)
                 int tmp = find(arr, arr[tagIndex], i + 1, tagIndex);
 //                i = tmp != -1 ? tmp - 1 : i;
                 i = tmp - 1;
@@ -85,13 +85,13 @@ public class ElementAppearingMoreThan25InSortedArray {
         int index = end;
         if (start <= end) {
             int middle = (start + end) / 2;
-            // è¯´æ˜èµ·å§‹å€¼åœ¨middle + 1 ï½ endä¹‹é—´
+            // ËµÃ÷ÆğÊ¼ÖµÔÚmiddle + 1 ¡« endÖ®¼ä
             if (arr[middle] < value) {
                 index = find(arr, value, middle + 1, end);
             } else if (start == end) {
                 return index;
             } else {
-                // è¯´æ˜èµ·å§‹å€¼åœ¨startï½middleä¹‹é—´
+                // ËµÃ÷ÆğÊ¼ÖµÔÚstart¡«middleÖ®¼ä
                 index = find(arr, value, start, middle);
             }
         }

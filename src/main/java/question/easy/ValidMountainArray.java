@@ -57,7 +57,7 @@ public class ValidMountainArray {
 
         int start = 0;
 
-        //æ‰¾åˆ°æœ€å¤§æ•°
+        //ÕÒµ½×î´óÊı
         for (int i = 0; i < A.length; i++) {
             if (i < A.length - 1) {
                 if (A[i] >= A[i + 1]) {
@@ -68,7 +68,7 @@ public class ValidMountainArray {
             }
         }
 
-        //ä»æœ€å¤§æ•°ç»§ç»­å‘åéå†ï¼Œå¦‚æœæœ‰å°äºç­‰äºçš„æƒ…å†µåˆ™ä¸æ˜¯å±±è„‰æ•°ç»„
+        //´Ó×î´óÊı¼ÌĞøÏòºó±éÀú£¬Èç¹ûÓĞĞ¡ÓÚµÈÓÚµÄÇé¿öÔò²»ÊÇÉ½ÂöÊı×é
         for (int i = start; i < A.length; i++) {
             if (i < A.length - 1) {
                 if (A[i] <= A[i + 1]) {
@@ -78,7 +78,7 @@ public class ValidMountainArray {
             }
         }
 
-        //å¦‚æœå±±é¡¶åœ¨æ•°ç»„å¤´æˆ–è€…å°¾ä¹Ÿä¸ç®—å±±è„‰æ•°ç»„
+        //Èç¹ûÉ½¶¥ÔÚÊı×éÍ·»òÕßÎ²Ò²²»ËãÉ½ÂöÊı×é
         if (start == 0 || start == A.length - 1) {
             ret = false;
         }

@@ -26,8 +26,8 @@ package question.medium;
  * Both dividend and divisor will be 32-bit signed integers.
  * The divisor will never be 0.
  * Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range:
- * [âˆ’231,  231 âˆ’ 1]. For the purpose of this problem,
- * assume that your function returns 231 âˆ’ 1 when the division result overflows.
+ * [?231,  231 ? 1]. For the purpose of this problem,
+ * assume that your function returns 231 ? 1 when the division result overflows.
  */
 
 public class DivideTwoIntegers {
@@ -44,17 +44,17 @@ public class DivideTwoIntegers {
             return Integer.MAX_VALUE;
         }
         boolean negative;
-        negative = (dividend ^ divisor) < 0;//ç”¨å¼‚æˆ–æ¥è®¡ç®—æ˜¯å¦ç¬¦å·ç›¸å¼‚
+        negative = (dividend ^ divisor) < 0;//ÓÃÒì»òÀ´¼ÆËãÊÇ·ñ·ûºÅÏàÒì
         long t = Math.abs((long) dividend);
         long d = Math.abs((long) divisor);
         int result = 0;
         for (int i = 31; i >= 0; i--) {
-            if ((t >> i) >= d) {//æ‰¾å‡ºè¶³å¤Ÿå¤§çš„æ•°2^n*divisor
-                result += 1 << i;//å°†ç»“æžœåŠ ä¸Š2^n
-                t -= d << i;//å°†è¢«é™¤æ•°å‡åŽ»2^n*divisor
+            if ((t >> i) >= d) {//ÕÒ³ö×ã¹»´óµÄÊý2^n*divisor
+                result += 1 << i;//½«½á¹û¼ÓÉÏ2^n
+                t -= d << i;//½«±»³ýÊý¼õÈ¥2^n*divisor
             }
         }
-        return negative ? -result : result;//ç¬¦å·ç›¸å¼‚å–å
+        return negative ? -result : result;//·ûºÅÏàÒìÈ¡·´
     }
 
 }

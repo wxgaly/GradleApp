@@ -63,7 +63,7 @@ public class KdiffPairsInAnArray {
 
 
     /**
-     * é€Ÿåº¦è¾ƒå¿«çš„é¢˜è§£
+     * ËÙ¶È½Ï¿ìµÄÌâ½â
      *
      * @param nums
      * @param k

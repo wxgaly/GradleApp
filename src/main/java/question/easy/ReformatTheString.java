@@ -11,12 +11,12 @@ import java.util.List;
  *
  * Given alphanumeric string s. (Alphanumeric string is a string consisting of lowercase English letters and digits).
  *
- * You have to find a permutation ofÂ the string where no letter is followed by another letter and no digit is followed by another digit.
+ * You have to find a permutation of?the string where no letter is followed by another letter and no digit is followed by another digit.
  * That is, no two adjacent characters have the same type.
  *
  * Return the reformatted string or return an empty string if it is impossible to reformat the string.
  *
- * Â 
+ * ?
  *
  * Example 1:
  *
@@ -41,7 +41,7 @@ import java.util.List;
  *
  * Input: s = "ab123"
  * Output: "1a2b3"
- * Â 
+ * ?
  *
  * Constraints:
  *
@@ -100,7 +100,7 @@ public class ReformatTheString {
             } else {
                 num2++;
             }
-        }//çœ‹æ•°å­—å­—ç¬¦æ¯”è¾ƒå¤šè¿˜æ˜¯å­—æ¯å­—ç¬¦æ¯”è¾ƒå¤š
+        }//¿´Êı×Ö×Ö·û±È½Ï¶à»¹ÊÇ×ÖÄ¸×Ö·û±È½Ï¶à
         if (num1 - num2 < -1 || num1 - num2 > 1) {
             return "";
         }

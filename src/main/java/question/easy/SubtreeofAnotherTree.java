@@ -24,7 +24,7 @@ package question.easy;
  *   / \
  *  1   2
  * Return true, because t has the same structure and node values with a subtree of s.
- * Â 
+ * ?
  *
  * Example 2:
  * Given tree s:
@@ -42,7 +42,7 @@ package question.easy;
  *  1   2
  * Return false.
  *
- * è¿™ç»å¯¹ä¸æ˜¯ä¸€é“éšéšä¾¿ä¾¿çš„ç®€å•é¢˜
+ * Õâ¾ø¶Ô²»ÊÇÒ»µÀËæËæ±ã±ãµÄ¼òµ¥Ìâ
  *
  */
 public class SubtreeofAnotherTree {
@@ -62,8 +62,8 @@ public class SubtreeofAnotherTree {
     }
 
     /**
-     * DFSæš´åŠ›åŒ¹é…
-     * å®˜æ–¹é¢˜è§£ï¼š https://leetcode-cn.com/problems/subtree-of-another-tree/solution/ling-yi-ge-shu-de-zi-shu-by-leetcode-solution/
+     * DFS±©Á¦Æ¥Åä
+     * ¹Ù·½Ìâ½â£º https://leetcode-cn.com/problems/subtree-of-another-tree/solution/ling-yi-ge-shu-de-zi-shu-by-leetcode-solution/
      *
      * @param s
      * @param t

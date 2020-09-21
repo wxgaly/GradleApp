@@ -49,29 +49,29 @@ public class RectangleArea {
         return area1 - (topX - bottomX) * (topY - bottomY) + area2;
     }
 
-    //é¢˜ç›®æè¿°ï¼šGiven a collection of distinct integers, return all possible permutations.ï¼ˆç»™å®šä¸€ç»„ä¸åŒçš„æ•´æ•°ï¼Œè¿”å›å…¶æ‰€æœ‰çš„å¯èƒ½ç»„åˆï¼‰
+    //ÌâÄ¿ÃèÊö£ºGiven a collection of distinct integers, return all possible permutations.£¨¸ø¶¨Ò»×é²»Í¬µÄÕûÊı£¬·µ»ØÆäËùÓĞµÄ¿ÉÄÜ×éºÏ£©
     public static List<List<Integer>> permute(int[] nums) {
-        //ä¸€ä¸ªå…¨å±€å˜é‡ï¼Œç”¨äºä¿å­˜æ‰€æœ‰é›†åˆ
+        //Ò»¸öÈ«¾Ö±äÁ¿£¬ÓÃÓÚ±£´æËùÓĞ¼¯ºÏ
         List<List<Integer>> list = new ArrayList<>();
-        //ä¼ å…¥ä¸‰ä¸ªå‚æ•°ï¼Œæ²¡æœ‰é™„åŠ å‚æ•°
+        //´«ÈëÈı¸ö²ÎÊı£¬Ã»ÓĞ¸½¼Ó²ÎÊı
         backtrack(list, new ArrayList<>(), nums);
         return list;
     }
 
     private static void backtrack(List<List<Integer>> list, List<Integer> tempList, int[] nums) {
-        //ä¸€ä¸ªç»ˆç»“æ¡ä»¶ï¼Œä¹Ÿå°±æ˜¯æ»¡è¶³æ¡ä»¶çš„æ—¶å€™
+        //Ò»¸öÖÕ½áÌõ¼ş£¬Ò²¾ÍÊÇÂú×ãÌõ¼şµÄÊ±ºò
         if (tempList.size() == nums.length) {
-            //å…¨å±€å˜é‡æ·»åŠ ä¸€ä¸ªæ»¡è¶³æ¡ä»¶çš„é›†åˆ
+            //È«¾Ö±äÁ¿Ìí¼ÓÒ»¸öÂú×ãÌõ¼şµÄ¼¯ºÏ
             list.add(new ArrayList<>(tempList));
         } else {
             for (int num : nums) {
                 if (tempList.contains(num)) continue;
-                //å¦‚æœtempListæ²¡æœ‰åŒ…å«nums[i]æ‰æ·»åŠ 
+                //Èç¹ûtempListÃ»ÓĞ°üº¬nums[i]²ÅÌí¼Ó
                 tempList.add(num);
-                //é€’å½’è°ƒç”¨ï¼Œæ­¤æ—¶çš„tempListä¸€ç›´åœ¨å˜åŒ–ï¼Œç›´åˆ°æ»¡è¶³ç»ˆç»“æ¡ä»¶æ‰ç»“æŸ
+                //µİ¹éµ÷ÓÃ£¬´ËÊ±µÄtempListÒ»Ö±ÔÚ±ä»¯£¬Ö±µ½Âú×ãÖÕ½áÌõ¼ş²Å½áÊø
                 backtrack(list, tempList, nums);
-//                System.out.println("tempListçš„å†…å®¹:" + tempList + "-------" + "içš„å€¼:" + i);
-                //å®ƒç§»é™¤tempListæœ€åä¸€ä¸ªå…ƒç´ çš„ä½œç”¨å°±æ˜¯è¿”å›ä¸Šä¸€æ¬¡è°ƒç”¨æ—¶çš„æ•°æ®ï¼Œä¹Ÿå°±æ˜¯å¸Œæœ›è¿”å›ä¹‹å‰çš„èŠ‚ç‚¹å†å»é‡æ–°æœç´¢æ»¡è¶³æ¡ä»¶ã€‚è¿™æ ·æ‰èƒ½å®ç°å›æº¯
+//                System.out.println("tempListµÄÄÚÈİ:" + tempList + "-------" + "iµÄÖµ:" + i);
+                //ËüÒÆ³ıtempList×îºóÒ»¸öÔªËØµÄ×÷ÓÃ¾ÍÊÇ·µ»ØÉÏÒ»´Îµ÷ÓÃÊ±µÄÊı¾İ£¬Ò²¾ÍÊÇÏ£Íû·µ»ØÖ®Ç°µÄ½ÚµãÔÙÈ¥ÖØĞÂËÑË÷Âú×ãÌõ¼ş¡£ÕâÑù²ÅÄÜÊµÏÖ»ØËİ
                 tempList.remove(tempList.size() - 1);
             }
         }

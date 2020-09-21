@@ -6,7 +6,7 @@ package question.easy;
  * @author Created by WXG on 2020-01-08 14:13
  * @version V1.0
  *
- * Given an integer array nums, find the sum of the elements between indices i and j (i â‰¤ j), inclusive.
+ * Given an integer array nums, find the sum of the elements between indices i and j (i ¡Ü j), inclusive.
  *
  * Example:
  * Given nums = [-2, 0, 3, -5, 2, -1]

@@ -7,18 +7,18 @@ package question.easy;
  * @version V1.0
  *
  *
- * On an 8 x 8 chessboard, there is one white rook.Â  There also may be empty squares, white bishops, and black pawns.Â 
+ * On an 8 x 8 chessboard, there is one white rook.? There also may be empty squares, white bishops, and black pawns.?
  * These are given as characters 'R', '.', 'B', and 'p' respectively. Uppercase characters represent white pieces,
  * and lowercase characters represent black pieces.
  *
  * The rook moves as in the rules of Chess: it chooses one of four cardinal directions (north, east, west, and south),
  * then moves in that direction until it chooses to stop, reaches the edge of the board,
- * or captures an opposite colored pawn by moving to the same square it occupies.Â 
+ * or captures an opposite colored pawn by moving to the same square it occupies.?
  * Also, rooks cannot move into the same square as other friendly bishops.
  *
  * Return the number of pawns the rook can capture in one move.
  *
- * Â 
+ * ?
  *
  * Example 1:
  *
@@ -68,12 +68,12 @@ package question.easy;
  * Output: 3
  * Explanation:
  * The rook can capture the pawns at positions b5, d6 and f5.
- * Â 
+ * ?
  *
  * Note:
  *
  * board.length == board[i].length == 8
- * board[i][j] is either 'R', '.', 'B', orÂ 'p'
+ * board[i][j] is either 'R', '.', 'B', or?'p'
  * There is exactly one cell with board[i][j] == 'R'
  *
  *
@@ -99,7 +99,7 @@ public class AvailableCapturesForRook {
 
         int count = 0;
 
-        //ç¬¬ä¸€ç§å›ºå®šyï¼Œéå†xï¼Œ
+        //µÚÒ»ÖÖ¹Ì¶¨y£¬±éÀúx£¬
         if (x == 0) {
             int BIndex = 0;
 

@@ -71,7 +71,7 @@ public class GenerateRandomPointInACircle {
             return new double[]{xRandom, yRandom};
         }
 
-        //æ±‚è§’åº¦ç”¨ä¸‰è§’å‡½æ•°è§£
+        //Çó½Ç¶ÈÓÃÈı½Çº¯Êı½â
 //        public double[] randPoint() {
 //            double r = radius * Math.sqrt(Math.random());
 //            double theta = Math.PI * 2 * Math.random();
@@ -87,11 +87,11 @@ public class GenerateRandomPointInACircle {
         }
 
         /**
-         * å–[x, y]å·¦é—­å³é—­éšæœºæ•°
+         * È¡[x, y]×ó±ÕÓÒ±ÕËæ»úÊı
          *
-         * @param x å·¦
-         * @param y å³
-         * @return [x, y]èŒƒå›´å†…çš„éšæœºæ•°
+         * @param x ×ó
+         * @param y ÓÒ
+         * @return [x, y]·¶Î§ÄÚµÄËæ»úÊı
          */
         private double random(double x, double y) {
             return x + Math.random() * y % (y - x + 1);

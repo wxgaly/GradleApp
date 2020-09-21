@@ -55,7 +55,7 @@ public class MaximumSubarray {
     }
 
     /**
-     * 姹傚緱鏈�浼樿В
+     * 求得最优解
      *
      * @param nums
      * @return

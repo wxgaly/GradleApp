@@ -23,7 +23,7 @@ import java.util.PriorityQueue;
  *
  * void addNum(int num) - Add a integer number from the data stream to the data structure.
  * double findMedian() - Return the median of all elements so far.
- * Â 
+ * ?
  *
  * Example:
  *
@@ -32,11 +32,11 @@ import java.util.PriorityQueue;
  * findMedian() -> 1.5
  * addNum(3)
  * findMedian() -> 2
- * Â 
+ * ?
  *
  * Follow up:
  *
- * If all integer numbers from the stream are between 0Â and 100, how would you optimize it?
+ * If all integer numbers from the stream are between 0?and 100, how would you optimize it?
  * If 99% of all integer numbers from the stream are between 0 and 100, how would you optimize it?
  *
  */
@@ -69,7 +69,7 @@ public class FindMedianFromDataStream {
     }
 
     /**
-     * æ¯æ¬¡æ’åºï¼Œä¼šè¶…æ—¶
+     * Ã¿´ÎÅÅĞò£¬»á³¬Ê±
      */
     public static class MedianFinder {
 
@@ -101,12 +101,12 @@ public class FindMedianFromDataStream {
     }
 
     /**
-     * æœ€å¤§å †ï¼Œæœ€å°å †è§£æ³•
+     * ×î´ó¶Ñ£¬×îĞ¡¶Ñ½â·¨
      */
     public class MedianFinder1 {
 
         /**
-         * å½“å‰å¤§é¡¶å †å’Œå°é¡¶å †çš„å…ƒç´ ä¸ªæ•°ä¹‹å’Œ
+         * µ±Ç°´ó¶¥¶ÑºÍĞ¡¶¥¶ÑµÄÔªËØ¸öÊıÖ®ºÍ
          */
         private int count;
         private PriorityQueue<Integer> maxheap;
@@ -125,7 +125,7 @@ public class FindMedianFromDataStream {
             count += 1;
             maxheap.offer(num);
             minheap.add(maxheap.poll());
-            // å¦‚æœä¸¤ä¸ªå †åˆèµ·æ¥çš„å…ƒç´ ä¸ªæ•°æ˜¯å¥‡æ•°ï¼Œå°é¡¶å †è¦æ‹¿å‡ºå †é¡¶å…ƒç´ ç»™å¤§é¡¶å †
+            // Èç¹ûÁ½¸ö¶ÑºÏÆğÀ´µÄÔªËØ¸öÊıÊÇÆæÊı£¬Ğ¡¶¥¶ÑÒªÄÃ³ö¶Ñ¶¥ÔªËØ¸ø´ó¶¥¶Ñ
             if ((count & 1) != 0) {
                 maxheap.add(minheap.poll());
             }
@@ -133,10 +133,10 @@ public class FindMedianFromDataStream {
 
         public double findMedian() {
             if ((count & 1) == 0) {
-                // å¦‚æœä¸¤ä¸ªå †åˆèµ·æ¥çš„å…ƒç´ ä¸ªæ•°æ˜¯å¶æ•°ï¼Œæ•°æ®æµçš„ä¸­ä½æ•°å°±æ˜¯å„è‡ªå †é¡¶å…ƒç´ çš„å¹³å‡å€¼
+                // Èç¹ûÁ½¸ö¶ÑºÏÆğÀ´µÄÔªËØ¸öÊıÊÇÅ¼Êı£¬Êı¾İÁ÷µÄÖĞÎ»Êı¾ÍÊÇ¸÷×Ô¶Ñ¶¥ÔªËØµÄÆ½¾ùÖµ
                 return (double) (maxheap.peek() + minheap.peek()) / 2;
             } else {
-                // å¦‚æœä¸¤ä¸ªå †åˆèµ·æ¥çš„å…ƒç´ ä¸ªæ•°æ˜¯å¥‡æ•°ï¼Œæ•°æ®æµçš„ä¸­ä½æ•°å¤§é¡¶å †çš„å †é¡¶å…ƒç´ 
+                // Èç¹ûÁ½¸ö¶ÑºÏÆğÀ´µÄÔªËØ¸öÊıÊÇÆæÊı£¬Êı¾İÁ÷µÄÖĞÎ»Êı´ó¶¥¶ÑµÄ¶Ñ¶¥ÔªËØ
                 return (double) maxheap.peek();
             }
         }

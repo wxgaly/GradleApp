@@ -63,14 +63,14 @@ public class ThreeSumClosest {
     }
 
     /**
-     * å…ˆæ’åº, ç„¶åéå†, ç„¶åå†…éƒ¨ä½¿ç”¨åŒæŒ‡é’ˆ, æ—¶é—´å¤æ‚åº¦åº”è¯¥æ˜¯O(nÂ²)
+     * ÏÈÅÅĞò, È»ºó±éÀú, È»ºóÄÚ²¿Ê¹ÓÃË«Ö¸Õë, Ê±¼ä¸´ÔÓ¶ÈÓ¦¸ÃÊÇO(n?)
      *
      * @param nums
      * @param target
      * @return
      */
     public static int threeSumClosest1(int[] nums, int target) {
-        // æ’åº
+        // ÅÅĞò
         Arrays.sort(nums);
         int closestNum = nums[0] + nums[1] + nums[2];
         for (int i = 0; i < nums.length - 2; i++) {
@@ -85,7 +85,7 @@ public class ThreeSumClosest {
                 } else if (threeSum < target) {
                     l++;
                 } else {
-                    // å¦‚æœå·²ç»ç­‰äºtargetçš„è¯, è‚¯å®šæ˜¯æœ€æ¥è¿‘çš„
+                    // Èç¹ûÒÑ¾­µÈÓÚtargetµÄ»°, ¿Ï¶¨ÊÇ×î½Ó½üµÄ
                     return target;
                 }
 

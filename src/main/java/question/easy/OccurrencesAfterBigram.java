@@ -10,12 +10,12 @@ import java.util.List;
  * @author Created by WXG on 2020-01-06 14:36
  * @version V1.0
  * <p>
- * Given words first and second, consider occurrences in someÂ text of the form "first second third",
+ * Given words first and second, consider occurrences in some?text of the form "first second third",
  * where second comes immediately after first, and third comes immediately after second.
  * <p>
  * For each such occurrence, add "third" to the answer, and return the answer.
  * <p>
- * Â 
+ * ?
  * <p>
  * Example 1:
  * <p>
@@ -25,7 +25,7 @@ import java.util.List;
  * <p>
  * Input: text = "we will we will rock you", first = "we", second = "will"
  * Output: ["we","rock"]
- * Â 
+ * ?
  * <p>
  * Note:
  * <p>
@@ -43,8 +43,8 @@ public class OccurrencesAfterBigram {
     }
 
     /**
-     * æ‰§è¡Œç”¨æ—¶ : 1 ms, åœ¨æ‰€æœ‰ Java æäº¤ä¸­å‡»è´¥äº† 97.74% çš„ç”¨æˆ·
-     * å†…å­˜æ¶ˆè€— : 34.7 MB, åœ¨æ‰€æœ‰ Java æäº¤ä¸­å‡»è´¥äº† 100.00% çš„ç”¨æˆ·
+     * Ö´ĞĞÓÃÊ± : 1 ms, ÔÚËùÓĞ Java Ìá½»ÖĞ»÷°ÜÁË 97.74% µÄÓÃ»§
+     * ÄÚ´æÏûºÄ : 34.7 MB, ÔÚËùÓĞ Java Ìá½»ÖĞ»÷°ÜÁË 100.00% µÄÓÃ»§
      *
      * @param text
      * @param first

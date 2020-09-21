@@ -90,7 +90,7 @@ public class SortCharactersByFrequency {
         char[] chs = s.toCharArray();
         Map<Character, Integer> map = new HashMap<>();
         int maxTimes = -1;
-        //ç»Ÿè®¡æ¯ä¸ªå­—æ¯çš„é¢‘æ¬¡ï¼Œå¹¶å­˜å…¥å“ˆå¸Œè¡¨
+        //Í³¼ÆÃ¿¸ö×ÖÄ¸µÄÆµ´Î£¬²¢´æÈë¹şÏ£±í
         for (char c : chs) {
             if (!map.containsKey(c)) {
                 map.put(c, 1);
@@ -99,7 +99,7 @@ public class SortCharactersByFrequency {
             }
             maxTimes = map.get(c) > maxTimes ? map.get(c) : maxTimes;
         }
-        //æ–°å»ºä¸€ä¸ªæ¡¶ï¼Œå°†å­—æ¯å­˜å…¥ç´¢å¼•ä¸ºå®ƒçš„é¢‘æ¬¡çš„æ¡¶é‡Œ
+        //ĞÂ½¨Ò»¸öÍ°£¬½«×ÖÄ¸´æÈëË÷ÒıÎªËüµÄÆµ´ÎµÄÍ°Àï
         ArrayList<Character>[] buckets = new ArrayList[maxTimes + 1];
         for (char c : map.keySet()) {
             int frequency = map.get(c);
@@ -108,14 +108,14 @@ public class SortCharactersByFrequency {
             }
             buckets[frequency].add(c);
         }
-        //å€’ç€éå†æ¡¶ï¼Œå°†æ¡¶é‡Œçš„å­—æ¯å–å‡ºæ¥ï¼Œå¹¶æŒ‰ç…§å®ƒçš„é¢‘æ¬¡æ’å…¥å­—ç¬¦æ•°ç»„ä¸­
+        //µ¹×Å±éÀúÍ°£¬½«Í°ÀïµÄ×ÖÄ¸È¡³öÀ´£¬²¢°´ÕÕËüµÄÆµ´Î²åÈë×Ö·ûÊı×éÖĞ
         int p = 0;
         for (int i = maxTimes; i >= 0; i--) {
             if (buckets[i] != null) {
                 for (char c : buckets[i]) {
-                    //buckets[i]è¿™ä¸ªæ¡¶é‡Œçš„å­—æ¯çš„é¢‘æ¬¡ä¸ºiï¼Œå› æ­¤è¦æ’å…¥iä¸ªåˆ°ç»“æœé›†ä¸­
+                    //buckets[i]Õâ¸öÍ°ÀïµÄ×ÖÄ¸µÄÆµ´ÎÎªi£¬Òò´ËÒª²åÈëi¸öµ½½á¹û¼¯ÖĞ
                     for (int j = 0; j < i; j++) {
-                        //å¤ç”¨chsä½œä¸ºç»“æœé›†
+                        //¸´ÓÃchs×÷Îª½á¹û¼¯
                         chs[p++] = c;
                     }
                 }

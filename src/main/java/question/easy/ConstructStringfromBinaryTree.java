@@ -60,7 +60,7 @@ public class ConstructStringfromBinaryTree {
     }
 
     /**
-     * é€’å½’çš„æ–¹å¼
+     * µİ¹éµÄ·½Ê½
      *
      * @param t
      * @return
@@ -78,7 +78,7 @@ public class ConstructStringfromBinaryTree {
     }
 
     /**
-     * è¿­ä»£çš„æ–¹å¼
+     * µü´úµÄ·½Ê½
      *
      * @param t
      * @return

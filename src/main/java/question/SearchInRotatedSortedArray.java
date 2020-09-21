@@ -34,11 +34,11 @@ public class SearchInRotatedSortedArray {
 //        int[] nums = new int[]{4, 5, 6, 7, 0, 1, 2};
         int[] nums = new int[]{1, 3};
         int target = 3;
-        System.out.println("æµ‹è¯•ç”¨ä¾‹1ï¼š " + search(nums, target));
+        System.out.println("²âÊÔÓÃÀı1£º " + search(nums, target));
 
         //test2
 //        target = 0;
-//        System.out.println("æµ‹è¯•ç”¨ä¾‹2ï¼š " + search(nums, target));
+//        System.out.println("²âÊÔÓÃÀı2£º " + search(nums, target));
     }
 
     public static int search(int[] nums, int target) {
@@ -53,7 +53,7 @@ public class SearchInRotatedSortedArray {
         int front = mid - 1;
         int back = mid + 1;
 
-        //1.çŒœæµ‹ä¸­é—´èŠ‚ç‚¹ä¸ç›®æ ‡å€¼ç›¸ç­‰
+        //1.²Â²âÖĞ¼ä½ÚµãÓëÄ¿±êÖµÏàµÈ
         if (target == nums[mid]) {
             return mid;
         } else {
@@ -64,7 +64,7 @@ public class SearchInRotatedSortedArray {
                     return result;
                 }
             } else {
-                //æ­¤å¤„ä¸æ˜¯æœ€ä¼˜ï¼Œåº”è¯¥ç”¨é€’å½’ï¼Œæ¯æ¬¡äºŒåˆ†
+                //´Ë´¦²»ÊÇ×îÓÅ£¬Ó¦¸ÃÓÃµİ¹é£¬Ã¿´Î¶ş·Ö
                 for (int i = 0; i < mid; i++) {
                     if (target == nums[front]) {
                         return front;

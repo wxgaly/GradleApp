@@ -15,14 +15,14 @@ import java.util.Arrays;
  * <p>
  * You may return any answer array that satisfies this condition.
  * <p>
- * Â 
+ * ?
  * <p>
  * Example 1:
  * <p>
  * Input: [3,1,2,4]
  * Output: [2,4,3,1]
  * The outputs [4,2,3,1], [2,4,1,3], and [4,2,1,3] would also be accepted.
- * Â 
+ * ?
  * <p>
  * Note:
  * <p>
@@ -68,7 +68,7 @@ public class SortArrayByParity {
     }
 
     /**
-     * ä¸¤ééå†ï¼Œä¸€æ¬¡æ‹¿å¥‡æ•°ï¼Œä¸€æ¬¡æ‹¿å¶æ•°
+     * Á½±é±éÀú£¬Ò»´ÎÄÃÆæÊı£¬Ò»´ÎÄÃÅ¼Êı
      *
      * @param A
      * @return
@@ -89,7 +89,7 @@ public class SortArrayByParity {
     }
 
     /**
-     * ä¸€ééå†ï¼Œå¶æ•°ä»æ•°ç»„å‰éƒ¨æ”¾ï¼Œå¥‡æ•°ä»æ•°ç»„åéƒ¨æ”¾
+     * Ò»±é±éÀú£¬Å¼Êı´ÓÊı×éÇ°²¿·Å£¬ÆæÊı´ÓÊı×éºó²¿·Å
      *
      * @param A
      * @return

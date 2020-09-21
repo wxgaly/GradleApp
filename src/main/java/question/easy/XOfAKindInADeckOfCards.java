@@ -12,12 +12,12 @@ import java.util.TreeSet;
  *
  * n a deck of cards, each card has an integer written on it.
  *
- * Return true if and only if you can chooseÂ X >= 2 such thatÂ 
- * it is possible to split the entire deckÂ into 1 or more groups of cards, where:
+ * Return true if and only if you can choose?X >= 2 such that?
+ * it is possible to split the entire deck?into 1 or more groups of cards, where:
  *
  * Each group has exactly X cards.
  * All the cards in each group have the same integer.
- * Â 
+ * ?
  *
  * Example 1:
  *
@@ -48,7 +48,7 @@ import java.util.TreeSet;
  * Note:
  *
  * 1 <= deck.length <= 10000
- * 0 <= deck[i] <Â 10000
+ * 0 <= deck[i] <?10000
  *
  *
  */
@@ -71,7 +71,7 @@ public class XOfAKindInADeckOfCards {
             a[deck[i]]++;
         }
 
-        // ä½¿ç”¨æœ‰åºçš„set
+        // Ê¹ÓÃÓÐÐòµÄset
         Set<Integer> sameLength = new TreeSet<>();
         for (int i = 0; i < a.length; i++) {
             if (a[i] != 0) {
@@ -85,7 +85,7 @@ public class XOfAKindInADeckOfCards {
             return true;
         }
 
-        // å¦‚æžœsameLenthä¸­å…ƒç´ ä¸ªæ•°ä¸ä¸€è‡´ï¼Œé‚£ä¹ˆå…¶ä»–çš„éƒ½åº”è¯¥æŠŠXèƒ½æ•´é™¤
+        // Èç¹ûsameLenthÖÐÔªËØ¸öÊý²»Ò»ÖÂ£¬ÄÇÃ´ÆäËûµÄ¶¼Ó¦¸Ã°ÑXÄÜÕû³ý
         Iterator<Integer> iterator = sameLength.iterator();
         int min = iterator.next();
 

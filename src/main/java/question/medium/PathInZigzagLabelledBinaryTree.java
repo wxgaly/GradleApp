@@ -17,9 +17,9 @@ import java.util.List;
 
 
 
-    Given the label of a node in this tree, return the labels in the path from the root of the tree to theÂ node with that label.
+    Given the label of a node in this tree, return the labels in the path from the root of the tree to the?node with that label.
 
-    Â 
+    ?
 
     Example 1:
 
@@ -29,7 +29,7 @@ import java.util.List;
 
     Input: label = 26
     Output: [1,2,6,10,26]
-    Â 
+    ?
 
     Constraints:
 
@@ -47,23 +47,23 @@ public class PathInZigzagLabelledBinaryTree {
     }
 
     /**
-     * æ²¡æœ‰æ‰¾åˆ°åˆé€‚çš„æ–¹æ³•ï¼Œä½¿ç”¨äº†é¢˜è§£
-     * è¿™é¢˜çš„è€ƒå¯Ÿæ€è·¯ä¸»è¦æ˜¯å®Œå…¨äºŒå‰æ ‘çš„ç‰¹æ€§
+     * Ã»ÓĞÕÒµ½ºÏÊÊµÄ·½·¨£¬Ê¹ÓÃÁËÌâ½â
+     * ÕâÌâµÄ¿¼²ìË¼Â·Ö÷ÒªÊÇÍêÈ«¶ş²æÊ÷µÄÌØĞÔ
      * https://leetcode-cn.com/problems/path-in-zigzag-labelled-binary-tree/solution/jian-dan-yi-dong-de-gong-shi-shi-jian-guo-100-by-a/
      *
      * @param label
      * @return
      */
     public List<Integer> pathInZigZagTree(int label) {
-        ArrayList<Integer> integers = new ArrayList<>();//0.åˆå§‹åŒ–å­˜æ”¾ç»“æœçš„å˜é‡
-        int a = (int) (Math.log(label) / Math.log(2));//2.è®¡ç®—labelæ‰€åœ¨çš„å±‚
-        while (label > 1) {//5.å¾ªç¯ç›´åˆ°é‡åˆ°ç‰¹æ®Šæƒ…å†µ1
-            integers.add(label);//3.å°†labelçš„ç»“æœæ·»åŠ åˆ°æ•°ç»„ä¸­
-            label = (int) (3 * Math.pow(2, --a) - label / 2 - 1);//4.è®¡ç®—ä¸‹ä¸€ä¸ªlabelçš„å€¼
+        ArrayList<Integer> integers = new ArrayList<>();//0.³õÊ¼»¯´æ·Å½á¹ûµÄ±äÁ¿
+        int a = (int) (Math.log(label) / Math.log(2));//2.¼ÆËãlabelËùÔÚµÄ²ã
+        while (label > 1) {//5.Ñ­»·Ö±µ½Óöµ½ÌØÊâÇé¿ö1
+            integers.add(label);//3.½«labelµÄ½á¹ûÌí¼Óµ½Êı×éÖĞ
+            label = (int) (3 * Math.pow(2, --a) - label / 2 - 1);//4.¼ÆËãÏÂÒ»¸ölabelµÄÖµ
         }
-        integers.add(1);//6.æ·»åŠ ç‰¹æ®Šæƒ…å†µ 1
-        Collections.reverse(integers); //7.ç¿»è½¬æ•°ç»„
-        return integers;//1.è¿”å›ç»“æœ
+        integers.add(1);//6.Ìí¼ÓÌØÊâÇé¿ö 1
+        Collections.reverse(integers); //7.·­×ªÊı×é
+        return integers;//1.·µ»Ø½á¹û
     }
 
 

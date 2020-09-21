@@ -81,7 +81,7 @@ public class FairCandySwap {
     }
 
     /**
-     * æ•°å­¦å¤§æ³•å¥½
+     * ÊýÑ§´ó·¨ºÃ
      *
      * @param A
      * @param B

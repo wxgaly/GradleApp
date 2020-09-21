@@ -6,7 +6,7 @@ package question.easy;
  * @author Created by WXG on 2020-04-30 13:48
  * @version V1.0
  *
- * é¢˜ç›®ï¼š
+ * ÌâÄ¿£º
  * https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/
  *
  */
@@ -27,11 +27,11 @@ public class BinaryTreeKMax {
     }
 
     /**
-     * æ¥è‡ªé¢˜è§£ï¼š
+     * À´×ÔÌâ½â£º
      * https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/solution/mian-shi-ti-54-er-cha-sou-suo-shu-de-di-k-da-jie-d/
      *
-     * æ ¹æ®ä»¥ä¸Šæ€§è´¨ï¼Œæ˜“å¾—äºŒå‰æœç´¢æ ‘çš„ ä¸­åºéå†å€’åº ä¸º é€’å‡åºåˆ—
-     * å› æ­¤ï¼Œæ±‚ â€œäºŒå‰æœç´¢æ ‘ç¬¬ k å¤§çš„èŠ‚ç‚¹â€ å¯è½¬åŒ–ä¸ºæ±‚ â€œæ­¤æ ‘çš„ä¸­åºéå†å€’åºçš„ç¬¬ k ä¸ªèŠ‚ç‚¹â€ ã€‚
+     * ¸ù¾İÒÔÉÏĞÔÖÊ£¬Ò×µÃ¶ş²æËÑË÷Ê÷µÄ ÖĞĞò±éÀúµ¹Ğò Îª µİ¼õĞòÁĞ
+     * Òò´Ë£¬Çó ¡°¶ş²æËÑË÷Ê÷µÚ k ´óµÄ½Úµã¡± ¿É×ª»¯ÎªÇó ¡°´ËÊ÷µÄÖĞĞò±éÀúµ¹ĞòµÄµÚ k ¸ö½Úµã¡± ¡£
      */
     int res, k;
 

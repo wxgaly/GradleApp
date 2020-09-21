@@ -10,19 +10,19 @@ import java.util.List;
  * @author Created by WXG on 2019-09-02 13:56.
  * @version V1.0
  *
- * Given a string SÂ and a character C, return an array of integers representing the shortest distance
+ * Given a string S?and a character C, return an array of integers representing the shortest distance
  * from the character C in the string.
  *
  * Example 1:
  *
  * Input: S = "loveleetcode", C = 'e'
  * Output: [3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0]
- * Â 
+ * ?
  *
  * Note:
  *
- * S string length isÂ inÂ [1, 10000].
- * CÂ is a single character, and guaranteed to be in string S.
+ * S string length is?in?[1, 10000].
+ * C?is a single character, and guaranteed to be in string S.
  * All letters in S and C are lowercase.
  *
  *
@@ -85,7 +85,7 @@ public class ShortestDistanceToACharacter {
     }
 
     /**
-     * ä»å·¦å‘å³éå†ï¼Œè®°å½•ä¸€æ¬¡è·ç¦»ï¼Œå†ä»å³å‘å·¦éå†ï¼Œæ¯”è¾ƒè·ç¦»æœ€å°çš„å€¼è®°å½•æ•°ç»„å³å¯
+     * ´Ó×óÏòÓÒ±éÀú£¬¼ÇÂ¼Ò»´Î¾àÀë£¬ÔÙ´ÓÓÒÏò×ó±éÀú£¬±È½Ï¾àÀë×îĞ¡µÄÖµ¼ÇÂ¼Êı×é¼´¿É
      *
      * @param S
      * @param C

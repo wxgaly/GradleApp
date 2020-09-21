@@ -1,6 +1,5 @@
 package question.easy;
 
-import jdk.internal.util.xml.impl.Pair;
 
 import java.util.*;
 
@@ -42,7 +41,7 @@ public class DegreeofanArray {
     }
 
     /**
-     * æ‰§è¡Œç”¨æ—¶ : 48 ms
+     * Ö´ĞĞÓÃÊ± : 48 ms
      *
      * @param nums
      * @return
@@ -82,7 +81,7 @@ public class DegreeofanArray {
     private int minLen = -1;
 
     /**
-     * æ‰§è¡Œç”¨æ—¶ : 18 ms , åœ¨æ‰€æœ‰ Java æäº¤ä¸­å‡»è´¥äº† 88.05% çš„ç”¨æˆ·
+     * Ö´ĞĞÓÃÊ± : 18 ms , ÔÚËùÓĞ Java Ìá½»ÖĞ»÷°ÜÁË 88.05% µÄÓÃ»§
      *
      * @param nums
      * @return

@@ -6,13 +6,13 @@ package question.easy;
  * @author Created by WXG on 2019-11-18 17:23
  * @version V1.0
  *
- * You are given an array of stringsÂ wordsÂ and a stringÂ chars.
+ * You are given an array of strings?words?and a string?chars.
  *
- * A string is goodÂ ifÂ it can be formed byÂ characters from charsÂ (each characterÂ can only be used once).
+ * A string is good?if?it can be formed by?characters from chars?(each character?can only be used once).
  *
  * Return the sum of lengths of all good strings in words.
  *
- * Â 
+ * ?
  *
  * Example 1:
  *
@@ -26,12 +26,12 @@ package question.easy;
  * Output: 10
  * Explanation:
  * The strings that can be formed are "hello" and "world" so the answer is 5 + 5 = 10.
- * Â 
+ * ?
  *
  * Note:
  *
  * 1 <= words.length <= 1000
- * 1 <= words[i].length, chars.lengthÂ <= 100
+ * 1 <= words[i].length, chars.length?<= 100
  * All strings contain lowercase English letters only.
  *
  *
@@ -66,7 +66,7 @@ public class FindWordsThatBeFormedbyCharacters {
 
                     }
                 }
-                //æœ‰ä¸€ä¸ªcharæ²¡æœ‰æ‰¾åˆ°ï¼Œç›´æ¥æ‰¾ä¸‹ä¸€ä¸ªå•è¯
+                //ÓĞÒ»¸öcharÃ»ÓĞÕÒµ½£¬Ö±½ÓÕÒÏÂÒ»¸öµ¥´Ê
                 if (!isFind) {
                     break;
                 }
@@ -77,9 +77,9 @@ public class FindWordsThatBeFormedbyCharacters {
     }
 
     /**
-     * 1. ç”¨å­—å…¸è®°å½•æ‰€æœ‰å­—ç¬¦å‡ºç°æ¬¡æ•°
-     * 2. éå†wordsï¼Œ
-     * 3. éå†wordæ‰¾åˆ°charä¸ä¹‹åŒ¹é…çš„charï¼Œç„¶åæ¬¡æ•°å‡ä¸€ï¼Œå¹¶ä¸”
+     * 1. ÓÃ×Öµä¼ÇÂ¼ËùÓĞ×Ö·û³öÏÖ´ÎÊı
+     * 2. ±éÀúwords£¬
+     * 3. ±éÀúwordÕÒµ½charÓëÖ®Æ¥ÅäµÄchar£¬È»ºó´ÎÊı¼õÒ»£¬²¢ÇÒ
      * @param words
      * @param chars
      * @return

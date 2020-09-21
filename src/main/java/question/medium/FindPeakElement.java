@@ -8,11 +8,11 @@ package question.medium;
  * <p>
  * A peak element is an element that is greater than its neighbors.
  * <p>
- * Given an input array nums, where nums[i] â‰  nums[i+1], find a peak element and return its index.
+ * Given an input array nums, where nums[i] ¡Ù nums[i+1], find a peak element and return its index.
  * <p>
  * The array may contain multiple peaks, in that case return the index to any one of the peaks is fine.
  * <p>
- * You may imagine that nums[-1] = nums[n] = -âˆ.
+ * You may imagine that nums[-1] = nums[n] = -¡Ş.
  * <p>
  * Example 1:
  * <p>
@@ -70,11 +70,11 @@ public class FindPeakElement {
     }
 
     /**
-     * O(logN)ä¸€èˆ¬è€ƒè™‘äºŒåˆ†æœç´¢ã€‚æœ‰å¦‚ä¸‹è§„å¾‹ï¼š
+     * O(logN)Ò»°ã¿¼ÂÇ¶ş·ÖËÑË÷¡£ÓĞÈçÏÂ¹æÂÉ£º
      * <p>
-     * è§„å¾‹ä¸€ï¼šå¦‚æœnums[i] > nums[i+1]ï¼Œåˆ™åœ¨iä¹‹å‰ä¸€å®šå­˜åœ¨å³°å€¼å…ƒç´ 
+     * ¹æÂÉÒ»£ºÈç¹ûnums[i] > nums[i+1]£¬ÔòÔÚiÖ®Ç°Ò»¶¨´æÔÚ·åÖµÔªËØ
      * <p>
-     * è§„å¾‹äºŒï¼šå¦‚æœnums[i] < nums[i+1]ï¼Œåˆ™åœ¨i+1ä¹‹åä¸€å®šå­˜åœ¨å³°å€¼å…ƒç´ 
+     * ¹æÂÉ¶ş£ºÈç¹ûnums[i] < nums[i+1]£¬ÔòÔÚi+1Ö®ºóÒ»¶¨´æÔÚ·åÖµÔªËØ
      *
      * @param nums
      * @return

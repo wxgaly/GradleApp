@@ -14,11 +14,11 @@ import java.util.Stack;
  * Given an n-ary tree, return the preorder traversal of its nodes' values.
  *
  * For example, given a 3-ary tree:
- * 聽
+ * ?
  *
  * Return its preorder traversal as: [1,3,5,6,2,4].
  *
- * 聽
+ * ?
  *
  * Note:
  *
@@ -76,9 +76,9 @@ public class NaryTreePreorderTraversal {
         stack.push(root);
         while (!stack.isEmpty()) {
             Node cur = stack.pop();
-            //澶寸粨鐐瑰姞鍏ョ粨鏋滈泦
+            //头结点加入结果集
             res.add(cur.val);
-            //灏嗚鑺傜偣鐨勫瓙鑺傜偣浠庡彸寰�宸﹀帇鍏ユ爤
+            //将该节点的子节点从右往左压入栈
             List<Node> nodeList = cur.children;
             for (int i = nodeList.size() - 1; i >= 0; i--) {
                 stack.push(nodeList.get(i));

@@ -15,7 +15,7 @@ package question.easy;
  * One cell is a square with side length 1. The grid is rectangular, width and height don't exceed 100.
  * Determine the perimeter of the island.
  *
- * Â 
+ * ?
  *
  * Example:
  *
@@ -39,7 +39,7 @@ public class IslandPerimeter {
     }
 
     /**
-     * é¢˜è§£ï¼Œç”±äºå²›å±¿å†…æ²¡æœ‰æ¹–,æ‰€ä»¥åªéœ€è¦æ±‚å‡º åŒ—é¢(æˆ–å—é¢) + è¥¿é¢(æˆ–ä¸œé¢)çš„é•¿åº¦å†ä¹˜2å³å¯
+     * Ìâ½â£¬ÓÉÓÚµºÓìÄÚÃ»ÓĞºş,ËùÒÔÖ»ĞèÒªÇó³ö ±±Ãæ(»òÄÏÃæ) + Î÷Ãæ(»ò¶«Ãæ)µÄ³¤¶ÈÔÙ³Ë2¼´¿É
      * @param grid
      * @return
      */

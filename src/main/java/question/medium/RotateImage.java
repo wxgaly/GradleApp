@@ -70,7 +70,7 @@ public class RotateImage {
     }
 
     /**
-     * åˆ›å»ºæ–°ç©ºé—´
+     * ´´½¨ĞÂ¿Õ¼ä
      *
      * @param matrix
      * @return
@@ -98,7 +98,7 @@ public class RotateImage {
     }
 
     /**
-     * ä»»æ„ä¸€ä¸ª(i,j) , (j, n-i-1), (n-i-1, n-j-1), (n -j-1, i)å°±æ˜¯è¿™å››ä¸ªç´¢å¼•å·ä¸Šçš„æ•°äº¤æ¢
+     * ÈÎÒâÒ»¸ö(i,j) , (j, n-i-1), (n-i-1, n-j-1), (n -j-1, i)¾ÍÊÇÕâËÄ¸öË÷ÒıºÅÉÏµÄÊı½»»»
      *
      * @param matrix
      */

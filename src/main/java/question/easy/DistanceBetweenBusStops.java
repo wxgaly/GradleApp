@@ -6,15 +6,15 @@ package question.easy;
  * @author Created by WXG on 2020-02-23 16:48
  * @version V1.0
  *
- * A busÂ has n stops numbered from 0 to n - 1 that formÂ a circle.
+ * A bus?has n stops numbered from 0 to n - 1 that form?a circle.
  * We know the distance between all pairs of neighboring stops where distance[i]
- * is the distance between the stops numberÂ i and (i + 1) % n.
+ * is the distance between the stops number?i and (i + 1) % n.
  *
- * The bus goes along both directionsÂ i.e. clockwise and counterclockwise.
+ * The bus goes along both directions?i.e. clockwise and counterclockwise.
  *
- * Return the shortest distance between the givenÂ startÂ and destinationÂ stops.
+ * Return the shortest distance between the given?start?and destination?stops.
  *
- * Â 
+ * ?
  *
  * Example 1:
  *
@@ -23,7 +23,7 @@ package question.easy;
  * Input: distance = [1,2,3,4], start = 0, destination = 1
  * Output: 1
  * Explanation: Distance between 0 and 1 is 1 or 9, minimum is 1.
- * Â 
+ * ?
  *
  * Example 2:
  *
@@ -32,7 +32,7 @@ package question.easy;
  * Input: distance = [1,2,3,4], start = 0, destination = 2
  * Output: 3
  * Explanation: Distance between 0 and 2 is 3 or 7, minimum is 3.
- * Â 
+ * ?
  *
  * Example 3:
  *
@@ -41,11 +41,11 @@ package question.easy;
  * Input: distance = [1,2,3,4], start = 0, destination = 3
  * Output: 4
  * Explanation: Distance between 0 and 3 is 6 or 4, minimum is 4.
- * Â 
+ * ?
  *
  * Constraints:
  *
- * 1 <= nÂ <= 10^4
+ * 1 <= n?<= 10^4
  * distance.length == n
  * 0 <= start, destination < n
  * 0 <= distance[i] <= 10^4
@@ -63,7 +63,7 @@ public class DistanceBetweenBusStops {
         int min = 0;
 
         /**
-         * å…ˆè®¡ç®—é¡ºæ—¶é’ˆè·ç¦»[start, destination)
+         * ÏÈ¼ÆËãË³Ê±Õë¾àÀë[start, destination)
          */
         for (int i = start; i < destination; i++) {
             min += distance[i];
@@ -71,7 +71,7 @@ public class DistanceBetweenBusStops {
 
         int temp = 0;
         /**
-         * å†è®¡ç®—é€†æ—¶é’ˆè·ç¦»[0, start), [destination, length)
+         * ÔÙ¼ÆËãÄæÊ±Õë¾àÀë[0, start), [destination, length)
          */
         for (int i = 0; i < start; i++) {
             temp += distance[i];

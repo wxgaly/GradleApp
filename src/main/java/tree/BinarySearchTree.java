@@ -124,19 +124,19 @@ public class BinarySearchTree {
     public void printf() {
         if (rootNode != null) {
 
-            //å…ˆåºéå† æ ¹å·¦å³
+            //ÏÈĞò±éÀú ¸ù×óÓÒ
 //            preOrder(rootNode);
 //            preOrderNonRecursive(rootNode);
 
-            //ä¸­åºéå† å·¦æ ¹å³
+            //ÖĞĞò±éÀú ×ó¸ùÓÒ
 //            inOrder(rootNode);
 //            inOrderNonRecursive(rootNode);
 
-            //ååºéå† æ ¹å·¦å³
+            //ºóĞò±éÀú ¸ù×óÓÒ
 //            lastOrder(rootNode);
             lastOrderNonRecursive(rootNode);
 
-            //å±‚åºéå†
+            //²ãĞò±éÀú
 //            levelOrder(rootNode);
 
         } else {
@@ -145,9 +145,9 @@ public class BinarySearchTree {
     }
 
     /**
-     * å…ˆåºéå†ï¼Œé€’å½’å®ç°
+     * ÏÈĞò±éÀú£¬µİ¹éÊµÏÖ
      *
-     * @param root æ ¹èŠ‚ç‚¹
+     * @param root ¸ù½Úµã
      */
     private void preOrder(BinaryTreeNode<Integer> root) {
         if (root != null) {
@@ -158,9 +158,9 @@ public class BinarySearchTree {
     }
 
     /**
-     * å…ˆåºéå†ï¼Œéé€’å½’å®ç°
+     * ÏÈĞò±éÀú£¬·Çµİ¹éÊµÏÖ
      *
-     * @param root æ ¹èŠ‚ç‚¹
+     * @param root ¸ù½Úµã
      */
     private void preOrderNonRecursive(BinaryTreeNode<Integer> root) {
         Stack<BinaryTreeNode<Integer>> stack = new Stack<>();
@@ -182,9 +182,9 @@ public class BinarySearchTree {
     }
 
     /**
-     * ä¸­åºéå†ï¼Œé€’å½’å®ç°
+     * ÖĞĞò±éÀú£¬µİ¹éÊµÏÖ
      *
-     * @param root æ ¹èŠ‚ç‚¹
+     * @param root ¸ù½Úµã
      */
     private void inOrder(BinaryTreeNode<Integer> root) {
         if (root != null) {
@@ -195,9 +195,9 @@ public class BinarySearchTree {
     }
 
     /**
-     * ä¸­åºéå†ï¼Œéé€’å½’å®ç°
+     * ÖĞĞò±éÀú£¬·Çµİ¹éÊµÏÖ
      *
-     * @param root æ ¹èŠ‚ç‚¹
+     * @param root ¸ù½Úµã
      */
     private void inOrderNonRecursive(BinaryTreeNode<Integer> root) {
         Stack<BinaryTreeNode<Integer>> stack = new Stack<>();
@@ -218,9 +218,9 @@ public class BinarySearchTree {
     }
 
     /**
-     * ååºéå†ï¼Œé€’å½’å®ç°
+     * ºóĞò±éÀú£¬µİ¹éÊµÏÖ
      *
-     * @param root æ ¹èŠ‚ç‚¹
+     * @param root ¸ù½Úµã
      */
     private void lastOrder(BinaryTreeNode<Integer> root) {
         if (root != null) {
@@ -231,9 +231,9 @@ public class BinarySearchTree {
     }
 
     /**
-     * ååºéå†ï¼Œéé€’å½’å®ç°
+     * ºóĞò±éÀú£¬·Çµİ¹éÊµÏÖ
      *
-     * @param root æ ¹èŠ‚ç‚¹
+     * @param root ¸ù½Úµã
      */
     private void lastOrderNonRecursive(BinaryTreeNode<Integer> root) {
         List<Integer> list = new ArrayList<>();
@@ -279,9 +279,9 @@ public class BinarySearchTree {
 
 
     /**
-     * å±‚åºéå†
+     * ²ãĞò±éÀú
      *
-     * @param root æ ¹èŠ‚ç‚¹
+     * @param root ¸ù½Úµã
      */
     private void levelOrder(BinaryTreeNode<Integer> root) {
         Queue<BinaryTreeNode<Integer>> queue = new LinkedList<>();

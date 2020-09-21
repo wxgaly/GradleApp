@@ -16,7 +16,7 @@ public class SubarraySumsDivisibleByK {
 
         int[] A = new int[]{4, 5, 0, -2, -3, 1};
         int K = 5;
-        System.out.println("ç»“æžœæ˜¯: " + subarraysDivByK(A, K));
+        System.out.println("½á¹ûÊÇ: " + subarraysDivByK(A, K));
     }
 
     public static int subarraysDivByK(int[] A, int K) {

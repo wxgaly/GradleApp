@@ -98,15 +98,15 @@ public class LongestTurbulentSubarray {
         if (A.length == 1) return 1;
 
         int sum, max = 1;
-        long flag = A[1] - A[0];//----------------å¿…é¡»ä¸ºlongï¼ï¼ï¼
+        long flag = A[1] - A[0];//----------------±ØĞëÎªlong£¡£¡£¡
         sum = flag == 0 ? 1 : 2;
 
         for (int i = 2; i < A.length; i++) {
-            long flag2 = A[i] - A[i - 1];//------------------å¿…é¡»ä¸ºlongï¼ï¼ï¼
+            long flag2 = A[i] - A[i - 1];//------------------±ØĞëÎªlong£¡£¡£¡
             long temp = flag * flag2;
 
             if (temp < 0) sum++;
-            else {//æ­¤å¤„å¯èƒ½ä»æ¥æ²¡è¿›å»è¿‡ï¼›å›ºæœ€åè¿”å›å€¼æ—¶ è¦åˆ¤æ–­ï¼›
+            else {//´Ë´¦¿ÉÄÜ´ÓÀ´Ã»½øÈ¥¹ı£»¹Ì×îºó·µ»ØÖµÊ± ÒªÅĞ¶Ï£»
                 if (max < sum) max = sum;
                 sum = flag2 == 0 ? 1 : 2;
             }

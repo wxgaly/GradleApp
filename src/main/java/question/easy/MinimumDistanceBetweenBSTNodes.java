@@ -7,7 +7,7 @@ package question.easy;
  * @version V1.0
  *
  * Given a Binary Search Tree (BST) with the root node root,
- * returnÂ the minimum difference between the values of any two different nodes in the tree.
+ * return?the minimum difference between the values of any two different nodes in the tree.
  *
  * Example :
  *
@@ -27,9 +27,9 @@ package question.easy;
  * while the minimum difference in this tree is 1, it occurs between node 1 and node 2, also between node 3 and node 2.
  * Note:
  *
- * The size of the BST will be between 2 andÂ 100.
+ * The size of the BST will be between 2 and?100.
  * The BST is always valid, each node's value is an integer, and each node's value is different.
- * This question is the same as 530:Â https://leetcode.com/problems/minimum-absolute-difference-in-bst/
+ * This question is the same as 530:?https://leetcode.com/problems/minimum-absolute-difference-in-bst/
  *
  *
  */
@@ -65,12 +65,12 @@ public class MinimumDistanceBetweenBSTNodes {
     }
 
     /**
-     * åˆ©ç”¨äºŒå‰æœç´¢æ ‘çš„ç‰¹æ€§ï¼Œ
-     * ä¸­åºéå†å‡ºçš„é¡ºåºå³æ˜¯æ’åºï¼Œ
-     * ç„¶åæ¯”è¾ƒä¸¤ä¸¤å·®å€¼
-     * ã€‚ã€‚ã€‚ã€‚
+     * ÀûÓÃ¶ş²æËÑË÷Ê÷µÄÌØĞÔ£¬
+     * ÖĞĞò±éÀú³öµÄË³Ğò¼´ÊÇÅÅĞò£¬
+     * È»ºó±È½ÏÁ½Á½²îÖµ
+     * ¡£¡£¡£¡£
      * <p>
-     * å®˜æ–¹é¢˜è§£ï¼š
+     * ¹Ù·½Ìâ½â£º
      * https://leetcode-cn.com/problems/minimum-distance-between-bst-nodes/solution/er-cha-sou-suo-shu-jie-dian-zui-xiao-ju-chi-by-lee/
      */
     class Solution {

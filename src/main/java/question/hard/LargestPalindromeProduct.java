@@ -16,7 +16,7 @@ public class LargestPalindromeProduct {
     }
 
     /**
-     * æ‰“è¡¨æ³•
+     * ´ò±í·¨
      *
      * @param n
      * @return

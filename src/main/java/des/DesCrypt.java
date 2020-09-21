@@ -17,36 +17,36 @@ import java.security.Key;
  */
 public class DesCrypt {
 	  
-	  /** å­—ç¬¦ä¸²é»˜è®¤é”®å€¼     */
+	  /** ×Ö·û´®Ä¬ÈÏ¼üÖµ     */
 	  private static String strDefaultKey = "bcffaedddcbb19940205";
 
-	  /** åŠ å¯†å·¥å…·     */
+	  /** ¼ÓÃÜ¹¤¾ß     */
 	  private Cipher encryptCipher = null;
 
-	  /** è§£å¯†å·¥å…·     */
+	  /** ½âÃÜ¹¤¾ß     */
 	  private Cipher decryptCipher = null;
 
 	  /**  
-	   * å°†byteæ•°ç»„è½¬æ¢ä¸ºè¡¨ç¤º16è¿›åˆ¶å€¼çš„å­—ç¬¦ä¸²ï¼Œ å¦‚ï¼šbyte[]{8,18}è½¬æ¢ä¸ºï¼š0813ï¼Œ å’Œpublic static byte[]  
-	   * hexStr2ByteArr(String strIn) äº’ä¸ºå¯é€†çš„è½¬æ¢è¿‡ç¨‹  
+	   * ½«byteÊı×é×ª»»Îª±íÊ¾16½øÖÆÖµµÄ×Ö·û´®£¬ Èç£ºbyte[]{8,18}×ª»»Îª£º0813£¬ ºÍpublic static byte[]  
+	   * hexStr2ByteArr(String strIn) »¥Îª¿ÉÄæµÄ×ª»»¹ı³Ì  
 	   *   
 	   * @param arrB  
-	   *            éœ€è¦è½¬æ¢çš„byteæ•°ç»„  
-	   * @return è½¬æ¢åçš„å­—ç¬¦ä¸²  
+	   *            ĞèÒª×ª»»µÄbyteÊı×é  
+	   * @return ×ª»»ºóµÄ×Ö·û´®  
 	   * @throws Exception  
-	   *             æœ¬æ–¹æ³•ä¸å¤„ç†ä»»ä½•å¼‚å¸¸ï¼Œæ‰€æœ‰å¼‚å¸¸å…¨éƒ¨æŠ›å‡º  
+	   *             ±¾·½·¨²»´¦ÀíÈÎºÎÒì³££¬ËùÓĞÒì³£È«²¿Å×³ö  
 	   */
 	  public static String byteArr2HexStr(byte[] arrB) throws Exception {
 	    int iLen = arrB.length;
-	    // æ¯ä¸ªbyteç”¨ä¸¤ä¸ªå­—ç¬¦æ‰èƒ½è¡¨ç¤ºï¼Œæ‰€ä»¥å­—ç¬¦ä¸²çš„é•¿åº¦æ˜¯æ•°ç»„é•¿åº¦çš„ä¸¤å€   
+	    // Ã¿¸öbyteÓÃÁ½¸ö×Ö·û²ÅÄÜ±íÊ¾£¬ËùÒÔ×Ö·û´®µÄ³¤¶ÈÊÇÊı×é³¤¶ÈµÄÁ½±¶   
 	    StringBuffer sb = new StringBuffer(iLen * 2);
 	    for (int i = 0; i < iLen; i++) {
 	      int intTmp = arrB[i];
-	      // æŠŠè´Ÿæ•°è½¬æ¢ä¸ºæ­£æ•°   
+	      // °Ñ¸ºÊı×ª»»ÎªÕıÊı   
 	      while (intTmp < 0) {
 	        intTmp = intTmp + 256;
 	      }
-	      // å°äº0Fçš„æ•°éœ€è¦åœ¨å‰é¢è¡¥0   
+	      // Ğ¡ÓÚ0FµÄÊıĞèÒªÔÚÇ°Ãæ²¹0   
 	      if (intTmp < 16) {
 	        sb.append("0");
 	      }
@@ -56,21 +56,21 @@ public class DesCrypt {
 	  }
 
 	  /**  
-	   * å°†è¡¨ç¤º16è¿›åˆ¶å€¼çš„å­—ç¬¦ä¸²è½¬æ¢ä¸ºbyteæ•°ç»„ï¼Œ å’Œpublic static String byteArr2HexStr(byte[] arrB)  
-	   * äº’ä¸ºå¯é€†çš„è½¬æ¢è¿‡ç¨‹  
+	   * ½«±íÊ¾16½øÖÆÖµµÄ×Ö·û´®×ª»»ÎªbyteÊı×é£¬ ºÍpublic static String byteArr2HexStr(byte[] arrB)  
+	   * »¥Îª¿ÉÄæµÄ×ª»»¹ı³Ì  
 	   *   
 	   * @param strIn  
-	   *            éœ€è¦è½¬æ¢çš„å­—ç¬¦ä¸²  
-	   * @return è½¬æ¢åçš„byteæ•°ç»„  
+	   *            ĞèÒª×ª»»µÄ×Ö·û´®  
+	   * @return ×ª»»ºóµÄbyteÊı×é  
 	   * @throws Exception  
-	   *             æœ¬æ–¹æ³•ä¸å¤„ç†ä»»ä½•å¼‚å¸¸ï¼Œæ‰€æœ‰å¼‚å¸¸å…¨éƒ¨æŠ›å‡º  
+	   *             ±¾·½·¨²»´¦ÀíÈÎºÎÒì³££¬ËùÓĞÒì³£È«²¿Å×³ö  
 	   * @author <a href="mailto:leo841001@163.com">LiGuoQing</a>  
 	   */
 	  public static byte[] hexStr2ByteArr(String strIn) throws Exception {
 	    byte[] arrB = strIn.getBytes();
 	    int iLen = arrB.length;
 
-	    // ä¸¤ä¸ªå­—ç¬¦è¡¨ç¤ºä¸€ä¸ªå­—èŠ‚ï¼Œæ‰€ä»¥å­—èŠ‚æ•°ç»„é•¿åº¦æ˜¯å­—ç¬¦ä¸²é•¿åº¦é™¤ä»¥2   
+	    // Á½¸ö×Ö·û±íÊ¾Ò»¸ö×Ö½Ú£¬ËùÒÔ×Ö½ÚÊı×é³¤¶ÈÊÇ×Ö·û´®³¤¶È³ıÒÔ2   
 	    byte[] arrOut = new byte[iLen / 2];
 	    for (int i = 0; i < iLen; i = i + 2) {
 	      String strTmp = new String(arrB, i, 2);
@@ -80,7 +80,7 @@ public class DesCrypt {
 	  }
 
 	  /**  
-	   * é»˜è®¤æ„é€ æ–¹æ³•ï¼Œä½¿ç”¨é»˜è®¤å¯†é’¥  
+	   * Ä¬ÈÏ¹¹Ôì·½·¨£¬Ê¹ÓÃÄ¬ÈÏÃÜÔ¿  
 	   *   
 	   * @throws Exception  
 	   */
@@ -89,10 +89,10 @@ public class DesCrypt {
 	  }
 
 	  /**  
-	   * æŒ‡å®šå¯†é’¥æ„é€ æ–¹æ³•  
+	   * Ö¸¶¨ÃÜÔ¿¹¹Ôì·½·¨  
 	   *   
 	   * @param strKey  
-	   *            æŒ‡å®šçš„å¯†é’¥  
+	   *            Ö¸¶¨µÄÃÜÔ¿  
 	   * @throws Exception  
 	   */
 	  public DesCrypt(String strKey) throws Exception {
@@ -107,11 +107,11 @@ public class DesCrypt {
 	  }
 
 	  /**  
-	   * åŠ å¯†å­—èŠ‚æ•°ç»„  
+	   * ¼ÓÃÜ×Ö½ÚÊı×é  
 	   *   
 	   * @param arrB  
-	   *            éœ€åŠ å¯†çš„å­—èŠ‚æ•°ç»„  
-	   * @return åŠ å¯†åçš„å­—èŠ‚æ•°ç»„  
+	   *            Ğè¼ÓÃÜµÄ×Ö½ÚÊı×é  
+	   * @return ¼ÓÃÜºóµÄ×Ö½ÚÊı×é  
 	   * @throws Exception  
 	   */
 	  public byte[] encrypt(byte[] arrB) throws Exception {
@@ -119,11 +119,11 @@ public class DesCrypt {
 	  }
 
 	  /**  
-	   * åŠ å¯†å­—ç¬¦ä¸²  
+	   * ¼ÓÃÜ×Ö·û´®  
 	   *   
 	   * @param strIn  
-	   *            éœ€åŠ å¯†çš„å­—ç¬¦ä¸²  
-	   * @return åŠ å¯†åçš„å­—ç¬¦ä¸²  
+	   *            Ğè¼ÓÃÜµÄ×Ö·û´®  
+	   * @return ¼ÓÃÜºóµÄ×Ö·û´®  
 	   * @throws Exception  
 	   */
 	  public String encrypt(String strIn) throws Exception {
@@ -131,11 +131,11 @@ public class DesCrypt {
 	  }
 
 	  /**  
-	   * è§£å¯†å­—èŠ‚æ•°ç»„  
+	   * ½âÃÜ×Ö½ÚÊı×é  
 	   *   
 	   * @param arrB  
-	   *            éœ€è§£å¯†çš„å­—èŠ‚æ•°ç»„  
-	   * @return è§£å¯†åçš„å­—èŠ‚æ•°ç»„  
+	   *            Ğè½âÃÜµÄ×Ö½ÚÊı×é  
+	   * @return ½âÃÜºóµÄ×Ö½ÚÊı×é  
 	   * @throws Exception  
 	   */
 	  public byte[] decrypt(byte[] arrB) throws Exception {
@@ -143,11 +143,11 @@ public class DesCrypt {
 	  }
 
 	  /**  
-	   * è§£å¯†å­—ç¬¦ä¸²  
+	   * ½âÃÜ×Ö·û´®  
 	   *   
 	   * @param strIn  
-	   *            éœ€è§£å¯†çš„å­—ç¬¦ä¸²  
-	   * @return è§£å¯†åçš„å­—ç¬¦ä¸²  
+	   *            Ğè½âÃÜµÄ×Ö·û´®  
+	   * @return ½âÃÜºóµÄ×Ö·û´®  
 	   * @throws Exception  
 	   */
 	  public String decrypt(String strIn) throws Exception {
@@ -155,25 +155,25 @@ public class DesCrypt {
 	  }
 
 	  /**  
-	   * ä»æŒ‡å®šå­—ç¬¦ä¸²ç”Ÿæˆå¯†é’¥ï¼Œå¯†é’¥æ‰€éœ€çš„å­—èŠ‚æ•°ç»„é•¿åº¦ä¸º8ä½ ä¸è¶³8ä½æ—¶åé¢è¡¥0ï¼Œè¶…å‡º8ä½åªå–å‰8ä½  
+	   * ´ÓÖ¸¶¨×Ö·û´®Éú³ÉÃÜÔ¿£¬ÃÜÔ¿ËùĞèµÄ×Ö½ÚÊı×é³¤¶ÈÎª8Î» ²»×ã8Î»Ê±ºóÃæ²¹0£¬³¬³ö8Î»Ö»È¡Ç°8Î»  
 	   *   
 	   * @param arrBTmp  
-	   *            æ„æˆè¯¥å­—ç¬¦ä¸²çš„å­—èŠ‚æ•°ç»„  
-	   * @return ç”Ÿæˆçš„å¯†é’¥  
+	   *            ¹¹³É¸Ã×Ö·û´®µÄ×Ö½ÚÊı×é  
+	   * @return Éú³ÉµÄÃÜÔ¿  
 	   * @throws Exception
 	   */
 	  private Key getKey(byte[] arrBTmp) throws Exception {
-	    // åˆ›å»ºä¸€ä¸ªç©ºçš„8ä½å­—èŠ‚æ•°ç»„ï¼ˆé»˜è®¤å€¼ä¸º0ï¼‰   
+	    // ´´½¨Ò»¸ö¿ÕµÄ8Î»×Ö½ÚÊı×é£¨Ä¬ÈÏÖµÎª0£©   
 	    byte[] arrB = new byte[8];
 
-	    // å°†åŸå§‹å­—èŠ‚æ•°ç»„è½¬æ¢ä¸º8ä½   
+	    // ½«Ô­Ê¼×Ö½ÚÊı×é×ª»»Îª8Î»   
 	    for (int i = 0; i < arrBTmp.length && i < arrB.length; i++) {
 	      arrB[i] = arrBTmp[i];
 	    }
 
-	    // ç”Ÿæˆå¯†é’¥
+	    // Éú³ÉÃÜÔ¿
 
-		  //å»æ‰ä¸å¿…è¦çš„å±€éƒ¨å˜é‡ --bcc
+		  //È¥µô²»±ØÒªµÄ¾Ö²¿±äÁ¿ --bcc
 		  return new javax.crypto.spec.SecretKeySpec(arrB, "DES");
 	  }
 }

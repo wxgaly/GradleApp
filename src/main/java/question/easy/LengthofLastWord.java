@@ -11,7 +11,7 @@ package question.easy;
  *
  * If the last word does not exist, return 0.
  *
- * Note: A word is defined as a maximal substring consistingÂ of non-space characters only.
+ * Note: A word is defined as a maximal substring consisting?of non-space characters only.
  *
  * Example:
  *
@@ -27,7 +27,7 @@ public class LengthofLastWord {
     }
 
     /**
-     * ä»å³å‘å·¦éå†ï¼Œé‡åˆ°ç¬¬ä¸€ä¸ªç©ºæ ¼å¼€å§‹è®¡æ•°ï¼Œå†é‡åˆ°ä¸‹ä¸€ä¸ªç©ºæ ¼ç»“æŸè®¡æ•°
+     * ´ÓÓÒÏò×ó±éÀú£¬Óöµ½µÚÒ»¸ö¿Õ¸ñ¿ªÊ¼¼ÆÊı£¬ÔÙÓöµ½ÏÂÒ»¸ö¿Õ¸ñ½áÊø¼ÆÊı
      *
      * @param s
      * @return

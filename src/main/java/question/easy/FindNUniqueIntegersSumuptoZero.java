@@ -8,9 +8,9 @@ import java.util.Arrays;
  * @author Created by WXG on 2020-01-16 17:00
  * @version V1.0
  * <p>
- * Given an integer n, return any array containing n uniqueÂ integers such that they add up to 0.
+ * Given an integer n, return any array containing n unique?integers such that they add up to 0.
  * <p>
- * Â 
+ * ?
  * <p>
  * Example 1:
  * <p>
@@ -25,7 +25,7 @@ import java.util.Arrays;
  * <p>
  * Input: n = 1
  * Output: [0]
- * Â 
+ * ?
  * <p>
  * Constraints:
  * <p>
@@ -46,8 +46,8 @@ public class FindNUniqueIntegersSumuptoZero {
     }
 
     /**
-     * æ‰§è¡Œç”¨æ—¶ : 0 ms, åœ¨æ‰€æœ‰ Java æäº¤ä¸­å‡»è´¥äº† 100.00% çš„ç”¨æˆ·
-     * å†…å­˜æ¶ˆè€— : 35 MB, åœ¨æ‰€æœ‰ Java æäº¤ä¸­å‡»è´¥äº† 100.00% çš„ç”¨æˆ·
+     * Ö´ĞĞÓÃÊ± : 0 ms, ÔÚËùÓĞ Java Ìá½»ÖĞ»÷°ÜÁË 100.00% µÄÓÃ»§
+     * ÄÚ´æÏûºÄ : 35 MB, ÔÚËùÓĞ Java Ìá½»ÖĞ»÷°ÜÁË 100.00% µÄÓÃ»§
      *
      * @param n
      * @return
@@ -72,7 +72,7 @@ public class FindNUniqueIntegersSumuptoZero {
     }
 
     /**
-     * å®˜æ–¹é¢˜è§£
+     * ¹Ù·½Ìâ½â
      *
      * @param n
      * @return

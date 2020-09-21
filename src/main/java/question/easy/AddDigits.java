@@ -13,7 +13,7 @@ package question.easy;
  * Input: 38
  * Output: 2
  * Explanation: The process is like: 3 + 8 = 11, 1 + 1 = 2.
- * Â             Since 2 has only one digit, return it.
+ * ?            Since 2 has only one digit, return it.
  * Follow up:
  * Could you do it without any loop/recursion in O(1) runtime?
  *
@@ -26,7 +26,7 @@ public class AddDigits {
     }
 
     /**
-     * åè¿›åˆ¶ï¼Œ9ä»½æ‰“åŒ…
+     * Ê®½øÖÆ£¬9·İ´ò°ü
      *
      * @param num
      * @return

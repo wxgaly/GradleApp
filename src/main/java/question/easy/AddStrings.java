@@ -26,7 +26,7 @@ public class AddStrings {
 
     /**
      * https://leetcode-cn.com/problems/add-strings/solution/add-strings-shuang-zhi-zhen-fa-by-jyd/
-     * è¯„è®ºåŒºé¢˜è§£
+     * ÆÀÂÛÇøÌâ½â
      *
      * @param num1
      * @param num2

@@ -11,7 +11,7 @@ import java.util.Arrays;
  * You are given two sorted arrays, A and B, where A has a large enough buffer at the end to hold B.
  * Write a method to merge B into A in sorted order.
  *
- * Initially the number of elements in A and B are m and n respectively.
+ * Initially the number of elements in A and B are?m?and?n respectively.
  *
  * Example:
  *
@@ -19,7 +19,7 @@ import java.util.Arrays;
  * A = [1,2,3,0,0,0], m = 3
  * B = [2,5,6],       n = 3
  *
- * Output: [1,2,2,3,5,6]
+ * Output:?[1,2,2,3,5,6]
  *
  *
  */
@@ -65,9 +65,9 @@ public class SortedMergeLCCI {
     }
 
     /**
-     * 逆向双指针
-     * 时间复杂度：O(m+n)
-     * 空间复杂度：O(1)
+     * ����˫ָ��
+     * ʱ�临�Ӷȣ�O(m+n)
+     * �ռ临�Ӷȣ�O(1)
      *
      * @param A
      * @param m

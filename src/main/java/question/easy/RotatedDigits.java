@@ -6,14 +6,14 @@ package question.easy;
  * @author Created by WXG on 2020-02-07 14:46
  * @version V1.0
  * <p>
- * X is a good number if after rotating each digit individually by 180 degrees, we get a valid number that is different from X.Â 
+ * X is a good number if after rotating each digit individually by 180 degrees, we get a valid number that is different from X.?
  * Each digit must be rotated - we cannot choose to leave it alone.
  * <p>
  * A number is valid if each digit remains a digit after rotation. 0, 1, and 8 rotate to themselves;
  * 2 and 5 rotate to each other; 6 and 9 rotate to each other,
  * and the rest of the numbers do not rotate to any other number and become invalid.
  * <p>
- * NowÂ given a positive number N, how many numbers X from 1 to N are good?
+ * Now?given a positive number N, how many numbers X from 1 to N are good?
  * <p>
  * Example:
  * Input: 10
@@ -23,7 +23,7 @@ package question.easy;
  * Note that 1 and 10 are not good numbers, since they remain unchanged after rotating.
  * Note:
  * <p>
- * NÂ  will be in range [1, 10000].
+ * N? will be in range [1, 10000].
  */
 public class RotatedDigits {
 
@@ -67,7 +67,7 @@ public class RotatedDigits {
     }
 
     /**
-     * éå†
+     * ±éÀú
      *
      * @param N
      * @return
@@ -92,7 +92,7 @@ public class RotatedDigits {
     }
 
     /**
-     * åŠ¨æ€è§„åˆ’
+     * ¶¯Ì¬¹æ»®
      *
      * @param N
      * @return

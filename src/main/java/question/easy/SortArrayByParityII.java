@@ -8,20 +8,20 @@ import java.util.Arrays;
  * @author Created by WXG on 2019-10-23 17:28
  * @version V1.0
  *
- * Given an array AÂ of non-negative integers, half of the integers in A are odd, and half of the integers are even.
+ * Given an array A?of non-negative integers, half of the integers in A are odd, and half of the integers are even.
  *
  * Sort the array so that whenever A[i] is odd, i is odd; and whenever A[i] is even, i is even.
  *
  * You may return any answer array that satisfies this condition.
  *
- * Â 
+ * ?
  *
  * Example 1:
  *
  * Input: [4,2,5,7]
  * Output: [4,5,2,7]
  * Explanation: [4,7,2,5], [2,5,4,7], [2,7,4,5] would also have been accepted.
- * Â 
+ * ?
  *
  * Note:
  *
@@ -66,8 +66,8 @@ public class SortArrayByParityII {
     }
 
     /**
-     * è®©å¶æ•°éƒ¨åˆ†ä¸‹æ ‡ i ä¹‹å‰çš„æ‰€æœ‰æ•°éƒ½æ˜¯å¶æ•°ã€‚ä¸ºäº†å®ç°è¿™ä¸ªç›®æ ‡ï¼ŒæŠŠå¥‡æ•°éƒ¨åˆ†ä½œä¸ºæš‚å­˜åŒºï¼Œä¸æ–­å¢åŠ æŒ‡å‘å¥‡æ•°éƒ¨åˆ†çš„æŒ‡é’ˆï¼Œ
-     * ç›´åˆ°æ‰¾åˆ°ä¸€ä¸ªå¶æ•°ï¼Œç„¶åäº¤æ¢æŒ‡é’ˆ iï¼Œj æ‰€æŒ‡çš„æ•°ã€‚
+     * ÈÃÅ¼Êı²¿·ÖÏÂ±ê i Ö®Ç°µÄËùÓĞÊı¶¼ÊÇÅ¼Êı¡£ÎªÁËÊµÏÖÕâ¸öÄ¿±ê£¬°ÑÆæÊı²¿·Ö×÷ÎªÔİ´æÇø£¬²»¶ÏÔö¼ÓÖ¸ÏòÆæÊı²¿·ÖµÄÖ¸Õë£¬
+     * Ö±µ½ÕÒµ½Ò»¸öÅ¼Êı£¬È»ºó½»»»Ö¸Õë i£¬j ËùÖ¸µÄÊı¡£
      *
      * @param A
      * @return

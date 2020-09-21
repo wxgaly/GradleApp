@@ -30,7 +30,7 @@ public class OddEvenLinkedList {
     }
 
     /**
-     * åŒæŒ‡é’ˆï¼Œæ²¡ç”¨å¥½
+     * Ë«Ö¸Õë£¬Ã»ÓÃºÃ
      *
      * @param head
      * @return
@@ -63,7 +63,7 @@ public class OddEvenLinkedList {
     }
 
     /**
-     * ä¸‰æŒ‡é’ˆæ³•ï¼Œ å¾ˆæ¸…æ™°çš„æ€è·¯
+     * ÈıÖ¸Õë·¨£¬ ºÜÇåÎúµÄË¼Â·
      *
      * @param head
      * @return
@@ -72,13 +72,13 @@ public class OddEvenLinkedList {
         if (head == null || head.next == null) {
             return head;
         }
-        // head ä¸ºå¥‡é“¾è¡¨å¤´ç»“ç‚¹ï¼Œo ä¸ºå¥‡é“¾è¡¨å°¾èŠ‚ç‚¹
+        // head ÎªÆæÁ´±íÍ·½áµã£¬o ÎªÆæÁ´±íÎ²½Úµã
         ListNode o = head;
 
-        // p ä¸ºå¶é“¾è¡¨å¤´ç»“ç‚¹
+        // p ÎªÅ¼Á´±íÍ·½áµã
         ListNode p = head.next;
 
-        // e ä¸ºå¶é“¾è¡¨å°¾èŠ‚ç‚¹
+        // e ÎªÅ¼Á´±íÎ²½Úµã
         ListNode e = p;
         while (o.next != null && e.next != null) {
             o.next = e.next;

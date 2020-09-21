@@ -9,8 +9,8 @@ import java.util.List;
  * @author Created by WXG on 2019-07-26 14:55.
  * @version V1.0
  *
- * Given a singly linked list L: L0â†’L1â†’â€¦â†’Ln-1â†’Ln,
- * reorder it to: L0â†’Lnâ†’L1â†’Ln-1â†’L2â†’Ln-2â†’â€¦
+ * Given a singly linked list L: L0¡úL1¡ú¡­¡úLn-1¡úLn,
+ * reorder it to: L0¡úLn¡úL1¡úLn-1¡úL2¡úLn-2¡ú¡­
  *
  * You may not modify the values in the list's nodes, only nodes itself may be changed.
  *
@@ -96,7 +96,7 @@ public class ReorderList {
 
 
     /**
-     * å…ˆæŠŠé“¾è¡¨åˆ†ä¸ºä¸¤æ®µï¼Œåè½¬ç¬¬äºŒæ®µé“¾è¡¨ï¼Œç„¶ååˆå¹¶ä¸¤ä¸ªé“¾è¡¨
+     * ÏÈ°ÑÁ´±í·ÖÎªÁ½¶Î£¬·´×ªµÚ¶ş¶ÎÁ´±í£¬È»ºóºÏ²¢Á½¸öÁ´±í
      *
      * @param head
      */
@@ -106,18 +106,18 @@ public class ReorderList {
         ListNode p1 = head;
         ListNode p2 = head;
 
-        // æ‰¾åˆ°é“¾è¡¨çš„ä¸€åŠ
+        // ÕÒµ½Á´±íµÄÒ»°ë
         while (p2.next != null && p2.next.next != null) {
             p1 = p1.next;
             p2 = p2.next.next;
         }
 
-        // å°†é“¾è¡¨åˆ†ä¸ºä¸¤æ®µ
+        // ½«Á´±í·ÖÎªÁ½¶Î
         p2 = p1.next;
         p1.next = null;
         p1 = head;
 
-        // å°†ååŠæ®µè¿›è¡Œé“¾è¡¨çš„ç¿»è½¬
+        // ½«ºó°ë¶Î½øĞĞÁ´±íµÄ·­×ª
         ListNode head2 = p2;
         ListNode next2;
         while (p2.next != null) {
@@ -128,7 +128,7 @@ public class ReorderList {
         }
         p2 = head2;
 
-        // ä¸¤æ¡é“¾è¡¨è¿›è¡Œåˆå¹¶
+        // Á½ÌõÁ´±í½øĞĞºÏ²¢
         ListNode next1;
         while (p2 != null) {
             next1 = p1.next;

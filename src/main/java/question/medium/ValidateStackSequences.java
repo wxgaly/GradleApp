@@ -111,23 +111,23 @@ public class ValidateStackSequences {
         }
     }
 
-    // å‰‘æŒ‡offerè§£ç­”
+    // ½£Ö¸offer½â´ğ
     public static boolean IsPopOrder(int[] pushed, int[] popped) {
         if (pushed == null || popped == null || pushed.length == 0
                 || popped.length == 0)
             return false;
-        int index = 0; //ä½œä¸ºå¼¹å‡ºåºåˆ—çš„ä¸€ä¸ªç´¢å¼•
+        int index = 0; //×÷Îªµ¯³öĞòÁĞµÄÒ»¸öË÷Òı
         Stack<Integer> stack = new Stack<>();
         for (int value : pushed) {
             stack.push(value);
-            while (!stack.isEmpty() && stack.peek() == popped[index]) {// å½“æ ˆä¸ä¸ºç©ºä¸”æ ˆé¡¶å…ƒ
-                //ç´ ç­‰äºå¼¹å‡ºåºåˆ—å…ƒç´ æ—¶å€™ï¼Œå°±å¼¹å‡ºä¸€ä¸ªï¼ŒåŒæ—¶è®©å¼¹å‡ºåºåˆ—åç§»ä¸€ä¸ª
+            while (!stack.isEmpty() && stack.peek() == popped[index]) {// µ±Õ»²»Îª¿ÕÇÒÕ»¶¥Ôª
+                //ËØµÈÓÚµ¯³öĞòÁĞÔªËØÊ±ºò£¬¾Íµ¯³öÒ»¸ö£¬Í¬Ê±ÈÃµ¯³öĞòÁĞºóÒÆÒ»¸ö
                 stack.pop();
                 index++;
             }
         }
-        return stack.isEmpty();//å¦‚æœæœ€åï¼Œæ ˆä¸ä¸ºç©ºï¼Œç›¸å½“äºæ²¡æœ‰æŒ‰ç…§ç»™å®šçš„å¼¹å‡ºpopAå¼¹å‡ºå®Œæ¯•ï¼Œ
-        //å°±è¯´æ˜ä¸èƒ½æŒ‰ç…§popAï¼Œè¿”å›false
+        return stack.isEmpty();//Èç¹û×îºó£¬Õ»²»Îª¿Õ£¬Ïàµ±ÓÚÃ»ÓĞ°´ÕÕ¸ø¶¨µÄµ¯³öpopAµ¯³öÍê±Ï£¬
+        //¾ÍËµÃ÷²»ÄÜ°´ÕÕpopA£¬·µ»Øfalse
     }
 
 

@@ -6,12 +6,12 @@ package question.easy;
  * @author Created by WXG on 2020-04-13 14:22
  * @version V1.0
  * <p>
- * In a list of songs, the i-thÂ song has a duration ofÂ time[i] seconds.Â 
+ * In a list of songs, the i-th?song has a duration of?time[i] seconds.?
  * <p>
- * Return the number of pairs of songs for which their totalÂ duration in seconds is divisible by 60.Â 
- * Formally, we want the number ofÂ indices i < j with (time[i] + time[j]) % 60 == 0.
+ * Return the number of pairs of songs for which their total?duration in seconds is divisible by 60.?
+ * Formally, we want the number of?indices i < j with (time[i] + time[j]) % 60 == 0.
  * <p>
- * Â 
+ * ?
  * <p>
  * Example 1:
  * <p>
@@ -26,7 +26,7 @@ package question.easy;
  * Input: [60,60,60]
  * Output: 3
  * Explanation: All three pairs have a total duration of 120, which is divisible by 60.
- * Â 
+ * ?
  * <p>
  * Note:
  * <p>
@@ -43,7 +43,7 @@ public class PairsSongsWithTotalDurationsDivisiblebySixty {
     }
 
     /**
-     * è¶…æ—¶
+     * ³¬Ê±
      *
      * @param time
      * @return
@@ -67,7 +67,7 @@ public class PairsSongsWithTotalDurationsDivisiblebySixty {
     }
 
     /**
-     * é¢˜è§£æ¥è‡ªï¼š
+     * Ìâ½âÀ´×Ô£º
      * https://leetcode-cn.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/solution/java-2ms-ji-bai-10000-by-keen0126/
      *
      * @param time
@@ -88,7 +88,7 @@ public class PairsSongsWithTotalDurationsDivisiblebySixty {
         return count;
     }
 
-    // æ±‚ç»„åˆæ•°
+    // Çó×éºÏÊı
     public int combination(int n, int k) {
         long result = 1;
         for (int i = 1; i <= k; i++) {

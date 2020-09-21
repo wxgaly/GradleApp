@@ -6,15 +6,15 @@ package question.medium;
  * @author Created by WXG on 2020-06-02 13:53
  * @version V1.0
  * <p>
- * There areÂ nÂ soldiers standing in a line. Each soldier is assigned a unique rating value.
+ * There are?n?soldiers standing in a line. Each soldier is assigned a unique rating value.
  * <p>
- * You have to form a team of 3 soldiersÂ amongst them under the following rules:
+ * You have to form a team of 3 soldiers?amongst them under the following rules:
  * <p>
- * Choose 3 soldiers with index (i, j, k) withÂ rating (rating[i], rating[j], rating[k]).
- * A team is valid if:Â  (rating[i] < rating[j] < rating[k]) or (rating[i] > rating[j] > rating[k]) where (0Â <= i <Â j <Â k <Â n).
+ * Choose 3 soldiers with index (i, j, k) with?rating (rating[i], rating[j], rating[k]).
+ * A team is valid if:? (rating[i] < rating[j] < rating[k]) or (rating[i] > rating[j] > rating[k]) where (0?<= i <?j <?k <?n).
  * Return the number of teams you can form given the conditions. (soldiers can be part of multiple teams).
  * <p>
- * Â 
+ * ?
  * <p>
  * Example 1:
  * <p>
@@ -30,7 +30,7 @@ package question.medium;
  * <p>
  * Input: rating = [1,2,3,4]
  * Output: 4
- * Â 
+ * ?
  * <p>
  * Constraints:
  * <p>
@@ -65,14 +65,14 @@ public class CountNumberofTeams {
     }
 
     /**
-     * é“¾æŽ¥ï¼šhttps://leetcode-cn.com/problems/count-number-of-teams/solution/tong-ji-zuo-zhan-dan-wei-shu-by-leetcode-solution/
+     * Á´½Ó£ºhttps://leetcode-cn.com/problems/count-number-of-teams/solution/tong-ji-zuo-zhan-dan-wei-shu-by-leetcode-solution/
      *
      * @return
      */
     public int numTeams1(int[] rating) {
         int n = rating.length;
         int ans = 0;
-        // æžšä¸¾ä¸‰å…ƒç»„ä¸­çš„ j
+        // Ã¶¾ÙÈýÔª×éÖÐµÄ j
         for (int j = 1; j < n - 1; ++j) {
             int iless = 0, imore = 0;
             int kless = 0, kmore = 0;
@@ -80,8 +80,8 @@ public class CountNumberofTeams {
                 if (rating[i] < rating[j]) {
                     ++iless;
                 }
-                // æ³¨æ„è¿™é‡Œä¸èƒ½ç›´æŽ¥å†™æˆ else
-                // å› ä¸ºå¯èƒ½æœ‰è¯„åˆ†ç›¸åŒçš„æƒ…å†µ
+                // ×¢ÒâÕâÀï²»ÄÜÖ±½ÓÐ´³É else
+                // ÒòÎª¿ÉÄÜÓÐÆÀ·ÖÏàÍ¬µÄÇé¿ö
                 else if (rating[i] > rating[j]) {
                     ++imore;
                 }

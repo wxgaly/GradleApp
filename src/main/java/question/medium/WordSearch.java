@@ -52,9 +52,9 @@ public class WordSearch {
     // x,y-1  x,y    x,y+1
     //        x+1,y
     private static int[][] direction = {{-1, 0}, {0, -1}, {0, 1}, {1, 0}};
-    // ç›˜é¢ä¸Šæœ‰å¤šå°‘è¡Œ
+    // ÅÌÃæÉÏÓĞ¶àÉÙĞĞ
     private static int m;
-    // ç›˜é¢ä¸Šæœ‰å¤šå°‘åˆ—
+    // ÅÌÃæÉÏÓĞ¶àÉÙÁĞ
     private static int n;
     private static String mWord;
     private static char[][] mBoard;

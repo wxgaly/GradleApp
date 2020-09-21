@@ -39,7 +39,7 @@ public class DiameterOfBinaryTree {
 
     }
 
-    //å…¨å±€å˜é‡ä¿ç•™æœ€å¤§çš„å€¼
+    //È«¾Ö±äÁ¿±£Áô×î´óµÄÖµ
     private int res = 0;
 
     public int diameterOfBinaryTree(TreeNode root) {
@@ -51,12 +51,12 @@ public class DiameterOfBinaryTree {
         if (root == null) {
             return 0;
         }
-        //é€’å½’å·¦å³å­æ ‘
+        //µİ¹é×óÓÒ×ÓÊ÷
         int r = maxDiameter(root.right);
         int l = maxDiameter(root.left);
-        //æ›´æ–°äºŒå‰æ ‘ç›´å¾„
+        //¸üĞÂ¶ş²æÊ÷Ö±¾¶
         res = Math.max(res, l + r);
-        //è¿”å›çš„æ˜¯è¯¥èŠ‚ç‚¹çš„å±‚æ•°
+        //·µ»ØµÄÊÇ¸Ã½ÚµãµÄ²ãÊı
         return Math.max(l, r) + 1;
     }
 

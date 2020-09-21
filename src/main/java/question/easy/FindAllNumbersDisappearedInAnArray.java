@@ -8,7 +8,7 @@ import java.util.*;
  * @author Created by WXG on 2019-06-21 14:17.
  * @version V1.0
  * <p>
- * Given an array of integers where 1 â‰¤ a[i] â‰¤ n (n = size of array),
+ * Given an array of integers where 1 ¡Ü a[i] ¡Ü n (n = size of array),
  * some elements appear twice and others appear once.
  * <p>
  * Find all the elements of [1, n] inclusive that do not appear in this array.
@@ -35,7 +35,7 @@ public class FindAllNumbersDisappearedInAnArray {
     }
 
     /**
-     * ä¸‹æ ‡å‡ä¸€
+     * ÏÂ±ê¼õÒ»
      *
      * @param nums
      * @return

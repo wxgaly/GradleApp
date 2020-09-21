@@ -11,30 +11,30 @@ import java.util.Queue;
  *
  * Write a class RecentCounter to count recent requests.
  *
- * It has only one method:Â ping(int t), where t represents some time in milliseconds.
+ * It has only one method:?ping(int t), where t represents some time in milliseconds.
  *
  * Return the number of pings that have been made from 3000 milliseconds ago until now.
  *
  * Any ping with time in [t - 3000, t] will count, including the current ping.
  *
- * It is guaranteed that every call to ping uses a strictly larger value ofÂ t than before.
+ * It is guaranteed that every call to ping uses a strictly larger value of?t than before.
  *
- * Â 
+ * ?
  *
  * Example 1:
  *
  * Input: inputs = ["RecentCounter","ping","ping","ping","ping"], inputs = [[],[1],[100],[3001],[3002]]
  * Output: [null,1,2,3,3]
- * Â 
+ * ?
  *
  * Note:
  *
  * Each test case will have at most 10000 calls to ping.
- * Each test case will callÂ ping with strictly increasing values of t.
+ * Each test case will call?ping with strictly increasing values of t.
  * Each call to ping will have 1 <= t <= 10^9.
  *
- * é¢˜æ„æœ¬èº«æœ‰äº›éš¾ç†è§£ï¼Œå…¶å®žå°±æ˜¯è¦è®°å½•3ç§’å†…çš„pingçš„æ•°é‡ï¼Œæ‰€ä»¥ç”¨ä¸€ä¸ªé˜Ÿåˆ—ï¼Œæœ‰æ–°çš„pingå°±å°†é˜Ÿé¦–å…ƒç´ åŽ»é™¤ä¸Žæœ€æ–°çš„æ—¶é—´è¿›è¡Œå¯¹æ¯”ï¼Œ
- * å¦‚æžœæ²¡æœ‰è¶…è¿‡3såˆ™ä¸ç§»é™¤é˜Ÿåˆ—ï¼Œå¦‚æžœè¶…è¿‡äº†ï¼Œåˆ™ä»Žé˜Ÿåˆ—ç§»é™¤
+ * ÌâÒâ±¾ÉíÓÐÐ©ÄÑÀí½â£¬ÆäÊµ¾ÍÊÇÒª¼ÇÂ¼3ÃëÄÚµÄpingµÄÊýÁ¿£¬ËùÒÔÓÃÒ»¸ö¶ÓÁÐ£¬ÓÐÐÂµÄping¾Í½«¶ÓÊ×ÔªËØÈ¥³ýÓë×îÐÂµÄÊ±¼ä½øÐÐ¶Ô±È£¬
+ * Èç¹ûÃ»ÓÐ³¬¹ý3sÔò²»ÒÆ³ý¶ÓÁÐ£¬Èç¹û³¬¹ýÁË£¬Ôò´Ó¶ÓÁÐÒÆ³ý
  *
  */
 public class NumberOfRecentCalls {

@@ -18,12 +18,12 @@ import java.util.Stack;
  *
  * Input: 2
  * Output: 1
- * Explanation: 2 = 1 + 1, 1 Ã— 1 = 1.
+ * Explanation: 2 = 1 + 1, 1 ¡Á 1 = 1.
  * Example 2:
  *
  * Input: 10
  * Output: 36
- * Explanation: 10 = 3 + 3 + 4, 3 Ã—Â 3 Ã—Â 4 = 36.
+ * Explanation: 10 = 3 + 3 + 4, 3 ¡Á?3 ¡Á?4 = 36.
  *
  *
  *
@@ -44,7 +44,7 @@ public class IntegerBreak {
         if (n == 4) {
             return 4;
         }
-        // æ¥ä¸‹æ¥å°±æ˜¯ n >= 5 çš„æ—¶å€™çš„é€»è¾‘äº†
+        // ½ÓÏÂÀ´¾ÍÊÇ n >= 5 µÄÊ±ºòµÄÂß¼­ÁË
         int res = 1;
         while (n > 4) {
             res *= 3;

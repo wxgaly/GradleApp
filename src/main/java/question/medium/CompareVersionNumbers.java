@@ -7,7 +7,7 @@ package question.medium;
  * @version V1.0
  *
  * Compare two version numbers version1 and version2.
- * If version1 > version2 return 1;Â if version1 < version2 return -1;otherwise return 0.
+ * If version1 > version2 return 1;?if version1 < version2 return -1;otherwise return 0.
  *
  * You may assume that the version strings are non-empty and contain only digits and the . character.
  *
@@ -20,7 +20,7 @@ package question.medium;
  * For example, version number 3.4 has a revision number of 3 and 4 for its first and second level revision number.
  * Its third and fourth level revision number are both 0.
  *
- * Â 
+ * ?
  *
  * Example 1:
  *
@@ -38,14 +38,14 @@ package question.medium;
  *
  * Input: version1 = "1.01", version2 = "1.001"
  * Output: 0
- * Explanation: Ignoring leading zeroes, both â€œ01â€ and â€œ001" represent the same number â€œ1â€
+ * Explanation: Ignoring leading zeroes, both ¡°01¡± and ¡°001" represent the same number ¡°1¡±
  * Example 5:
  *
  * Input: version1 = "1.0", version2 = "1.0.0"
  * Output: 0
  * Explanation: The first version number does not have a third level revision number,
  * which means its third level revision number is default to "0"
- * Â 
+ * ?
  *
  * Note:
  *

@@ -93,7 +93,7 @@ public class IntersectionOfTwoLinkedLists {
         int bLen = getListLen(headB);
 
         if (aLen > bLen) {
-            //å…ˆå°†Açš„æŒ‡é’ˆç§»åŠ¨åˆ°ä¸Bçš„é•¿åº¦ç›¸åŒçš„å¤´ä½ç½®
+            //ÏÈ½«AµÄÖ¸ÕëÒÆ¶¯µ½ÓëBµÄ³¤¶ÈÏàÍ¬µÄÍ·Î»ÖÃ
             int moveLen = aLen - bLen;
             int tempLen = 0;
             while (headA != null) {
@@ -105,7 +105,7 @@ public class IntersectionOfTwoLinkedLists {
             }
 
         } else {
-            //å…ˆå°†Bçš„æŒ‡é’ˆç§»åŠ¨åˆ°ä¸Açš„é•¿åº¦ç›¸åŒçš„å¤´ä½ç½®
+            //ÏÈ½«BµÄÖ¸ÕëÒÆ¶¯µ½ÓëAµÄ³¤¶ÈÏàÍ¬µÄÍ·Î»ÖÃ
             int moveLen = bLen - aLen;
             int tempLen = 0;
             while (headB != null) {
@@ -117,7 +117,7 @@ public class IntersectionOfTwoLinkedLists {
             }
         }
 
-        //ä¸€èµ·éå†
+        //Ò»Æğ±éÀú
         while (headA != null && headB != null) {
             if (headA == headB) {
                 return headA;

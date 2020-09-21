@@ -9,7 +9,7 @@ import java.util.Arrays;
  * @version V1.0
  * <p>
  * For a web developer, it is very important to know how to design a web page's size.
- * So, given a specific rectangular web pageâ€™s area, your job by now is to design a rectangular web page,
+ * So, given a specific rectangular web page¡¯s area, your job by now is to design a rectangular web page,
  * whose length L and width W satisfy the following requirements:
  * <p>
  * 1. The area of the rectangular web page you designed must equal to the given target area.
@@ -59,7 +59,7 @@ public class ConstructTheRectangle {
     }
 
     /**
-     * ç”¨å¼€å¹³æ–¹æ±‚å¾—æœ€å°å–å€¼å¤„ï¼Œç„¶åé€’å‡æ‰¾åˆ°æ•´é™¤æ•°å³å¯
+     * ÓÃ¿ªÆ½·½ÇóµÃ×îĞ¡È¡Öµ´¦£¬È»ºóµİ¼õÕÒµ½Õû³ıÊı¼´¿É
      *
      * @param area
      * @return

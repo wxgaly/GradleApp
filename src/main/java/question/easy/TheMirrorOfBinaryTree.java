@@ -9,29 +9,29 @@ import java.util.Stack;
  * @version V1.0
  *
  *
- * è¯·å®Œæˆä¸€ä¸ªå‡½æ•°ï¼Œè¾“å…¥ä¸€ä¸ªäºŒå‰æ ‘ï¼Œè¯¥å‡½æ•°è¾“å‡ºå®ƒçš„é•œåƒã€‚
+ * ÇëÍê³ÉÒ»¸öº¯Êı£¬ÊäÈëÒ»¸ö¶ş²æÊ÷£¬¸Ãº¯ÊıÊä³öËüµÄ¾µÏñ¡£
  *
- * ä¾‹å¦‚è¾“å…¥ï¼š
+ * ÀıÈçÊäÈë£º
  *
- * Â  Â  Â 4
- * Â  Â / Â  \
- * Â  2 Â  Â  7
- * Â / \ Â  / \
- * 1 Â  3 6 Â  9
- * é•œåƒè¾“å‡ºï¼š
+ * ? ? ?4
+ * ? ?/ ? \
+ * ? 2 ? ? 7
+ * ?/ \ ? / \
+ * 1 ? 3 6 ? 9
+ * ¾µÏñÊä³ö£º
  *
- * Â  Â  Â 4
- * Â  Â / Â  \
- * Â  7 Â  Â  2
- * Â / \ Â  / \
- * 9 Â  6 3Â  Â 1
+ * ? ? ?4
+ * ? ?/ ? \
+ * ? 7 ? ? 2
+ * ?/ \ ? / \
+ * 9 ? 6 3? ?1
  *
- * Â 
+ * ?
  *
- * ç¤ºä¾‹ 1ï¼š
+ * Ê¾Àı 1£º
  *
- * è¾“å…¥ï¼šroot = [4,2,7,1,3,6,9]
- * è¾“å‡ºï¼š[4,7,2,9,6,3,1]
+ * ÊäÈë£ºroot = [4,2,7,1,3,6,9]
+ * Êä³ö£º[4,7,2,9,6,3,1]
  *
  *
  */
@@ -68,7 +68,7 @@ public class TheMirrorOfBinaryTree {
 
     public TreeNode mirrorTree1(TreeNode root) {
         if (root == null) return root;
-//        é€’å½’æ³•
+//        µİ¹é·¨
         TreeNode tmp = root.left;
         root.left = mirrorTree1(root.right);
         root.right = mirrorTree1(tmp);
@@ -79,7 +79,7 @@ public class TheMirrorOfBinaryTree {
     public TreeNode mirrorTree2(TreeNode root) {
         if (root == null) return root;
 
-        //è¾…åŠ©æ ˆæ³•
+        //¸¨ÖúÕ»·¨
         Stack<TreeNode> stack = new Stack<>();
         stack.push(root);
         while (!stack.isEmpty()) {

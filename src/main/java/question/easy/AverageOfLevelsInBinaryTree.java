@@ -41,25 +41,25 @@ public class AverageOfLevelsInBinaryTree {
     public List<Double> averageOfLevels(TreeNode root) {
         if (root == null)
             return new ArrayList<>();
-        Queue<TreeNode> queue = new LinkedList<>(); //é˜Ÿåˆ—å­˜å‚¨ä¸­é—´èŠ‚ç‚¹
-        LinkedList<Double> res = new LinkedList<>();//è¿”å›ç»“æœç»“æœ
+        Queue<TreeNode> queue = new LinkedList<>(); //¶ÓÁĞ´æ´¢ÖĞ¼ä½Úµã
+        LinkedList<Double> res = new LinkedList<>();//·µ»Ø½á¹û½á¹û
         double sum = 0;
-        int count = 0;  //sumè¡¨ç¤ºå±‚æ¬¡å…ƒç´ çš„å’Œï¼Œcountè¡¨ç¤ºå±‚æ¬¡å…ƒç´ çš„ä¸ªæ•°
-        TreeNode last = root, nlast = root;//lastè¡¨ç¤ºå½“å‰è¡Œçš„æœ€åä¸€ä¸ªèŠ‚ç‚¹ï¼Œnlastè¡¨ç¤ºä¸‹ä¸€è¡Œçš„æœ€åèŠ‚ç‚¹
+        int count = 0;  //sum±íÊ¾²ã´ÎÔªËØµÄºÍ£¬count±íÊ¾²ã´ÎÔªËØµÄ¸öÊı
+        TreeNode last = root, nlast = root;//last±íÊ¾µ±Ç°ĞĞµÄ×îºóÒ»¸ö½Úµã£¬nlast±íÊ¾ÏÂÒ»ĞĞµÄ×îºó½Úµã
         queue.add(root);
         while (!queue.isEmpty()) {
-            TreeNode cur = queue.poll();  //å–å‡ºé˜Ÿåˆ—é¦–èŠ‚ç‚¹
+            TreeNode cur = queue.poll();  //È¡³ö¶ÓÁĞÊ×½Úµã
             if (cur.left != null) {
-                queue.add(cur.left); //æ¯æ¬¡è®¿é—®å­©å­ï¼Œè±†æµ†nlastæŒ‡å‘
+                queue.add(cur.left); //Ã¿´Î·ÃÎÊº¢×Ó£¬¶¹½¬nlastÖ¸Ïò
                 nlast = cur.left;
             }
             if (cur.right != null) {
                 queue.add(cur.right);
                 nlast = cur.right;
             }
-            sum += cur.val; //å±‚é›†åˆåŠ å…¥å½“å‰èŠ‚ç‚¹
+            sum += cur.val; //²ã¼¯ºÏ¼ÓÈëµ±Ç°½Úµã
             count++;
-            if (cur == last) {  //å¦‚æœåˆ°äº†å°¾èŠ‚ç‚¹è¯´æ˜å½“å‰è¡Œå·²ç»è®¿é—®å®Œäº†
+            if (cur == last) {  //Èç¹ûµ½ÁËÎ²½ÚµãËµÃ÷µ±Ç°ĞĞÒÑ¾­·ÃÎÊÍêÁË
                 res.add(sum / count);
                 last = nlast;
                 sum = 0;

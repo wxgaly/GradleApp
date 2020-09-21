@@ -91,7 +91,7 @@ public class IsomorphicStrings {
     }
 
     /**
-     * 鍒ゆ柇鐩稿悓瀛楃鎵�鍦ㄧ殑浣嶇疆鏄惁鐩稿悓
+     * 判断相同字符所在的位置是否相同
      *
      * @param s
      * @param t

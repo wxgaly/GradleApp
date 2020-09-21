@@ -11,7 +11,7 @@ import java.util.List;
  * @author Created by WXG on 2020-06-09 14:17
  * @version V1.0
  *
- * Write a method to return all subsets of a set. The elements in a set areÂ pairwise distinct.
+ * Write a method to return all subsets of a set. The elements in a set are?pairwise distinct.
  *
  * Note: The result set should not contain duplicated subsets.
  *
@@ -21,13 +21,13 @@ import java.util.List;
  *  Output:
  * [
  *   [3],
- * Â  [1],
- * Â  [2],
- * Â  [1,2,3],
- * Â  [1,3],
- * Â  [2,3],
- * Â  [1,2],
- * Â  []
+ * ? [1],
+ * ? [2],
+ * ? [1,2,3],
+ * ? [1,3],
+ * ? [2,3],
+ * ? [1,2],
+ * ? []
  * ]
  *
  */
@@ -65,17 +65,17 @@ public class PowerSetLCCI {
     }
 
     /**
-     * é“¾æ¥ï¼šhttps://leetcode-cn.com/problems/power-set-lcci/solution/java-wei-tu-by-1ujin/
+     * Á´½Ó£ºhttps://leetcode-cn.com/problems/power-set-lcci/solution/java-wei-tu-by-1ujin/
      */
     class Solution {
         public List<List<Integer>> subsets(int[] nums) {
             List<List<Integer>> subsets = new ArrayList<>();
             int bmp = (int) Math.pow(2, nums.length);
-            // ä» nums.length ä¸ª 0 éå†åˆ° nums.length ä¸ª 1
+            // ´Ó nums.length ¸ö 0 ±éÀúµ½ nums.length ¸ö 1
             for (int i = 0; i < bmp; i++) {
                 List<Integer> subset = new ArrayList<>();
                 for (int j = 0; j < nums.length; j++)
-                    // å°†æ¯ä¸€ä½å³ç§»æœ€ä½ä½ï¼Œæ£€æµ‹å…¶æ˜¯å¦ä¸º1
+                    // ½«Ã¿Ò»Î»ÓÒÒÆ×îµÍÎ»£¬¼ì²âÆäÊÇ·ñÎª1
                     if ((i >>> j & 1) == 1) subset.add(nums[j]);
                 subsets.add(subset);
             }
@@ -84,7 +84,7 @@ public class PowerSetLCCI {
     }
 
     /**
-     * å›æº¯çš„æ–¹æ³•
+     * »ØËİµÄ·½·¨
      */
     class Solution1 {
         public List<List<Integer>> subsets(int[] nums) {

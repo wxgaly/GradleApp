@@ -11,7 +11,7 @@ import java.util.Map;
  * @author Created by WXG on 2020-06-07 16:41
  * @version V1.0
  *
- * You have a list ofÂ words and a pattern, and you want to know which words in words matches the pattern.
+ * You have a list of?words and a pattern, and you want to know which words in words matches the pattern.
  *
  * A word matches the pattern if there exists a permutation of letters p so that after replacing every letter x in the pattern with p(x),
  * we get the desired word.
@@ -19,11 +19,11 @@ import java.util.Map;
  * (Recall that a permutation of letters is a bijection from letters to letters:
  * every letter maps to another letter, and no two letters map to the same letter.)
  *
- * Return a list of the words in wordsÂ that match the given pattern.Â 
+ * Return a list of the words in words?that match the given pattern.?
  *
  * You may return the answer in any order.
  *
- * Â 
+ * ?
  *
  * Example 1:
  *
@@ -32,12 +32,12 @@ import java.util.Map;
  * Explanation: "mee" matches the pattern because there is a permutation {a -> m, b -> e, ...}.
  * "ccc" does not match the pattern because {a -> c, b -> c, ...} is not a permutation,
  * since a and b map to the same letter.
- * Â 
+ * ?
  *
  * Note:
  *
  * 1 <= words.length <= 50
- * 1 <= pattern.length = words[i].lengthÂ <= 20
+ * 1 <= pattern.length = words[i].length?<= 20
  *
  */
 public class FindandReplacePattern {
@@ -69,17 +69,17 @@ public class FindandReplacePattern {
 
         for (int i = 0; i < pattern.length(); i++) {
             char tmp = pattern.charAt(i);
-            //keyå·²ç»åœ¨
+            //keyÒÑ¾­ÔÚ
             if (map.containsKey(tmp)) {
-                //ä¸å¯¹åº”å°±å¤±è´¥
+                //²»¶ÔÓ¦¾ÍÊ§°Ü
                 if (!map.get(tmp).equals(str.charAt(i))) return false;
             }
-            //keyä¸å­˜åœ¨
+            //key²»´æÔÚ
             else {
-                //ä¸¤ä¸ªvalueçš„å€¼ä¸€æ · a-dog b-dog->false
+                //Á½¸övalueµÄÖµÒ»Ñù a-dog b-dog->false
                 if (map.containsValue(str.charAt(i))) return false;
                 else
-                    //æ·»åŠ k-vå€¼
+                    //Ìí¼Ók-vÖµ
                     map.put(tmp, str.charAt(i));
             }
         }
@@ -88,7 +88,7 @@ public class FindandReplacePattern {
 
 
     /**
-     * å®˜æ–¹é¢˜è§£ï¼ŒåŒæ˜ å°„è¡¨
+     * ¹Ù·½Ìâ½â£¬Ë«Ó³Éä±í
      */
     class Solution {
         public List<String> findAndReplacePattern(String[] words, String pattern) {

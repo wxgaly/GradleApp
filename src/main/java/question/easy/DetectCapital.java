@@ -14,19 +14,19 @@ package question.easy;
  * All letters in this word are not capitals, like "leetcode".
  * Only the first letter in this word is capital, like "Google".
  * Otherwise, we define that this word doesn't use capitals in a right way.
- * Â 
+ * ?
  *
  * Example 1:
  *
  * Input: "USA"
  * Output: True
- * Â 
+ * ?
  *
  * Example 2:
  *
  * Input: "FlaG"
  * Output: False
- * Â 
+ * ?
  *
  * Note: The input will be a non-empty word consisting of uppercase and lowercase latin letters.
  *
@@ -53,14 +53,14 @@ public class DetectCapital {
         if (word.charAt(0) >= 'A' && word.charAt(0) <= 'Z') {
             String temp = word.substring(1);
             if (word.charAt(1) >= 'A' && word.charAt(1) <= 'Z') {
-                //å…¨éƒ¨éƒ½æ˜¯å¤§å†™
+                //È«²¿¶¼ÊÇ´óÐ´
                 res = temp.equals(temp.toUpperCase());
             } else {
-                //é™¤äº†é¦–å­—æ¯éƒ½æ˜¯å°å†™
+                //³ýÁËÊ××ÖÄ¸¶¼ÊÇÐ¡Ð´
                 res = temp.equals(temp.toLowerCase());
             }
         } else {
-            //å…¨éƒ¨éƒ½æ˜¯å°å†™
+            //È«²¿¶¼ÊÇÐ¡Ð´
             res = word.equals(word.toLowerCase());
         }
 

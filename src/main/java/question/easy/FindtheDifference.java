@@ -57,7 +57,7 @@ public class FindtheDifference {
     }
 
     /**
-     * å¼‚æˆ–
+     * Òì»ò
      *
      * @param s
      * @param t
@@ -74,7 +74,7 @@ public class FindtheDifference {
     }
 
     /**
-     * å­—ç¬¦ä¸²æ›¿æ¢
+     * ×Ö·û´®Ìæ»»
      *
      * @param s
      * @param t

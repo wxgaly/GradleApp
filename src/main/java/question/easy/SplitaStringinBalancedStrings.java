@@ -8,13 +8,13 @@ import java.util.Stack;
  * @author Created by WXG on 2019-11-13 17:35
  * @version V1.0
  *
- * BalancedÂ strings are those who have equal quantity of 'L' and 'R' characters.
+ * Balanced?strings are those who have equal quantity of 'L' and 'R' characters.
  *
- * Given a balanced stringÂ sÂ split it in the maximum amount of balanced strings.
+ * Given a balanced string?s?split it in the maximum amount of balanced strings.
  *
  * Return the maximum amount of splitted balanced strings.
  *
- * Â 
+ * ?
  *
  * Example 1:
  *
@@ -36,7 +36,7 @@ import java.util.Stack;
  * Input: s = "RLRRRLLRLL"
  * Output: 2
  * Explanation: s can be split into "RL", "RRRLLRLL", since each substring contains an equal number of 'L' and 'R'
- * Â 
+ * ?
  *
  * Constraints:
  *
@@ -84,7 +84,7 @@ public class SplitaStringinBalancedStrings {
     }
 
     /**
-     * ç”¨æ•°å­—ä½œä¸ºæ ˆçš„è®°å½•ï¼Œçœå»æ ˆæ‰€å æœ‰çš„ç©ºé—´å’Œæ—¶é—´æ¶ˆè€—
+     * ÓÃÊı×Ö×÷ÎªÕ»µÄ¼ÇÂ¼£¬Ê¡È¥Õ»ËùÕ¼ÓĞµÄ¿Õ¼äºÍÊ±¼äÏûºÄ
      *
      * @param s
      * @return

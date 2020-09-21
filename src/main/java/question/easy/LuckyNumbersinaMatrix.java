@@ -10,11 +10,11 @@ import java.util.List;
  * @author Created by WXG on 2020-04-10 13:51
  * @version V1.0
  * <p>
- * Given a m * n matrix of distinct numbers, return all lucky numbers in theÂ matrix in any order.
+ * Given a m * n matrix of distinct numbers, return all lucky numbers in the?matrix in any order.
  * <p>
  * A lucky number is an element of the matrix such that it is the minimum element in its row and maximum in its column.
  * <p>
- * Â 
+ * ?
  * <p>
  * Example 1:
  * <p>
@@ -30,14 +30,14 @@ import java.util.List;
  * <p>
  * Input: matrix = [[7,8],[1,2]]
  * Output: [7]
- * Â 
+ * ?
  * <p>
  * Constraints:
  * <p>
  * m == mat.length
  * n == mat[i].length
  * 1 <= n, m <= 50
- * 1 <=Â matrix[i][j]Â <= 10^5.
+ * 1 <=?matrix[i][j]?<= 10^5.
  * All elements in the matrix are distinct.
  */
 public class LuckyNumbersinaMatrix {
@@ -53,7 +53,7 @@ public class LuckyNumbersinaMatrix {
     }
 
     /**
-     * è¿™ç§å†™æ³•å½“é‡è§ä¸€è¡Œæˆ–è€…ä¸€åˆ—çš„æ—¶å€™ä¼šå‡ºçŽ°é—®é¢˜
+     * ÕâÖÖÐ´·¨µ±Óö¼ûÒ»ÐÐ»òÕßÒ»ÁÐµÄÊ±ºò»á³öÏÖÎÊÌâ
      *
      * @param matrix
      * @return
@@ -105,8 +105,8 @@ public class LuckyNumbersinaMatrix {
         Arrays.fill(max, Integer.MIN_VALUE);
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                min[i] = Math.min(min[i], matrix[i][j]);// ç¬¬iè¡Œæœ€å°å€¼
-                max[j] = Math.max(max[j], matrix[i][j]);// æ¯ä¸€åˆ—æœ€å¤§å€¼ä¸Žå½“å‰å€¼æ¯”è¾ƒ
+                min[i] = Math.min(min[i], matrix[i][j]);// µÚiÐÐ×îÐ¡Öµ
+                max[j] = Math.max(max[j], matrix[i][j]);// Ã¿Ò»ÁÐ×î´óÖµÓëµ±Ç°Öµ±È½Ï
             }
         }
 

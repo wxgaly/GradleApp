@@ -11,7 +11,7 @@ import java.util.*;
  * Given a binary tree, design an algorithm which creates a linked list of all the nodes at each depth
  * (e.g., if you have a tree with depth D, you'll have D linked lists). Return a array containing all the linked lists.
  *
- * Â 
+ * ?
  *
  * Example:
  *
@@ -55,7 +55,7 @@ public class ListofDepthLCCI {
     }
 
     /**
-     * å±‚åºéå†ï¼Œæ¯å±‚éƒ½ä¼šåœ¨é˜Ÿåˆ—ä¸­å­˜å‚¨ï¼Œç„¶ååœ¨éå†
+     * ²ãĞò±éÀú£¬Ã¿²ã¶¼»áÔÚ¶ÓÁĞÖĞ´æ´¢£¬È»ºóÔÚ±éÀú
      * @param tree
      * @return
      */

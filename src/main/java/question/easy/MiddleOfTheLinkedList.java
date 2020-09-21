@@ -9,11 +9,11 @@ import java.util.List;
  * @author Created by WXG on 2019-08-09 14:11.
  * @version V1.0
  *
- * Given a non-empty, singlyÂ linked list with head node head, returnÂ aÂ middle node of linked list.
+ * Given a non-empty, singly?linked list with head node head, return?a?middle node of linked list.
  *
  * If there are two middle nodes, return the second middle node.
  *
- * Â 
+ * ?
  *
  * Example 1:
  *
@@ -27,11 +27,11 @@ import java.util.List;
  * Input: [1,2,3,4,5,6]
  * Output: Node 4 from this list (Serialization: [4,5,6])
  * Since the list has two middle nodes with values 3 and 4, we return the second one.
- * Â 
+ * ?
  *
  * Note:
  *
- * The number of nodes in the given list will be between 1Â and 100.
+ * The number of nodes in the given list will be between 1?and 100.
  *
  */
 public class MiddleOfTheLinkedList {
@@ -51,7 +51,7 @@ public class MiddleOfTheLinkedList {
     }
 
     /**
-     * æ•°ç»„å–ä¸­é—´å€¼
+     * Êı×éÈ¡ÖĞ¼äÖµ
      *
      * @param head
      * @return
@@ -69,7 +69,7 @@ public class MiddleOfTheLinkedList {
     }
 
     /**
-     * å¿«æ…¢æŒ‡é’ˆ
+     * ¿ìÂıÖ¸Õë
      *
      * @param head
      * @return

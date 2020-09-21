@@ -31,13 +31,13 @@ public class MaximumProductSubarray {
 
     public static int maxProduct(int[] nums) {
 
-        int max = Integer.MIN_VALUE, imax = 1, imin = 1; //ä¸€ä¸ªä¿å­˜æœ€å¤§çš„ï¼Œä¸€ä¸ªä¿å­˜æœ€å°çš„ã€‚
+        int max = Integer.MIN_VALUE, imax = 1, imin = 1; //Ò»¸ö±£´æ×î´óµÄ£¬Ò»¸ö±£´æ×îĞ¡µÄ¡£
         for (int num : nums) {
             if (num < 0) {
                 int tmp = imax;
                 imax = imin;
                 imin = tmp;
-            } //å¦‚æœæ•°ç»„çš„æ•°æ˜¯è´Ÿæ•°ï¼Œé‚£ä¹ˆä¼šå¯¼è‡´æœ€å¤§çš„å˜æœ€å°çš„ï¼Œæœ€å°çš„å˜æœ€å¤§çš„ã€‚å› æ­¤äº¤æ¢ä¸¤ä¸ªçš„å€¼ã€‚
+            } //Èç¹ûÊı×éµÄÊıÊÇ¸ºÊı£¬ÄÇÃ´»áµ¼ÖÂ×î´óµÄ±ä×îĞ¡µÄ£¬×îĞ¡µÄ±ä×î´óµÄ¡£Òò´Ë½»»»Á½¸öµÄÖµ¡£
             imax = Math.max(imax * num, num);
             imin = Math.min(imin * num, num);
 

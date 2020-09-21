@@ -10,7 +10,7 @@ import java.util.Stack;
  * @author Created by WXG on 2019-06-05 14:09.
  * @version V1.0
  * Given an array of size n, find the majority element.
- * The majority element is the element that appears more than âŒŠ n/2 âŒ‹ times.
+ * The majority element is the element that appears more than ? n/2 ? times.
  * <p>
  * You may assume that the array is non-empty and the majority element always exist in the array.
  * <p>
@@ -39,7 +39,7 @@ public class MajorityElement {
     }
 
     /**
-     * ç”¨mapå­˜å‚¨
+     * ÓÃmap´æ´¢
      *
      * @param nums
      * @return
@@ -75,7 +75,7 @@ public class MajorityElement {
     }
 
     /**
-     * ç”¨æ ˆå­˜å‚¨
+     * ÓÃÕ»´æ´¢
      *
      * @param nums
      * @return
@@ -93,7 +93,7 @@ public class MajorityElement {
     }
 
     /**
-     * ç›´æ¥éå†ï¼Œé‡è§ä¸åŒå‡ä¸€ï¼Œç›¸åŒåŠ ä¸€
+     * Ö±½Ó±éÀú£¬Óö¼û²»Í¬¼õÒ»£¬ÏàÍ¬¼ÓÒ»
      *
      * @param nums
      * @return

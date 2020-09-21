@@ -44,7 +44,7 @@ public class PrimeofBitsinBinaryRepresentation {
     }
 
     public int countPrimeSetBits(int L, int R) {
-        //0-20çš„è´¨æ•°åˆ—è¡¨ï¼Œprime[i]ä¸º1ï¼Œåˆ™iä¸ºè´¨æ•°
+        //0-20µÄÖÊÊıÁĞ±í£¬prime[i]Îª1£¬ÔòiÎªÖÊÊı
         int[] primes = {0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1};
         int res = 0;
         for (int i = L; i <= R; i++) {

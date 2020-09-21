@@ -72,7 +72,7 @@ public class MinimumNumberOfRefuelingStops {
     }
 
     /**
-     * è¯¥é¢˜æœªä½œå‡ºæ­£ç¡®ç­”æ¡ˆ
+     * ¸ÃÌâÎ´×÷³öÕıÈ·´ğ°¸
      *
      * @param target
      * @param startFuel
@@ -95,11 +95,11 @@ public class MinimumNumberOfRefuelingStops {
                 for (int i = 0; i < stations.length; i++) {
 
                     int residue = target - startFuel;
-                    if (startFuel > stations[i][0] - startPosition) {//å½“å‰æ²¹è¿˜è¶³å¤Ÿç»§ç»­ä¸‹ä¸€ä¸ªåŠ æ²¹ç«™
+                    if (startFuel > stations[i][0] - startPosition) {//µ±Ç°ÓÍ»¹×ã¹»¼ÌĞøÏÂÒ»¸ö¼ÓÓÍÕ¾
                         continue;
-                    } else if (startFuel == stations[i][0] - startPosition) {//å½“å‰æ²¹æ­£å¥½å¤Ÿåˆ°æ­¤åŠ æ²¹ç«™
+                    } else if (startFuel == stations[i][0] - startPosition) {//µ±Ç°ÓÍÕıºÃ¹»µ½´Ë¼ÓÓÍÕ¾
                         startFuel = stations[i][1];
-                    } else {//å½“å‰æ²¹æ­£å¥½ä¸å¤Ÿåˆ°æ­¤åŠ æ²¹ç«™ï¼Œå°±å¾—åœ¨ä¸Šä¸€ä¸ªåŠ æ²¹ç«™åŠ æ²¹
+                    } else {//µ±Ç°ÓÍÕıºÃ²»¹»µ½´Ë¼ÓÓÍÕ¾£¬¾ÍµÃÔÚÉÏÒ»¸ö¼ÓÓÍÕ¾¼ÓÓÍ
                         startFuel = startFuel - stations[i - 1][0] + stations[i - 1][1];
                     }
 
@@ -129,7 +129,7 @@ public class MinimumNumberOfRefuelingStops {
     }
 
     /**
-     * æ­£ç¡®è§£ç­”
+     * ÕıÈ·½â´ğ
      *
      * @param target
      * @param startFuel
@@ -137,7 +137,7 @@ public class MinimumNumberOfRefuelingStops {
      * @return
      */
     public static int minRefuelStops1(int target, int startFuel, int[][] stations) {
-        //æ¯æ¬¡èµ°å‰©ä½™æ²¹èƒ½èµ°çš„æœ€å¤§çš„è·¯ç¨‹ï¼Œæ‰¾åˆ°æœ€å¤§çš„å’Œèµ·å§‹èŒƒå›´å†…çš„åŠ æ²¹ç«™ä¸­èƒ½åŠ æœ€å¤šæ²¹çš„é‚£ä¸ª
+        //Ã¿´Î×ßÊ£ÓàÓÍÄÜ×ßµÄ×î´óµÄÂ·³Ì£¬ÕÒµ½×î´óµÄºÍÆğÊ¼·¶Î§ÄÚµÄ¼ÓÓÍÕ¾ÖĞÄÜ¼Ó×î¶àÓÍµÄÄÇ¸ö
         int alreadyGo = 0;
         alreadyGo += startFuel;
         int res = 0;
@@ -145,9 +145,9 @@ public class MinimumNumberOfRefuelingStops {
         while (alreadyGo < target) {
             int maxPos = 0;
             int maxFuel = -1;
-            //æ ‡è¯†æ˜¯å¦æœ‰æ²¹å¯åŠ 
+            //±êÊ¶ÊÇ·ñÓĞÓÍ¿É¼Ó
             boolean isAddFuel = false;
-            //æ‰¾åˆ°å‰é¢å¯åŠ æœ€å¤šæ²¹çš„åŠ æ²¹ç«™ï¼ŒåŠ æ²¹
+            //ÕÒµ½Ç°Ãæ¿É¼Ó×î¶àÓÍµÄ¼ÓÓÍÕ¾£¬¼ÓÓÍ
             for (int i = 0; i < stations.length && stations[i][0] <= alreadyGo; i++) {
                 if (isStationUsed[i] == false && stations[i][1] > maxFuel) {
                     maxFuel = stations[i][1];

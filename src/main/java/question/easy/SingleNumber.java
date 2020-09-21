@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * question.easy.
  * <p>
- * å‰‘æŒ‡offeré¢è¯•é¢˜ï¼Œ hashï¼Œ æ’åºï¼Œ å¼‚æˆ–
+ * ½£Ö¸offerÃæÊÔÌâ£¬ hash£¬ ÅÅĞò£¬ Òì»ò
  *
  * @author Created by WXG on 2019-05-31 14:49.
  * @version V1.0
@@ -36,7 +36,7 @@ public class SingleNumber {
     }
 
     /**
-     * æ’åºçš„æ–¹å¼ï¼Œ æ—¶é—´å¤æ‚åº¦O(nlogn), ç©ºé—´å¤æ‚åº¦O(1)
+     * ÅÅĞòµÄ·½Ê½£¬ Ê±¼ä¸´ÔÓ¶ÈO(nlogn), ¿Õ¼ä¸´ÔÓ¶ÈO(1)
      *
      * @param nums
      * @return
@@ -69,7 +69,7 @@ public class SingleNumber {
     }
 
     /**
-     * ä½¿ç”¨å¼‚æˆ–çš„æ–¹å¼ï¼Œ æ—¶é—´å¤æ‚åº¦O(n), ç©ºé—´å¤æ‚åº¦O(1)
+     * Ê¹ÓÃÒì»òµÄ·½Ê½£¬ Ê±¼ä¸´ÔÓ¶ÈO(n), ¿Õ¼ä¸´ÔÓ¶ÈO(1)
      *
      * @param nums
      * @return

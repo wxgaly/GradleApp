@@ -7,7 +7,7 @@ package question.medium;
  * @version V1.0
  * <p>
  * Note:
- * You may assume k is always valid, 1 â‰¤ k â‰¤ BST's total elements.
+ * You may assume k is always valid, 1 ¡Ü k ¡Ü BST's total elements.
  * <p>
  * Example 1:
  * <p>

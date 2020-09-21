@@ -8,10 +8,10 @@ import java.util.Arrays;
  * @author Created by WXG on 2019-09-25 11:13
  * @version V1.0
  * <p>
- * Given an array of integers AÂ sorted in non-decreasing order,Â return an array of the squares of each number,Â 
+ * Given an array of integers A?sorted in non-decreasing order,?return an array of the squares of each number,?
  * also in sorted non-decreasing order.
  * <p>
- * Â 
+ * ?
  * <p>
  * Example 1:
  * <p>
@@ -21,13 +21,13 @@ import java.util.Arrays;
  * <p>
  * Input: [-7,-3,2,3,11]
  * Output: [4,9,9,49,121]
- * Â 
+ * ?
  * <p>
  * Note:
  * <p>
  * 1 <= A.length <= 10000
  * -10000 <= A[i] <= 10000
- * AÂ is sorted in non-decreasing order.
+ * A?is sorted in non-decreasing order.
  */
 public class SquaresOfASortedArray {
 
@@ -51,10 +51,10 @@ public class SquaresOfASortedArray {
     }
 
     /**
-     * åŒæŒ‡é’ˆæ³•ï¼Œ æ­£å‘éåŽ†æ­£å€¼çš„å¹³æ–¹ï¼Œåå‘éåŽ†è´Ÿå€¼çš„å¹³æ–¹
+     * Ë«Ö¸Õë·¨£¬ ÕýÏò±éÀúÕýÖµµÄÆ½·½£¬·´Ïò±éÀú¸ºÖµµÄÆ½·½
      *
-     * æ—¶é—´å¤æ‚åº¦ O(N)
-     * ç©ºé—´å¤æ‚åº¦ O(N)
+     * Ê±¼ä¸´ÔÓ¶È O(N)
+     * ¿Õ¼ä¸´ÔÓ¶È O(N)
      *
      * @param A
      * @return

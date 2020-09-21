@@ -8,13 +8,13 @@ import java.util.*;
  * @author Created by WXG on 2020-05-09 14:03
  * @version V1.0
  *
- * Given a paragraphÂ and a list of banned words, return the most frequent word that is not in the list of banned words.Â 
+ * Given a paragraph?and a list of banned words, return the most frequent word that is not in the list of banned words.?
  * It is guaranteed there is at least one word that isn't banned, and that the answer is unique.
  *
- * Words in the list of banned words are given in lowercase, and free of punctuation.Â 
- * Words in the paragraph are not case sensitive.Â  The answer is in lowercase.
+ * Words in the list of banned words are given in lowercase, and free of punctuation.?
+ * Words in the paragraph are not case sensitive.? The answer is in lowercase.
  *
- * Â 
+ * ?
  *
  * Example:
  *
@@ -28,14 +28,14 @@ import java.util.*;
  * Note that words in the paragraph are not case sensitive,
  * that punctuation is ignored (even if adjacent to words, such as "ball,"),
  * and that "hit" isn't the answer even though it occurs more because it is banned.
- * Â 
+ * ?
  *
  * Note:
  *
  * 1 <= paragraph.length <= 1000.
  * 0 <= banned.length <= 100.
  * 1 <= banned[i].length <= 10.
- * The answer is unique, and written in lowercase (even if its occurrences in paragraphÂ may haveÂ uppercase symbols,
+ * The answer is unique, and written in lowercase (even if its occurrences in paragraph?may have?uppercase symbols,
  * and even if it is a proper noun.)
  * paragraph only consists of letters, spaces, or the punctuation symbols !?',;.
  * There are no hyphens or hyphenated words.
@@ -64,7 +64,7 @@ public class MostCommonWord {
         String result = strings[0];
         for (String string : strings) {
             if (!set.contains(string)) {
-                //éœ€è¦å¢žåŠ æ¨¡ç³ŠåŒ¹é…
+                //ÐèÒªÔö¼ÓÄ£ºýÆ¥Åä
                 Integer count = map.getOrDefault(string, 0);
                 if (count == 0) {
                     map.put(string, 1);

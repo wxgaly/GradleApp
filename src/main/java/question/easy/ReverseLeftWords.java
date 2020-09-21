@@ -6,26 +6,26 @@ package question.easy;
  * @author Created by WXG on 2020-04-15 14:41
  * @version V1.0
  * <p>
- * å­—ç¬¦ä¸²çš„å·¦æ—‹è½¬æ“ä½œæ˜¯æŠŠå­—ç¬¦ä¸²å‰é¢çš„è‹¥å¹²ä¸ªå­—ç¬¦è½¬ç§»åˆ°å­—ç¬¦ä¸²çš„å°¾éƒ¨ã€‚
- * è¯·å®šä¹‰ä¸€ä¸ªå‡½æ•°å®žçŽ°å­—ç¬¦ä¸²å·¦æ—‹è½¬æ“ä½œçš„åŠŸèƒ½ã€‚æ¯”å¦‚ï¼Œè¾“å…¥å­—ç¬¦ä¸²"abcdefg"å’Œæ•°å­—2ï¼Œè¯¥å‡½æ•°å°†è¿”å›žå·¦æ—‹è½¬ä¸¤ä½å¾—åˆ°çš„ç»“æžœ"cdefgab"ã€‚
+ * ×Ö·û´®µÄ×óÐý×ª²Ù×÷ÊÇ°Ñ×Ö·û´®Ç°ÃæµÄÈô¸É¸ö×Ö·û×ªÒÆµ½×Ö·û´®µÄÎ²²¿¡£
+ * Çë¶¨ÒåÒ»¸öº¯ÊýÊµÏÖ×Ö·û´®×óÐý×ª²Ù×÷µÄ¹¦ÄÜ¡£±ÈÈç£¬ÊäÈë×Ö·û´®"abcdefg"ºÍÊý×Ö2£¬¸Ãº¯Êý½«·µ»Ø×óÐý×ªÁ½Î»µÃµ½µÄ½á¹û"cdefgab"¡£
  * <p>
- * Â 
+ * ?
  * <p>
- * ç¤ºä¾‹ 1ï¼š
+ * Ê¾Àý 1£º
  * <p>
- * è¾“å…¥: s = "abcdefg", k = 2
- * è¾“å‡º:Â "cdefgab"
- * ç¤ºä¾‹ 2ï¼š
+ * ÊäÈë: s = "abcdefg", k = 2
+ * Êä³ö:?"cdefgab"
+ * Ê¾Àý 2£º
  * <p>
- * è¾“å…¥: s = "lrloseumgh", k = 6
- * è¾“å‡º:Â "umghlrlose"
- * Â 
+ * ÊäÈë: s = "lrloseumgh", k = 6
+ * Êä³ö:?"umghlrlose"
+ * ?
  * <p>
- * é™åˆ¶ï¼š
+ * ÏÞÖÆ£º
  * <p>
  * 1 <= k < s.length <= 10000
  *
- * å‰‘æŒ‡offerè¯•é¢˜
+ * ½£Ö¸offerÊÔÌâ
  *
  */
 public class ReverseLeftWords {
@@ -39,18 +39,18 @@ public class ReverseLeftWords {
             return str;
         }
         int len = str.length();
-        n = n % len;// å½“len=3ï¼Œn=4ï¼Œå…¶å®žç›¸å½“äºŽå·¦æ—‹è½¬1ä½ï¼Œæ‰€ä»¥éœ€è¦å–ä½™
+        n = n % len;// µ±len=3£¬n=4£¬ÆäÊµÏàµ±ÓÚ×óÐý×ª1Î»£¬ËùÒÔÐèÒªÈ¡Óà
         char[] charstr = str.toCharArray();
-        //å…ˆæ—‹è½¬å‰é¢çš„
+        //ÏÈÐý×ªÇ°ÃæµÄ
         reverse(charstr, 0, n - 1);
-        //å†æ—‹è½¬åŽé¢çš„å­—ç¬¦ä¸²
+        //ÔÙÐý×ªºóÃæµÄ×Ö·û´®
         reverse(charstr, n, len - 1);
-        //æœ€åŽæ•´ä½“åè½¬
+        //×îºóÕûÌå·´×ª
         reverse(charstr, 0, len - 1);
         return String.valueOf(charstr);
     }
 
-    //å®žçŽ°çš„æ˜¯charstrsä»Žiåˆ°jçš„åè½¬ï¼Œä¹Ÿå¯ä»¥ä½¿ç”¨ä¸Šé¢˜ä¸­stringbufferçš„åè½¬æ–¹å¼
+    //ÊµÏÖµÄÊÇcharstrs´Óiµ½jµÄ·´×ª£¬Ò²¿ÉÒÔÊ¹ÓÃÉÏÌâÖÐstringbufferµÄ·´×ª·½Ê½
     private void reverse(char[] charStrs, int i, int j) {
         while (i < j) {
             char temp = charStrs[i];

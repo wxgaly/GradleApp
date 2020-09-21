@@ -53,7 +53,7 @@ public class NonoverlappingIntervals {
         if (ilen == 0) {
             return 0;
         }
-        // æŒ‰ç»“å°¾å‡åºæ’åº
+        // °´½áÎ²ÉıĞòÅÅĞò
         Arrays.sort(intervals, new Comparator<Interval>() {
             @Override
             public int compare(Interval o1, Interval o2) {
@@ -64,7 +64,7 @@ public class NonoverlappingIntervals {
             }
         });
         int res = 1;
-        // å‰ä¸€ä¸ªç»“å°¾åŒºé—´çš„ç´¢å¼•
+        // Ç°Ò»¸ö½áÎ²Çø¼äµÄË÷Òı
         int pre = 0;
         for (int i = 1; i < ilen; i++) {
             if (intervals[i].start >= intervals[pre].end) {

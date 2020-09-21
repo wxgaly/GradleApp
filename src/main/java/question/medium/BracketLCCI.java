@@ -12,7 +12,7 @@ import java.util.*;
  *
  * Note: The result set should not contain duplicated subsets.
  *
- * For example, givenÂ n = 3, the result should be:
+ * For example, given?n = 3, the result should be:
  *
  * [
  *   "((()))",
@@ -63,17 +63,17 @@ public class BracketLCCI {
         if (right != 0 && left != 0) {
             res.add(track);
         } else {
-            /*ä½¿ç”¨ä¸€ä¸ªå·¦æ‹¬å·ï¼ŒåŒæ—¶å¯ä½¿ç”¨å³æ‹¬å·æ•°åŠ 1ï¼Œè¿™æ ·å¯é¿å…ç”Ÿæˆæ— æ•ˆæ‹¬å·*/
+            /*Ê¹ÓÃÒ»¸ö×óÀ¨ºÅ£¬Í¬Ê±¿ÉÊ¹ÓÃÓÒÀ¨ºÅÊı¼Ó1£¬ÕâÑù¿É±ÜÃâÉú³ÉÎŞĞ§À¨ºÅ*/
             if (left > 0) backtrack(res, left - 1, right + 1, track + '(');
-            /*å¯ä½¿ç”¨çš„å³æ‹¬å·æ•°å¤§äº0ï¼Œåˆ™ç”¨æ¥è¡¥é½åŸæ¥çš„å·¦æ‹¬å·*/
+            /*¿ÉÊ¹ÓÃµÄÓÒÀ¨ºÅÊı´óÓÚ0£¬ÔòÓÃÀ´²¹ÆëÔ­À´µÄ×óÀ¨ºÅ*/
             if (right > 0) backtrack(res, left, right - 1, track + ')');
         }
     }
 
     /*
-        è§£ç­”
-        1ã€å›æº¯ç®—æ³•
-        2ã€()éœ€è¦é…å¯¹
+        ½â´ğ
+        1¡¢»ØËİËã·¨
+        2¡¢()ĞèÒªÅä¶Ô
     */
     List<String> ans;
 
@@ -95,7 +95,7 @@ public class BracketLCCI {
             dfs(cs, k + 1, leftCnt - 1, rightCnt);
         }
 
-        if (rightCnt > 0 && rightCnt > leftCnt) {//å³è¾¹')'å¿…é¡»æœ‰è¶³å¤Ÿçš„'('åŒ¹é…
+        if (rightCnt > 0 && rightCnt > leftCnt) {//ÓÒ±ß')'±ØĞëÓĞ×ã¹»µÄ'('Æ¥Åä
             cs[k] = ')';
             dfs(cs, k + 1, leftCnt, rightCnt - 1);
         }

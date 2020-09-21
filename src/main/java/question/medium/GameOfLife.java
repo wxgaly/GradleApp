@@ -19,25 +19,25 @@ import java.util.Arrays;
  * Any live cell with two or three live neighbors lives on to the next generation.
  * Any live cell with more than three live neighbors dies, as if by over-population..
  * Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
- * Write a function to compute the next state (after one update) of the board given its current state.Â 
+ * Write a function to compute the next state (after one update) of the board given its current state.?
  * The next state is created by applying the above rules simultaneously to every cell in the current state,
- * whereÂ births and deaths occur simultaneously.
+ * where?births and deaths occur simultaneously.
  *
  * Example:
  *
  * Input:
  * [
- * Â  [0,1,0],
- * Â  [0,0,1],
- * Â  [1,1,1],
- * Â  [0,0,0]
+ * ? [0,1,0],
+ * ? [0,0,1],
+ * ? [1,1,1],
+ * ? [0,0,0]
  * ]
  * Output:
  * [
- * Â  [0,0,0],
- * Â  [1,0,1],
- * Â  [0,1,1],
- * Â  [0,1,0]
+ * ? [0,0,0],
+ * ? [1,0,1],
+ * ? [0,1,1],
+ * ? [0,1,0]
  * ]
  * Follow up:
  *
@@ -214,7 +214,7 @@ public class GameOfLife {
         int row = board.length;
         int col = board[0].length;
 
-        int total = 0; // è¿™æ˜¯è®°å½•è¯¥ç»†èƒå‘¨å›´æ´»ç»†èƒçš„æ•°é‡
+        int total = 0; // ÕâÊÇ¼ÇÂ¼¸ÃÏ¸°ûÖÜÎ§»îÏ¸°ûµÄÊıÁ¿
 
         for (int i = x - 1; i <= x + 1; i++) {
             for (int j = y - 1; j <= y + 1; j++) {

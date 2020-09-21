@@ -34,7 +34,7 @@ public class LongestPalindrome {
     }
 
     public int longestPalindrome(String s) {
-        // æ‰¾å‡ºå¯ä»¥æ„æˆæœ€é•¿å›æ–‡ä¸²çš„é•¿åº¦
+        // ÕÒ³ö¿ÉÒÔ¹¹³É×î³¤»ØÎÄ´®µÄ³¤¶È
         int[] arr = new int[128];
         for (char c : s.toCharArray()) {
             arr[c]++;

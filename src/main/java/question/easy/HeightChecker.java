@@ -10,10 +10,10 @@ import java.util.Arrays;
  * <p>
  * Students are asked to stand in non-decreasing order of heights for an annual photo.
  * <p>
- * Return the minimum number of students not standing in the right positions.Â 
+ * Return the minimum number of students not standing in the right positions.?
  * (This is the number of students that must move in order for all students to be standing in non-decreasing order of height.)
  * <p>
- * Â 
+ * ?
  * <p>
  * Example 1:
  * <p>
@@ -21,7 +21,7 @@ import java.util.Arrays;
  * Output: 3
  * Explanation:
  * Students with heights 4, 3 and the last 1 are not standing in the right positions.
- * Â 
+ * ?
  * <p>
  * Note:
  * <p>
@@ -62,26 +62,26 @@ public class HeightChecker {
     }
 
     /**
-     * å€ŸåŠ©æ¡¶æ’åºçš„æ€æƒ³
+     * ½èÖúÍ°ÅÅĞòµÄË¼Ïë
      *
      * @param heights
      * @return
      */
     public int heightChecker1(int[] heights) {
-        // å€¼çš„èŒƒå›´æ˜¯1 <= heights[i] <= 100ï¼Œå› æ­¤éœ€è¦1,2,3,...,99,100ï¼Œå…±101ä¸ªæ¡¶
+        // ÖµµÄ·¶Î§ÊÇ1 <= heights[i] <= 100£¬Òò´ËĞèÒª1,2,3,...,99,100£¬¹²101¸öÍ°
         int[] arr = new int[101];
-        // éå†æ•°ç»„heightsï¼Œè®¡ç®—æ¯ä¸ªæ¡¶ä¸­æœ‰å¤šå°‘ä¸ªå…ƒç´ ï¼Œä¹Ÿå°±æ˜¯æ•°ç»„heightsä¸­æœ‰å¤šå°‘ä¸ª1ï¼Œå¤šå°‘ä¸ª2ï¼Œã€‚ã€‚ã€‚ï¼Œå¤šå°‘ä¸ª100
-        // å°†è¿™101ä¸ªæ¡¶ä¸­çš„å…ƒç´ ï¼Œä¸€ä¸ªä¸€ä¸ªæ¡¶åœ°å–å‡ºæ¥ï¼Œå…ƒç´ å°±æ˜¯æœ‰åºçš„
+        // ±éÀúÊı×éheights£¬¼ÆËãÃ¿¸öÍ°ÖĞÓĞ¶àÉÙ¸öÔªËØ£¬Ò²¾ÍÊÇÊı×éheightsÖĞÓĞ¶àÉÙ¸ö1£¬¶àÉÙ¸ö2£¬¡£¡£¡££¬¶àÉÙ¸ö100
+        // ½«Õâ101¸öÍ°ÖĞµÄÔªËØ£¬Ò»¸öÒ»¸öÍ°µØÈ¡³öÀ´£¬ÔªËØ¾ÍÊÇÓĞĞòµÄ
         for (int height : heights) {
             arr[height]++;
         }
 
         int count = 0;
         for (int i = 1, j = 0; i < arr.length; i++) {
-            // arr[i]ï¼Œiå°±æ˜¯æ¡¶ä¸­å­˜æ”¾çš„å…ƒç´ çš„å€¼ï¼Œarr[i]æ˜¯å…ƒç´ çš„ä¸ªæ•°
-            // arr[i]-- å°±æ˜¯æ¯æ¬¡å–å‡ºä¸€ä¸ªï¼Œä¸€ç›´å–åˆ°æ²¡æœ‰å…ƒç´ ï¼Œæˆä¸ºç©ºæ¡¶
+            // arr[i]£¬i¾ÍÊÇÍ°ÖĞ´æ·ÅµÄÔªËØµÄÖµ£¬arr[i]ÊÇÔªËØµÄ¸öÊı
+            // arr[i]-- ¾ÍÊÇÃ¿´ÎÈ¡³öÒ»¸ö£¬Ò»Ö±È¡µ½Ã»ÓĞÔªËØ£¬³ÉÎª¿ÕÍ°
             while (arr[i]-- > 0) {
-                // ä»æ¡¶ä¸­å–å‡ºå…ƒç´ æ—¶ï¼Œå…ƒç´ çš„æ’åˆ—é¡ºåºå°±æ˜¯éé€’å‡çš„ï¼Œç„¶åä¸heightsä¸­çš„å…ƒç´ æ¯”è¾ƒï¼Œå¦‚æœä¸åŒï¼Œè®¡ç®—å™¨å°±åŠ 1
+                // ´ÓÍ°ÖĞÈ¡³öÔªËØÊ±£¬ÔªËØµÄÅÅÁĞË³Ğò¾ÍÊÇ·Çµİ¼õµÄ£¬È»ºóÓëheightsÖĞµÄÔªËØ±È½Ï£¬Èç¹û²»Í¬£¬¼ÆËãÆ÷¾Í¼Ó1
                 if (heights[j++] != i) count++;
             }
         }

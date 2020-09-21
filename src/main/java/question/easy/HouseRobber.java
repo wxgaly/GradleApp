@@ -20,13 +20,13 @@ package question.easy;
  * Input: [1,2,3,1]
  * Output: 4
  * Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
- * Â             Total amount you can rob = 1 + 3 = 4.
+ * ?            Total amount you can rob = 1 + 3 = 4.
  * Example 2:
  * <p>
  * Input: [2,7,9,3,1]
  * Output: 12
  * Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1).
- * Â             Total amount you can rob = 2 + 9 + 1 = 12.
+ * ?            Total amount you can rob = 2 + 9 + 1 = 12.
  */
 public class HouseRobber {
 
@@ -44,10 +44,10 @@ public class HouseRobber {
     }
 
     /**
-     * è¿™ä¸ªæ¡ä»¶å¦‚æœç²¾ç®€æ‰å…¶ä»–å†…å®¹ï¼Œå¾ˆå®¹æ˜“è®©äººè”æƒ³åˆ°å¥‡å¶æ•°ã€‚è¿™ä¸ªè§£æ³•å°±æ˜¯ä»è¿™ç‚¹å‡ºå‘ã€‚
+     * Õâ¸öÌõ¼şÈç¹û¾«¼òµôÆäËûÄÚÈİ£¬ºÜÈİÒ×ÈÃÈËÁªÏëµ½ÆæÅ¼Êı¡£Õâ¸ö½â·¨¾ÍÊÇ´ÓÕâµã³ö·¢¡£
      * <p>
-     * è®¾ç½®ä¸¤ä¸ªå˜é‡ï¼ŒsumOdd å’Œ sumEven åˆ†åˆ«å¯¹æ•°ç»„çš„å¥‡æ•°å’Œå¶æ•°å…ƒç´ æ±‚å’Œã€‚
-     * æœ€åæ¯”è¾ƒè¿™ä¸¤ä¸ªå’Œè°æ›´å¤§ï¼Œè°å°±æ˜¯æœ€ä¼˜è§£ã€‚
+     * ÉèÖÃÁ½¸ö±äÁ¿£¬sumOdd ºÍ sumEven ·Ö±ğ¶ÔÊı×éµÄÆæÊıºÍÅ¼ÊıÔªËØÇóºÍ¡£
+     * ×îºó±È½ÏÕâÁ½¸öºÍË­¸ü´ó£¬Ë­¾ÍÊÇ×îÓÅ½â¡£
      *
      * @return
      */

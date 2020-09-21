@@ -14,9 +14,9 @@ package question.medium;
  *
  * Note that you are not allowed to change any of the two trees or the target node and the answer must be a reference to a node in the cloned tree.
  *
- * Follow up:Â Solve the problem if repeated values on the tree are allowed.
+ * Follow up:?Solve the problem if repeated values on the tree are allowed.
  *
- * Â 
+ * ?
  *
  * Example 1:
  *
@@ -45,13 +45,13 @@ package question.medium;
  *
  * Input: tree = [1,2,null,3], target = 2
  * Output: 2
- * Â 
+ * ?
  *
  * Constraints:
  *
  * The number of nodes in the tree is in the range [1, 10^4].
  * The values of the nodes of the tree are unique.
- * target node is aÂ node from the original tree and is not null.
+ * target node is a?node from the original tree and is not null.
  *
  *
  */
@@ -72,8 +72,8 @@ public class FindCorrespondingNodeofaBinaryTreeinaCloneofThatTree {
     }
 
     /**
-     * å‰åºéå†
-     * é¢˜è§£ï¼š https://leetcode-cn.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/solution/tong-shi-bian-li-liang-ke-shu-jin-xing-jie-dian-pi/
+     * Ç°Ğò±éÀú
+     * Ìâ½â£º https://leetcode-cn.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/solution/tong-shi-bian-li-liang-ke-shu-jin-xing-jie-dian-pi/
      *
      * @param original
      * @param cloned
@@ -87,12 +87,12 @@ public class FindCorrespondingNodeofaBinaryTreeinaCloneofThatTree {
         if (original == target) {
             return cloned;
         }
-        // é€’å½’å·¦å­æ ‘
+        // µİ¹é×ó×ÓÊ÷
         TreeNode res = getTargetCopy(original.left, cloned.left, target);
         if (res != null) {
             return res;
         }
-        // é€’å½’å³å­æ ‘
+        // µİ¹éÓÒ×ÓÊ÷
         res = getTargetCopy(original.right, cloned.right, target);
         return res;
     }

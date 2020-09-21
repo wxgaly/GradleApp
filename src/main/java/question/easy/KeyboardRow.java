@@ -12,19 +12,19 @@ import java.util.*;
  * on only one row's of American keyboard like the image below.
  *
  *
- * Â 
+ * ?
  * Example:
  *
  * Input: ["Hello", "Alaska", "Dad", "Peace"]
  * Output: ["Alaska", "Dad"]
- * Â 
+ * ?
  *
  * Note:
  *
  * You may use one character in the keyboard more than once.
  * You may assume the input string will only contain letters of alphabet.
  *
- * å°½é‡ä¸è¦ç”¨åŒé‡forå¾ªç¯ï¼Œå¯ä»¥ç”¨å‡½æ•°å°†ä¸€å±‚å¾ªç¯æ”¾å…¥
+ * ¾¡Á¿²»ÒªÓÃË«ÖØforÑ­»·£¬¿ÉÒÔÓÃº¯Êı½«Ò»²ãÑ­»··ÅÈë
  *
  */
 public class KeyboardRow {
@@ -137,22 +137,22 @@ public class KeyboardRow {
 
         List<String> ans = new ArrayList<>();
 
-        // å­—å…¸è¡Œ
+        // ×ÖµäĞĞ
         String lines[] = new String[]{
                 "qwertyuiop",
                 "asdfghjkl",
                 "zxcvbnm"
         };
 
-        // æŒ¨ä¸ªå•è¯åŒ¹é…æ˜¯å¦æ»¡è¶³æ¡ä»¶
+        // °¤¸öµ¥´ÊÆ¥ÅäÊÇ·ñÂú×ãÌõ¼ş
         for (String word : words) {
             if (judge(word.toLowerCase(), lines)) {
                 ans.add(word);
             }
         }
 
-        // åˆšçœ‹åˆ°çš„æ—¶å€™æœ‰ç‚¹ç–‘æƒ‘è¿”å›å€¼ä¸ºä»€ä¹ˆä¸æ˜¯List<String>è€Œæ˜¯String[]
-        // listå¯ç›´æ¥åˆ©ç”¨APIè½¬æ¢ä¸ºStringæ•°ç»„å³å¯
+        // ¸Õ¿´µ½µÄÊ±ºòÓĞµãÒÉ»ó·µ»ØÖµÎªÊ²Ã´²»ÊÇList<String>¶øÊÇString[]
+        // list¿ÉÖ±½ÓÀûÓÃAPI×ª»»ÎªStringÊı×é¼´¿É
         return ans.toArray(new String[ans.size()]);
     }
 
@@ -160,7 +160,7 @@ public class KeyboardRow {
         boolean ok = true;
         String find = null;
 
-        // å…ˆç”¨wordé¦–å­—ç¬¦ç¡®å®šå±äºå“ªä¸€è¡Œ
+        // ÏÈÓÃwordÊ××Ö·ûÈ·¶¨ÊôÓÚÄÄÒ»ĞĞ
         for (String line : lines) {
             if (line.indexOf(word.charAt(0)) > -1) {
                 find = line;
@@ -173,7 +173,7 @@ public class KeyboardRow {
             return ok;
         }
 
-        // åˆ¤æ–­wordå­—ç¬¦ä¸²æ‰€æœ‰å­—ç¬¦æ˜¯å¦éƒ½å±äºåŒä¸€è¡Œ
+        // ÅĞ¶Ïword×Ö·û´®ËùÓĞ×Ö·ûÊÇ·ñ¶¼ÊôÓÚÍ¬Ò»ĞĞ
         for (int i = 1; i < word.length(); i++) {
             if (find.indexOf(word.charAt(i)) < 0) {
                 ok = false;

@@ -10,16 +10,16 @@ import java.util.List;
  * @author Created by WXG on 2020-02-14 17:04
  * @version V1.0
  * <p>
- * Given a 2D grid of size m x nÂ and an integer k. You need to shift the gridÂ k times.
+ * Given a 2D grid of size m x n?and an integer k. You need to shift the grid?k times.
  * <p>
  * In one shift operation:
  * <p>
  * Element at grid[i][j] moves to grid[i][j + 1].
  * Element at grid[i][n - 1] moves to grid[i + 1][0].
- * Element at grid[mÂ - 1][n - 1] moves to grid[0][0].
+ * Element at grid[m?- 1][n - 1] moves to grid[0][0].
  * Return the 2D grid after applying shift operation k times.
  * <p>
- * Â 
+ * ?
  * <p>
  * Example 1:
  * <p>
@@ -35,12 +35,12 @@ import java.util.List;
  * <p>
  * Input: grid = [[1,2,3],[4,5,6],[7,8,9]], k = 9
  * Output: [[1,2,3],[4,5,6],[7,8,9]]
- * Â 
+ * ?
  * <p>
  * Constraints:
  * <p>
- * m ==Â grid.length
- * n ==Â grid[i].length
+ * m ==?grid.length
+ * n ==?grid[i].length
  * 1 <= m <= 50
  * 1 <= n <= 50
  * -1000 <= grid[i][j] <= 1000
@@ -90,14 +90,14 @@ public class Shift2DGrid {
     }
 
     public List<List<Integer>> shiftGrid1(int[][] grid, int k) {
-        // å‡†å¤‡è¿”å›çš„åˆ—è¡¨
+        // ×¼±¸·µ»ØµÄÁĞ±í
         List<List<Integer>> ret = new ArrayList<List<Integer>>();
         for (int i = 0; i < grid.length; i++) {
             ret.add(new ArrayList<>());
         }
         //
         k = k % (grid.length * grid[0].length);
-        // å¦‚æœkæ˜¯äºŒç»´æ•°ç»„å…ƒç´ ä¸ªæ•°çš„å€æ•°,è¯´æ˜æ•°ç»„æ²¡æœ‰å˜åŒ–,ç›´æ¥è¿”å›
+        // Èç¹ûkÊÇ¶şÎ¬Êı×éÔªËØ¸öÊıµÄ±¶Êı,ËµÃ÷Êı×éÃ»ÓĞ±ä»¯,Ö±½Ó·µ»Ø
         if (k == 0) {
             for (int i = 0; i < grid.length; i++) {
                 for (int j = 0; j < grid[0].length; j++) {
@@ -105,11 +105,11 @@ public class Shift2DGrid {
                 }
             }
         }
-        // å°±åƒè®¡ç®—æ—¶é’Ÿæ—¶é—´ä¸€æ ·è¿›åˆ¶è®¡ç®—æ•°ç»„ä¸­å…ƒç´ ä½ç½®
+        // ¾ÍÏñ¼ÆËãÊ±ÖÓÊ±¼äÒ»Ñù½øÖÆ¼ÆËãÊı×éÖĞÔªËØÎ»ÖÃ
         else {
             int ColumnNum = grid.length;
             int RowNum = grid[0].length;
-            // æ•°ç»„å³ç§»å‡ ä½,å¼€å§‹éå†çš„æ—¶å€™èµ·å§‹ä½ç½®å°±æ˜¯å€’æ•°å‡ ä½
+            // Êı×éÓÒÒÆ¼¸Î»,¿ªÊ¼±éÀúµÄÊ±ºòÆğÊ¼Î»ÖÃ¾ÍÊÇµ¹Êı¼¸Î»
             int qishi = ColumnNum * RowNum - k;
             int line = qishi / grid[0].length;
             int row = qishi % grid[0].length;
@@ -117,7 +117,7 @@ public class Shift2DGrid {
                 for (int j = 0; j < grid[0].length; j++) {
                     ret.get(i).add(grid[line][row]);
                     row++;
-                    // è¿›åˆ¶
+                    // ½øÖÆ
                     if (row == RowNum) {
                         row = 0;
                         line++;

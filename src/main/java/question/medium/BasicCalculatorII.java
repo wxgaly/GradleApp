@@ -37,13 +37,13 @@ import java.util.Stack;
 public class BasicCalculatorII {
 
     /**
-     * åŠŸèƒ½: æ±‚ä¸€ä¸ªbyteæ•°å­—å¯¹åº”çš„äºŒè¿›åˆ¶æ•°å­—ä¸­1çš„æœ€å¤§è¿žç»­æ•°ï¼Œä¾‹å¦‚3çš„äºŒè¿›åˆ¶ä¸º00000011ï¼Œæœ€å¤§è¿žç»­2ä¸ª1
+     * ¹¦ÄÜ: ÇóÒ»¸öbyteÊý×Ö¶ÔÓ¦µÄ¶þ½øÖÆÊý×ÖÖÐ1µÄ×î´óÁ¬ÐøÊý£¬ÀýÈç3µÄ¶þ½øÖÆÎª00000011£¬×î´óÁ¬Ðø2¸ö1
      * <p>
-     * è¾“å…¥: ä¸€ä¸ªbyteåž‹çš„æ•°å­—
+     * ÊäÈë: Ò»¸öbyteÐÍµÄÊý×Ö
      * <p>
-     * è¾“å‡º: æ— 
+     * Êä³ö: ÎÞ
      * <p>
-     * è¿”å›ž: å¯¹åº”çš„äºŒè¿›åˆ¶æ•°å­—ä¸­1çš„æœ€å¤§è¿žç»­æ•°
+     * ·µ»Ø: ¶ÔÓ¦µÄ¶þ½øÖÆÊý×ÖÖÐ1µÄ×î´óÁ¬ÐøÊý
      *
      * @param byte1
      */
@@ -56,8 +56,8 @@ public class BasicCalculatorII {
     }
 
     /**
-     * è¯·ç¼–å†™ä¸€ä¸ªå‡½æ•°ï¼ˆå…è®¸å¢žåŠ å­å‡½æ•°ï¼‰ï¼Œè®¡ç®—n x mçš„æ£‹ç›˜æ ¼å­ï¼ˆnä¸ºæ¨ªå‘çš„æ ¼å­æ•°ï¼Œmä¸ºç«–å‘çš„æ ¼å­æ•°ï¼‰æ²¿ç€å„è‡ªè¾¹ç¼˜çº¿ä»Žå·¦ä¸Šè§’èµ°åˆ°å³ä¸‹è§’ï¼Œ
-     * æ€»å…±æœ‰å¤šå°‘ç§èµ°æ³•ï¼Œè¦æ±‚ä¸èƒ½èµ°å›žå¤´è·¯ï¼Œå³ï¼šåªèƒ½å¾€å³å’Œå¾€ä¸‹èµ°ï¼Œä¸èƒ½å¾€å·¦å’Œå¾€ä¸Šèµ°ã€‚
+     * Çë±àÐ´Ò»¸öº¯Êý£¨ÔÊÐíÔö¼Ó×Óº¯Êý£©£¬¼ÆËãn x mµÄÆåÅÌ¸ñ×Ó£¨nÎªºáÏòµÄ¸ñ×ÓÊý£¬mÎªÊúÏòµÄ¸ñ×ÓÊý£©ÑØ×Å¸÷×Ô±ßÔµÏß´Ó×óÉÏ½Ç×ßµ½ÓÒÏÂ½Ç£¬
+     * ×Ü¹²ÓÐ¶àÉÙÖÖ×ß·¨£¬ÒªÇó²»ÄÜ×ß»ØÍ·Â·£¬¼´£ºÖ»ÄÜÍùÓÒºÍÍùÏÂ×ß£¬²»ÄÜÍù×óºÍÍùÉÏ×ß¡£
      *
      * @param m
      * @param n
@@ -71,32 +71,32 @@ public class BasicCalculatorII {
     }
 
     /**
-     * åœ¨å‘½ä»¤è¡Œè¾“å…¥å¦‚ä¸‹å‘½ä»¤ï¼š
+     * ÔÚÃüÁîÐÐÊäÈëÈçÏÂÃüÁî£º
      * <p>
-     * xcopy /s c:\ d:\ï¼Œ
+     * xcopy /s c:\ d:\£¬
      * <p>
-     * å„ä¸ªå‚æ•°å¦‚ä¸‹ï¼š
+     * ¸÷¸ö²ÎÊýÈçÏÂ£º
      * <p>
-     * å‚æ•°1ï¼šå‘½ä»¤å­—xcopy
+     * ²ÎÊý1£ºÃüÁî×Öxcopy
      * <p>
-     * å‚æ•°2ï¼šå­—ç¬¦ä¸²/s
+     * ²ÎÊý2£º×Ö·û´®/s
      * <p>
-     * å‚æ•°3ï¼šå­—ç¬¦ä¸²c:\
+     * ²ÎÊý3£º×Ö·û´®c:\
      * <p>
-     * å‚æ•°4: å­—ç¬¦ä¸²d:\
+     * ²ÎÊý4: ×Ö·û´®d:\
      * <p>
-     * è¯·ç¼–å†™ä¸€ä¸ªå‚æ•°è§£æžç¨‹åºï¼Œå®žçŽ°å°†å‘½ä»¤è¡Œå„ä¸ªå‚æ•°è§£æžå‡ºæ¥ã€‚
+     * Çë±àÐ´Ò»¸ö²ÎÊý½âÎö³ÌÐò£¬ÊµÏÖ½«ÃüÁîÐÐ¸÷¸ö²ÎÊý½âÎö³öÀ´¡£
      * <p>
      * <p>
      * <p>
-     * è§£æžè§„åˆ™ï¼š
+     * ½âÎö¹æÔò£º
      * <p>
-     * 1.å‚æ•°åˆ†éš”ç¬¦ä¸ºç©ºæ ¼
-     * 2.å¯¹äºŽç”¨â€œâ€åŒ…å«èµ·æ¥çš„å‚æ•°ï¼Œå¦‚æžœä¸­é—´æœ‰ç©ºæ ¼ï¼Œä¸èƒ½è§£æžä¸ºå¤šä¸ªå‚æ•°ã€‚æ¯”å¦‚åœ¨å‘½ä»¤è¡Œè¾“å…¥xcopy /s
-     * â€œC:\program filesâ€ â€œd:\â€æ—¶ï¼Œå‚æ•°ä»ç„¶æ˜¯4ä¸ªï¼Œç¬¬3ä¸ªå‚æ•°åº”è¯¥æ˜¯å­—ç¬¦ä¸²C:\program filesï¼Œ
-     * è€Œä¸æ˜¯C:\programï¼Œæ³¨æ„è¾“å‡ºå‚æ•°æ—¶ï¼Œéœ€è¦å°†â€œâ€åŽ»æŽ‰ï¼Œå¼•å·ä¸å­˜åœ¨åµŒå¥—æƒ…å†µã€‚
-     * 3.å‚æ•°ä¸å®šé•¿
-     * 4.è¾“å…¥ç”±ç”¨ä¾‹ä¿è¯ï¼Œä¸ä¼šå‡ºçŽ°ä¸ç¬¦åˆè¦æ±‚çš„è¾“å…¥
+     * 1.²ÎÊý·Ö¸ô·ûÎª¿Õ¸ñ
+     * 2.¶ÔÓÚÓÃ¡°¡±°üº¬ÆðÀ´µÄ²ÎÊý£¬Èç¹ûÖÐ¼äÓÐ¿Õ¸ñ£¬²»ÄÜ½âÎöÎª¶à¸ö²ÎÊý¡£±ÈÈçÔÚÃüÁîÐÐÊäÈëxcopy /s
+     * ¡°C:\program files¡± ¡°d:\¡±Ê±£¬²ÎÊýÈÔÈ»ÊÇ4¸ö£¬µÚ3¸ö²ÎÊýÓ¦¸ÃÊÇ×Ö·û´®C:\program files£¬
+     * ¶ø²»ÊÇC:\program£¬×¢ÒâÊä³ö²ÎÊýÊ±£¬ÐèÒª½«¡°¡±È¥µô£¬ÒýºÅ²»´æÔÚÇ¶Ì×Çé¿ö¡£
+     * 3.²ÎÊý²»¶¨³¤
+     * 4.ÊäÈëÓÉÓÃÀý±£Ö¤£¬²»»á³öÏÖ²»·ûºÏÒªÇóµÄÊäÈë
      */
     void commands() {
         Scanner sc = new Scanner(System.in);
@@ -124,11 +124,11 @@ public class BasicCalculatorII {
     }
 
     /**
-     * æœ‰ä¸€åªå…”å­ï¼Œä»Žå‡ºç”ŸåŽç¬¬3ä¸ªæœˆèµ·æ¯ä¸ªæœˆéƒ½ç”Ÿä¸€åªå…”å­ï¼Œå°å…”å­é•¿åˆ°ç¬¬ä¸‰ä¸ªæœˆåŽæ¯ä¸ªæœˆåˆç”Ÿä¸€åªå…”å­ï¼Œå‡å¦‚å…”å­éƒ½ä¸æ­»ï¼Œé—®æ¯ä¸ªæœˆçš„å…”å­æ€»æ•°ä¸ºå¤šå°‘ï¼Ÿ
+     * ÓÐÒ»Ö»ÍÃ×Ó£¬´Ó³öÉúºóµÚ3¸öÔÂÆðÃ¿¸öÔÂ¶¼ÉúÒ»Ö»ÍÃ×Ó£¬Ð¡ÍÃ×Ó³¤µ½µÚÈý¸öÔÂºóÃ¿¸öÔÂÓÖÉúÒ»Ö»ÍÃ×Ó£¬¼ÙÈçÍÃ×Ó¶¼²»ËÀ£¬ÎÊÃ¿¸öÔÂµÄÍÃ×Ó×ÜÊýÎª¶àÉÙ£¿
      * <p>
-     * * ç»Ÿè®¡å‡ºå…”å­æ€»æ•°ã€‚
-     * * @param monthCount ç¬¬å‡ ä¸ªæœˆ
-     * * @return å…”å­æ€»æ•°
+     * * Í³¼Æ³öÍÃ×Ó×ÜÊý¡£
+     * * @param monthCount µÚ¼¸¸öÔÂ
+     * * @return ÍÃ×Ó×ÜÊý
      * *
      * public static int getTotalCount(int monthCount)
      * {
@@ -152,14 +152,14 @@ public class BasicCalculatorII {
     }
 
     /**
-     * å¿«æŽ’
+     * ¿ìÅÅ
      *
      * @param arr
      * @param start
      * @param end
      */
     public void quickSort(int[] arr, int start, int end) {
-        //å½“å¼€å§‹ä½ç½®å°äºŽç»“æŸä½ç½®æ—¶ï¼ˆæ•°ç»„æœ‰æ•°æ®ï¼‰  è¿›è¡ŒæŽ’åº  ä¹Ÿå°±æ˜¯é€’å½’å…¥å£
+        //µ±¿ªÊ¼Î»ÖÃÐ¡ÓÚ½áÊøÎ»ÖÃÊ±£¨Êý×éÓÐÊý¾Ý£©  ½øÐÐÅÅÐò  Ò²¾ÍÊÇµÝ¹éÈë¿Ú
         if (start < end) {
             int base = arr[start];
             int low = start;
@@ -182,7 +182,7 @@ public class BasicCalculatorII {
     }
 
     /**
-     * äºŒåˆ†æŸ¥æ‰¾
+     * ¶þ·Ö²éÕÒ
      *
      * @param a
      * @param key
@@ -204,11 +204,11 @@ public class BasicCalculatorII {
     }
 
     /**
-     * æ‰‘å…‹ç‰Œæ¸¸æˆå¤§å®¶åº”è¯¥éƒ½æ¯”è¾ƒç†Ÿæ‚‰äº†ï¼Œä¸€å‰¯ç‰Œç”±54å¼ ç»„æˆï¼Œå«3~Aã€2å„4å¼ ï¼Œå°çŽ‹1å¼ ï¼Œå¤§çŽ‹1å¼ ã€‚
-     * ç‰Œé¢ä»Žå°åˆ°å¤§ç”¨å¦‚ä¸‹å­—ç¬¦å’Œå­—ç¬¦ä¸²è¡¨ç¤ºï¼ˆå…¶ä¸­ï¼Œå°å†™jokerè¡¨ç¤ºå°çŽ‹ï¼Œå¤§å†™JOKERè¡¨ç¤ºå¤§çŽ‹ï¼‰ï¼š
+     * ÆË¿ËÅÆÓÎÏ·´ó¼ÒÓ¦¸Ã¶¼±È½ÏÊìÏ¤ÁË£¬Ò»¸±ÅÆÓÉ54ÕÅ×é³É£¬º¬3~A¡¢2¸÷4ÕÅ£¬Ð¡Íõ1ÕÅ£¬´óÍõ1ÕÅ¡£
+     * ÅÆÃæ´ÓÐ¡µ½´óÓÃÈçÏÂ×Ö·ûºÍ×Ö·û´®±íÊ¾£¨ÆäÖÐ£¬Ð¡Ð´joker±íÊ¾Ð¡Íõ£¬´óÐ´JOKER±íÊ¾´óÍõ£©£º
      * 3 4 5 6 7 8 9 10 J Q K A 2 joker JOKER
-     * è¾“å…¥ä¸¤æ‰‹ç‰Œï¼Œä¸¤æ‰‹ç‰Œä¹‹é—´ç”¨"-"è¿žæŽ¥ï¼Œæ¯æ‰‹ç‰Œçš„æ¯å¼ ç‰Œä»¥ç©ºæ ¼åˆ†éš”ï¼Œ"-"ä¸¤è¾¹æ²¡æœ‰ç©ºæ ¼ï¼Œå¦‚ï¼š4 4 4 4-joker JOKERã€‚
-     * è¯·æ¯”è¾ƒä¸¤æ‰‹ç‰Œå¤§å°ï¼Œè¾“å‡ºè¾ƒå¤§çš„ç‰Œï¼Œå¦‚æžœä¸å­˜åœ¨æ¯”è¾ƒå…³ç³»åˆ™è¾“å‡ºERRORã€‚
+     * ÊäÈëÁ½ÊÖÅÆ£¬Á½ÊÖÅÆÖ®¼äÓÃ"-"Á¬½Ó£¬Ã¿ÊÖÅÆµÄÃ¿ÕÅÅÆÒÔ¿Õ¸ñ·Ö¸ô£¬"-"Á½±ßÃ»ÓÐ¿Õ¸ñ£¬Èç£º4 4 4 4-joker JOKER¡£
+     * Çë±È½ÏÁ½ÊÖÅÆ´óÐ¡£¬Êä³ö½Ï´óµÄÅÆ£¬Èç¹û²»´æÔÚ±È½Ï¹ØÏµÔòÊä³öERROR¡£
      *
      * @throws IOException
      */
@@ -285,11 +285,11 @@ public class BasicCalculatorII {
     }
 
     /**
-     * ä¸€ä¸ªDNAåºåˆ—ç”±A/C/G/Tå››ä¸ªå­—æ¯çš„æŽ’åˆ—ç»„åˆç»„æˆã€‚Gå’ŒCçš„æ¯”ä¾‹ï¼ˆå®šä¹‰ä¸ºGC-Ratioï¼‰
-     * æ˜¯åºåˆ—ä¸­Gå’ŒCä¸¤ä¸ªå­—æ¯çš„æ€»çš„å‡ºçŽ°æ¬¡æ•°é™¤ä»¥æ€»çš„å­—æ¯æ•°ç›®ï¼ˆä¹Ÿå°±æ˜¯åºåˆ—é•¿åº¦ï¼‰ã€‚
-     * åœ¨åŸºå› å·¥ç¨‹ä¸­ï¼Œè¿™ä¸ªæ¯”ä¾‹éžå¸¸é‡è¦ã€‚å› ä¸ºé«˜çš„GC-Ratioå¯èƒ½æ˜¯åŸºå› çš„èµ·å§‹ç‚¹ã€‚
+     * Ò»¸öDNAÐòÁÐÓÉA/C/G/TËÄ¸ö×ÖÄ¸µÄÅÅÁÐ×éºÏ×é³É¡£GºÍCµÄ±ÈÀý£¨¶¨ÒåÎªGC-Ratio£©
+     * ÊÇÐòÁÐÖÐGºÍCÁ½¸ö×ÖÄ¸µÄ×ÜµÄ³öÏÖ´ÎÊý³ýÒÔ×ÜµÄ×ÖÄ¸ÊýÄ¿£¨Ò²¾ÍÊÇÐòÁÐ³¤¶È£©¡£
+     * ÔÚ»ùÒò¹¤³ÌÖÐ£¬Õâ¸ö±ÈÀý·Ç³£ÖØÒª¡£ÒòÎª¸ßµÄGC-Ratio¿ÉÄÜÊÇ»ùÒòµÄÆðÊ¼µã¡£
      * <p>
-     * ç»™å®šä¸€ä¸ªå¾ˆé•¿çš„DNAåºåˆ—ï¼Œä»¥åŠè¦æ±‚çš„æœ€å°å­åºåˆ—é•¿åº¦ï¼Œç ”ç©¶äººå‘˜ç»å¸¸ä¼šéœ€è¦åœ¨å…¶ä¸­æ‰¾å‡ºGC-Ratioæœ€é«˜çš„å­åºåˆ—ã€‚
+     * ¸ø¶¨Ò»¸öºÜ³¤µÄDNAÐòÁÐ£¬ÒÔ¼°ÒªÇóµÄ×îÐ¡×ÓÐòÁÐ³¤¶È£¬ÑÐ¾¿ÈËÔ±¾­³£»áÐèÒªÔÚÆäÖÐÕÒ³öGC-Ratio×î¸ßµÄ×ÓÐòÁÐ¡£
      *
      * @throws IOException
      */
@@ -375,24 +375,24 @@ public class BasicCalculatorII {
 
 
     /**
-     * ä¸€èˆ¬éœ€è¦ç¬¦å·æ ˆã€æ•°æ®æ ˆï¼Œä¸¤ä¸ªã€‚ä½†æ˜¯ï¼Œçœ‹åˆ°ç½‘ä¸Šä¸€ä¸ªå†™çš„ä¸é”™çš„ç®—æ³•ï¼Œåªç”¨äº†ä¸€ä¸ªæ•°æ®æ ˆã€‚
-     * ç¬¦å·æ ˆç”¨ä¸€ä¸ªå˜é‡signä»£æ›¿äº†ï¼Œåªå­˜å‚¨ä¸Šä¸€ä¸ªç¬¦å·ï¼Œä¸»è¦æ€æƒ³å¦‚ä¸‹ï¼š
+     * Ò»°ãÐèÒª·ûºÅÕ»¡¢Êý¾ÝÕ»£¬Á½¸ö¡£µ«ÊÇ£¬¿´µ½ÍøÉÏÒ»¸öÐ´µÄ²»´íµÄËã·¨£¬Ö»ÓÃÁËÒ»¸öÊý¾ÝÕ»¡£
+     * ·ûºÅÕ»ÓÃÒ»¸ö±äÁ¿sign´úÌæÁË£¬Ö»´æ´¢ÉÏÒ»¸ö·ûºÅ£¬Ö÷ÒªË¼ÏëÈçÏÂ£º
      * <p>
-     * å°†å‡æ³•è½¬åŒ–ä¸ºåŠ æ³•ï¼ˆå–ç›¸åæ•°ï¼‰
+     * ½«¼õ·¨×ª»¯Îª¼Ó·¨£¨È¡Ïà·´Êý£©
      * <p>
-     * ç”±äºŽä¹˜é™¤æ³•ä¼˜å…ˆçº§é«˜ï¼Œç›´æŽ¥è®¡ç®—
+     * ÓÉÓÚ³Ë³ý·¨ÓÅÏÈ¼¶¸ß£¬Ö±½Ó¼ÆËã
      * <p>
-     * æ•´æ•°ä¸ä»…ä¸€ä½ï¼Œä¼š>10
+     * ÕûÊý²»½öÒ»Î»£¬»á>10
      * <p>
-     * è¡¨è¾¾å¼ä¸­æ²¡æœ‰æ‹¬å·
+     * ±í´ïÊ½ÖÐÃ»ÓÐÀ¨ºÅ
      * <p>
-     * æ³¨æ„ï¼š
+     * ×¢Òâ£º
      * <p>
-     * åŠ å‡ä¹˜é™¤ç©ºæ ¼çš„ASCIIç éƒ½å°äºŽ'0'ï¼ŒASCIIå¯¹ç…§è¡¨å¦‚ä¸‹ï¼šhttp://tool.oschina.net/commons?type=4
+     * ¼Ó¼õ³Ë³ý¿Õ¸ñµÄASCIIÂë¶¼Ð¡ÓÚ'0'£¬ASCII¶ÔÕÕ±íÈçÏÂ£ºhttp://tool.oschina.net/commons?type=4
      * <p>
-     * å…ˆåšå‡æ³•ï¼Œé¿å…intæº¢å‡º
+     * ÏÈ×ö¼õ·¨£¬±ÜÃâintÒç³ö
      * <p>
-     * charç±»åž‹ï¼Œä¸èƒ½ä½¿ç”¨switch
+     * charÀàÐÍ£¬²»ÄÜÊ¹ÓÃswitch
      *
      * @param s
      * @return
@@ -403,8 +403,8 @@ public class BasicCalculatorII {
         Stack<Integer> nums = new Stack<>();
         char[] chars = s.toCharArray();
         for (int i = 0; i < s.length(); ++i) {
-            if (chars[i] >= '0') {//åŠ å‡ä¹˜é™¤å’Œç©ºæ ¼ASCIIç éƒ½å°äºŽ'0'
-                d = d * 10 - '0' + chars[i];//è¿›ä½(å…ˆå‡æ³•)
+            if (chars[i] >= '0') {//¼Ó¼õ³Ë³ýºÍ¿Õ¸ñASCIIÂë¶¼Ð¡ÓÚ'0'
+                d = d * 10 - '0' + chars[i];//½øÎ»(ÏÈ¼õ·¨)
             }
             if ((chars[i] < '0' && chars[i] != ' ') || i == s.length() - 1) {
                 if (sign == '+') {
@@ -416,7 +416,7 @@ public class BasicCalculatorII {
                     nums.pop();
                     nums.push(tmp);
                 }
-                sign = chars[i]; //ä¿å­˜å½“å‰ç¬¦å·
+                sign = chars[i]; //±£´æµ±Ç°·ûºÅ
                 d = 0;
             }
         }
