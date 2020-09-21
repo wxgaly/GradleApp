@@ -35,8 +35,8 @@ public class HappyNumber {
     }
 
     /**
-     * 思路应该是不能递归，因为可能会出现无限循环，所以应该用一个map将每次计算的值保存起来
-     * 然后每次计算完成在map中查找是否已经出现重复的值，如果出现则说明循环，返回false。
+     * ˼·Ӧ���ǲ��ܵݹ飬��Ϊ���ܻ��������ѭ��������Ӧ����һ��map��ÿ�μ����ֵ��������
+     * Ȼ��ÿ�μ��������map�в����Ƿ��Ѿ������ظ���ֵ�����������˵��ѭ��������false��
      */
     public static boolean isHappy(int n) {
         boolean ret = false;
